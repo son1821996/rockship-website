@@ -1,0 +1,99 @@
+.about-us-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin-top: 50px;
+  padding-bottom: 65px;
+  padding: 56px 136px 0px 136px;
+  @media only screen and (max-width: 414px) {
+    padding: 0;
+  }
+  .title {
+    height: 34px;
+    // font-family: ProximaNova;
+    font-size: 28px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4a4a4a;
+    padding-bottom: 6px;
+  }
+
+  .about-showcase {
+    margin-top: 105px;
+    padding: 56px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
+    @media only screen and (max-width: 768px) {
+      justify-content: center;
+      margin-top: 48px;
+    }
+
+    @media only screen and (max-width: 414px) {
+      padding: 0px 24px;
+    }
+
+    .about-item {
+      img {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      display: flex;
+      flex: 0 0 33.33%;
+      flex-direction: column;
+      text-align: center;
+
+      .flag-ship {
+        transition: transform .5s;
+      }
+
+      .flag-ship:hover {
+        transform: translateY(-10%);
+      }
+
+      .astronaut-img {
+        transition: transform .5s;
+      }
+
+      .astronaut-img:hover {
+        transform: rotate(45deg);
+      }
+    }
+    h3 {
+      height: 24px;
+    // font-family: ProximaNova;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1c1c1c;
+    }
+
+    p {
+      width: 307px;
+      height: 85px;
+      margin-left: auto;
+      margin-right: auto;
+      // font-family: ProximaNova;
+      font-size: 14px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #757575;
+    }
+  }
+}

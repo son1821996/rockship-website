@@ -1,0 +1,126 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1c1c1d;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  transform: translateY(-8px);
+  @media only screen and (max-width: 1024px) {
+    display: none;
+  }
+
+  .nav-left {
+    .logo {
+      margin-left: 49px;
+      width: 24px;
+      height: 24px;
+      margin-top: 28px;
+    }
+    .navigation_list {
+      display: flex;
+      list-style: none;
+      margin-top: 30px;
+      li:first-child{
+        margin-left: -49px;
+      }
+      li {
+        a {
+          text-decoration: none;
+          width: 61px;
+          height: 20px;
+          font-size: 16px;
+          font-weight: 600;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #ffffff;
+          margin-left: 85px;
+          text-transform: uppercase;
+        }
+      }
+    }  
+  }
+
+  .nav-right {
+    a {
+      text-decoration: none;
+      height: 20px;
+      font-size: 16px;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+    }
+    margin-right: 33px;
+    margin-top: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ffffff;
+  }
+}
+
+.navigation-mobile {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1c1c1d;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  transform: translateY(-8px);
+  @media only screen and (max-width: 1024px) {
+    display: block;
+  }
+
+  .nav-mobile-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav-left {
+      .logo {
+        margin-left: 48px;
+        width: 24px;
+        height: 24px;
+        margin-top: 28px;
+      }
+    }
+  
+    .nav-right {
+      margin-right: 32px;
+      margin-top: 24px;
+      img {
+        cursor: pointer;
+        transition: transform 0.6s;
+      }
+
+      .navigation_list {
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        right: -170px;
+        // -webkit-transition: all 0.15s ease-out 0;
+        // -moz-transition: all 0.15s ease-out 0;
+        // transition: all 1s ease-out 0;
+        width: 7rem;
+        background-color: #1c1c1d;
+        list-style: none;
+        margin: 0;
+        padding: 22px;
+        height: 40vh;
+        transition: transform 0.6s;
+
+        li {
+          margin-top: 16px;
+          a {
+            color: #ffffff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+}

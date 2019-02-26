@@ -1,0 +1,110 @@
+.clients-talk {
+  display: flex;
+  background-color: #1c1c1d;
+  color: #ffffff;
+  padding: 56px 136px 0px 136px;
+  height: 100vh;
+  @media only screen and (max-width: 1024px) {
+    height: 100%;
+  }
+  @media only screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width: 414px) {
+    padding: 60px 32px 60px 20px;
+  }
+  .section-title {
+    flex: 0 0 45%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 64px;
+
+    h1 {
+      height: 174px;
+      width: 350px;
+      @media only screen and (max-width: 414px) {
+        width: 323px;
+      }
+      // font-family: ProximaNova;
+      font-size: 48px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: -1.5px;
+    }
+  }
+
+  .clients-quote {
+    display: flex;
+    flex-direction: column;
+    .quote-item {
+      margin-top: 40px;
+      .number {
+        // font-family: ProximaNova;
+        width: 350px;
+        font-size: 32px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+      }
+
+      p {
+        // font-family: ProximaNova;
+        font-size: 14px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+      }
+
+      .clients-info {
+        display: flex;
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 24px;
+        }
+
+        .clients-details {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .clients-name {
+            height: 24px;
+            // font-family: ProximaNova;
+            font-size: 20px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #ffffff;
+          }
+          .clients-position {
+            width: 107px;
+            height: 17px;
+            // font-family: ProximaNova;
+            font-size: 14px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #757575;
+          }
+        }
+      }
+    }
+  }
+}
