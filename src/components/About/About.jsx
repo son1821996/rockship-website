@@ -31,8 +31,13 @@ class About extends Component {
               Cutting Edge & Specialized
             </h3>
             <p>
-            At Rockship, we embrace latest technology trends and it is demonstrated
-            by work efficiency improved constantly thanks to application of new technology.
+            Our engineering embrace latest technology to improve our work efficiency and deliver
+            excellent client expectation:
+            AI & Machine Learning, Blockchain, Rust, Golang, Docker, etc.
+            </p>
+            <p style={{ marginTop: '-10px' }}>
+            We actively look for projects in those new technologies to horn our specialization
+            and build up the portfolio for our engineers
             </p>
           </div>
           <div className="about-item">

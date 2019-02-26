@@ -44,27 +44,11 @@ class NewsThumbnail extends Component {
           shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla laoreet tempor arcu ut viverra. Maecenas nec odio sem. Ut feugiat leo nisl, a semper erat convallis sed. Nunc rhoncus posuere elementum. Vivamus lacinia ex felis, ac porttitor lacus vestibulum sed. ',
         },
       ],
-      width: 0,
     };
   }
 
-  componentDidMount() {
-    this.updateWindowDimensions();
-    window.addEventListener('resize', this.updateWindowDimensions);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.updateWindowDimensions);
-  }
-
-  updateWindowDimensions = () => {
-    this.setState({ width: window.innerWidth });
-  }
-
   render() {
-    const { width } = this.state;
-    let { news } = this.state;
-    news = width <= 568 ? news.slice(0, 3) : news;
+    const { news } = this.state;
 
     return (
       <Fragment>
