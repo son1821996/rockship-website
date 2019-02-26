@@ -1,0 +1,225 @@
+.career-section{
+    height: 945px;
+    width: 100%;
+    background-color: #1c1c1d;
+    display: flex;
+    .left {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .career-title-box {
+            height: 97px;
+            width: 330px;
+            margin-top: 177px;
+            margin-right: 255px;
+            .title-line{
+                width: 57px;
+                height: 4px;
+                background-color: #ffffff;
+            }
+            .title{
+                width: 184px;
+                height: 46px;
+                font-family: ProximaNova;
+                font-size: 48px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                margin-top: 16px;
+                color: #ffffff;
+            }
+            .join-rockship{
+                width: 330px;
+                height: 17px;
+                font-family: ProximaNova;
+                font-size: 14px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #ffffff;
+                margin-top: 14px;
+            }
+        }
+        .team-company-trip{
+            width: 570px;
+            height: 395px;
+            margin-top: 176px;
+            margin-right: 15px;
+            display: flex;
+            .left-side{
+                width: 330px;
+                height: 100%;
+                .first-time{
+                    width: 330px;
+                    height: 267px;
+                }
+                .left-pic-group{
+                    height: 98px;
+                    width: 100%;
+                    margin-top: 30px;
+                    display: flex;
+                    .shrimp{
+                        width: 172px;
+                        height: 98px;
+                        background-color: antiquewhite;
+                    }
+                    .sea{
+                        width: 128px;
+                        height: 98px;
+                        margin-left: 30px;
+                        background-color: antiquewhite;
+                    }
+                }
+            }
+            .right-side{
+                width: 240px;
+                height: 100%;
+                .grape{
+                    width: 210px;
+                    height: 115px;
+                    background-color: antiquewhite;
+                    margin-left: 30px;
+                }
+                .rock{
+                    width: 210px;
+                    height: 250px;
+                    background-color: antiquewhite; 
+                    margin-left: 30px;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+    
+    .right {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .ideal-teamate {
+            height: 406px;
+            width: 570px;
+            margin-top: 64px;
+            margin-left: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.28);
+            background-color: #181818;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .ideal-teamate-group{
+                height: 315px;
+                width: 471px;
+                margin-top: 56px;
+                .icon-frame{
+                    height:32px;
+                    width: 32px;
+                }
+                .what-we-want{
+                    width: 210px;
+                    height: 40px;
+                    font-family: ProximaNova;
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #ffffff;
+                    margin-top: 24px;
+                }
+                .ideal-teamate-element{
+                    width: 471px;
+                    height: 204px;
+                    font-family: ProximaNova;
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin-top: 24px;
+                }
+                .element{
+                    width: 100%;
+                    height: 50px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #757575;
+                    strong{
+                        color: #ffffff;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .why-chose-us {
+            width: 570px;
+            height: 340px;
+            margin-top: 35px;
+            margin-left: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.28);
+            background-color: #181818;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .ideal-teamate-group{
+                height: 315px;
+                width: 471px;
+                margin-top: 48px;
+                .icon-frame{
+                    height:32px;
+                    width: 32px;
+                }
+                .what-we-want{
+                    width: 203px;
+                    height: 24px;
+                    font-family: ProximaNova;
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #ffffff;
+                    margin-top: 24px;
+                }
+                .ideal-teamate-element{
+                    width: 471px;
+                    height: 204px;
+                    font-family: ProximaNova;
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin-top: 24px;
+                }
+                .element{
+                    width: 100%;
+                    height: 50px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #757575;
+                    strong{
+                        color: #ffffff;
+                        margin-right: 5px;
+                    }
+                }
+                .third{
+                    margin-top: -15px;
+                }
+                .fouth{
+                    margin-top: -15px;
+                }
+            }
+        }
+    }
+}

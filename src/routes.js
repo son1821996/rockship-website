@@ -11,6 +11,7 @@ import News from './containers/News';
 import PortfolioContainer from './containers/PortfolioContainer';
 import PortfolioDetails from './containers/PortfolioDetail';
 import NewsDetail from './containers/NewsDetail';
+import Career from './containers/Career';
 
 // eslint-disable-next-line react/prefer-stateless-function
 export default class Routes extends Component {
@@ -25,6 +26,7 @@ export default class Routes extends Component {
           <Route exact path="/news/details" component={NewsDetail} />
           <Route exact path="/portfolio" component={PortfolioContainer} />
           <Route exact path="/portfolio/details" component={PortfolioDetails} />
+          <Route exact path="/career" component={Career} />
         </Switch>
       </Router>
     );
