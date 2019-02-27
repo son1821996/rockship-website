@@ -13,7 +13,7 @@
       flex-wrap: wrap;
       padding: 56px 136px 64px 136px;
     }
-    @media only screen and (max-width: 414px) {
+    @media only screen and (max-width: 576px) {
       padding: 60px 32px 60px 20px;
     }
     .section-title {
@@ -38,6 +38,56 @@
         color: #ffffff;
         text-transform: uppercase;
         letter-spacing: -1.5px;
+      }
+    }
+
+    .carousel-slider {
+      width: 32% !important;
+      height: 600px;
+      position: relative;
+      @media only screen and (max-width: 576px) {
+        width: 30% !important;
+      }
+      @media only screen and (max-width: 414px) {
+        width: 20% !important;
+      }
+
+      .control-arrow {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 85%;
+        @media only screen and (max-width: 1024px) {
+          top: 0;
+        }
+        background-color: #000000;
+
+        &::before {
+          margin: 3px 8px;
+        }
+      }
+
+      .control-prev {
+        left: 0;
+        @media only screen and (max-width: 1024px) {
+          right: 32px;
+          left: unset;
+        }
+      }
+
+      .control-next {
+        left: 32px;
+        @media only screen and (max-width: 1024px) {
+          right: 0;
+          left: unset;
+        }
+      }
+    }
+
+    .carousel {
+      .slide {
+        background: #1c1c1d;
+        text-align: unset;
       }
     }
   

@@ -23,6 +23,17 @@ label {
     margin-top: 40px;
   }
 
+  .choose-option-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    @media only screen and (max-width: 576px) {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+  }
+
   textarea {
     color: #ffffff;
     position: relative;
@@ -38,8 +49,8 @@ label {
     @media only screen and (max-width: 1024px) {
       height: 180px;
     }
-    @media only screen and (max-width: 1024px) {
-      height: 130px;
+    @media only screen and (max-width: 576px) {
+      height: 90px;
     }
   }
 
@@ -119,13 +130,16 @@ label {
       font-size: 16px;
       border-bottom: 1px solid #ffffff;
       cursor: pointer;
-      margin-top: 48px;
+      margin-top: 70px;
       @media only screen and (max-width: 768px) {
         margin-top: 24px;
         width: 20%;
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 8px;
+      }
+      @media only screen and (max-width: 414px) {
+        margin-top: -16px;
       }
     }
 
@@ -136,7 +150,7 @@ label {
       padding-bottom: 16px;
       position: relative;
       top: 120px;
-      margin-bottom: 24px;
+      margin-bottom: 16px;
       @media only screen and (max-width: 576px) {
         top: 0px;
       }
@@ -272,7 +286,7 @@ label {
     }
     @media only screen and (max-width: 414px) {
       flex: 0 0 90%;
-      margin-bottom: 30px;
+      margin-bottom: 16px;
     }
     position: relative;
     padding-left: 35px;
