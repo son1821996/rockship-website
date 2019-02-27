@@ -5,9 +5,11 @@
   height: 85vh;
   @media only screen and (max-width: 1024px) {
     height: auto;
+    padding: 60px 64px 60px 64px;
   }
   @media only screen and (max-width: 768px) {
     flex-wrap: wrap;
+    padding: 60px 64px 60px 64px;
   }
 
   @media only screen and (max-width: 576px) {

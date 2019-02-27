@@ -11,10 +11,14 @@
     padding: 56px 136px 0px 136px;
     @media only screen and (max-width: 1024px) {
       flex-wrap: wrap;
-      padding: 56px 136px 64px 136px;
+      padding: 60px 64px 60px 64px;
+    }
+    @media only screen and (max-width: 768px) {
+      padding: 60px 64px 60px 64px;
     }
     @media only screen and (max-width: 576px) {
-      padding: 60px 32px 60px 20px;
+      flex-wrap: wrap;
+      padding: 60px 32px 60px 32px;
     }
     .section-title {
       flex: 0 0 45%;
@@ -45,7 +49,7 @@
       width: 32% !important;
       height: 600px;
       position: relative;
-      @media only screen and (max-width: 576px) {
+      @media only screen and (max-width: 768px) {
         width: 30% !important;
       }
       @media only screen and (max-width: 414px) {

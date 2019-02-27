@@ -7,10 +7,9 @@ label {
 }
 .contact-form {
   display: flex;
-  flex: 0 0 45%;
+  flex: 0 0 50%;
   flex-direction: column;
   margin-top: 38px;
-  margin-right: 64px;
   height: 580px;
 
   @media only screen and (max-width: 1280px) {
@@ -38,6 +37,7 @@ label {
     color: #ffffff;
     position: relative;
     height: 90px;
+    top: 20px;
     @media only screen and (max-width: 1024px) {
       top: 0px;
     }
