@@ -1,8 +1,8 @@
 .contact-section-container {
   background-color: #1c1c1d;
   color: #ffffff;
-  padding: 124px 256px 0px 256px;
-  height: 82vh;
+  padding: 124px 136px 0px 136px;
+  height: 85vh;
   @media only screen and (max-width: 1024px) {
     height: 100%;
   }
@@ -10,7 +10,7 @@
     flex-wrap: wrap;
   }
 
-  @media only screen and (max-width: 414px) {
+  @media only screen and (max-width: 576px) {
     padding: 60px 32px 60px 32px;
   }
   .greeting {

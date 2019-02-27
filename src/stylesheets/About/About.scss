@@ -3,12 +3,20 @@
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: 100vh;
   margin-top: 50px;
   padding-bottom: 65px;
-  padding: 56px 136px 0px 136px;
+  padding: 0px 136px 0px 136px;
+  z-index: 99;
+  position: relative;
+  @media only screen and (max-width: 1024px) {
+    margin-top: 20px;
+    padding-bottom: 65px;
+    padding: 0px 136px 0px 136px;
+    height: 100%;
+  }
   @media only screen and (max-width: 414px) {
-    padding: 0;
+    padding: 0 0 32px 0;
   }
   .title {
     height: 34px;
@@ -25,8 +33,8 @@
   }
 
   .about-showcase {
-    margin-top: 105px;
-    padding: 56px 0px;
+    margin-top: 32px;
+    padding: 32px 0px;
     display: flex;
     flex-wrap: wrap;
     @media only screen and (max-width: 1024px) {

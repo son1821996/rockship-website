@@ -61,42 +61,21 @@ class Home extends Component {
                 src="./img/rockship.png"
                 srcSet="./img/rockship@2x.png 2x, ./img/rockship@3x.png 3x,"
                 className="ship"
-                style={{
-                  transform: `${isClickToScroll ? 'translateY(-170%)' : 'unset'}`,
-                }}
               />
-              <img
-                alt="white-cloud"
-                src="./img/white-cloud.png"
-                srcSet="./img/white-cloud@2x.png 2x, ./img/white-cloud@3x.png 3x,"
+              <div
                 className="white-clound"
-                style={{
-                  transform: `${isClickToScroll ? 'translateY(22%)' : 'unset'}`,
-                }}
               />
-              <img
-                alt="grey-cloud"
-                src="./img/grey-cloud.png"
-                srcSet="./img/grey-cloud@2x.png 2x, ./img/grey-cloud@3x.png 3x,"
+              <div
                 className="grey-cloud"
-                style={{
-                  transform: `${isClickToScroll ? 'translateY(11%)' : 'unset'}`,
-                }}
               />
               <div
                 className="a"
                 onClick={this.handleClick}
-                style={{
-                  opacity: `${isClickToScroll ? '0' : '1'}`,
-                }}
               >
                 <div className="b" />
               </div>
               <div
                 className="scroll-text"
-                style={{
-                  opacity: `${isClickToScroll ? '0' : '1'}`,
-                }}
               >
                 SCROLL TO EXPLORE
               </div>

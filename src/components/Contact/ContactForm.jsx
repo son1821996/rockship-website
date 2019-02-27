@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import { object } from 'prop-types';
+import FormControl from '@material-ui/core/FormControl';
+import Input from '@material-ui/core/Input';
+import InputLabel from '@material-ui/core/InputLabel';
 import TextField from '@material-ui/core/TextField';
 import ArrowRightAlt from '@material-ui/icons/ArrowRightAlt';
 import { withStyles } from '@material-ui/core/styles';
+
+// import purple from '@material-ui/core/colors/purple';
 
 import '../../stylesheets/Contact/ContactForm.scss';
 
@@ -16,6 +21,16 @@ const styles = theme => ({
     marginRight: theme.spacing.unit,
     width: 200,
     color: '#ffffff',
+  },
+  cssLabel: {
+    '&$cssFocused': {
+      color: '#ffffff',
+    },
+  },
+  cssUnderline: {
+    '&:after': {
+      borderBottomColor: '#ffffff',
+    },
   },
   dense: {
     marginTop: 19,
@@ -126,7 +141,6 @@ class ContactForm extends Component {
       isShowFirstForm, isShowSecondForm, isShowThirdForm,
     } = this.state;
     const { classes } = this.props;
-
     const listCompanySize = ['Single founder', '3 - 10 engineers', '10 - 50 engineers', '>50 engineers'];
     const listCompanyLocation = ['US', 'Europe', 'East Asia', 'Other'];
     const listInterested = ['Live Streaming', ' Cryptocurrency Exchange', ' Payment Integration', ' VoIP routing app', ' Facility Booking System', 'Other'];
@@ -149,53 +163,106 @@ class ContactForm extends Component {
         )}
         {isShowFirstForm && (
           <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <TextField
-              id="standard-name"
-              label="Name"
-              className={classes.textField}
-              margin="normal"
-              value={name}
-              onChange={this.handleChange('name')}
-              autoComplete="off"
-              // floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
-            />
-            <TextField
-              id="mui-theme-provider-outlined-input"
-              label="Email"
-              type="email"
-              className={classes.textField}
-              margin="normal"
-              value={email}
-              onChange={this.handleChange('email')}
-              autoComplete="off"
-            />
-            <TextField
-              id="standard-name"
-              label="Address"
-              className={classes.textField}
-              margin="normal"
-              value={address}
-              onChange={this.handleChange('address')}
-              autoComplete="off"
-            />
-            <TextField
-              id="standard-name"
-              label="Phone"
-              className={classes.textField}
-              margin="normal"
-              value={phoneNumber}
-              onChange={this.handleChange('phoneNumber')}
-              autoComplete="off"
-            />
-            <TextField
-              id="standard-name"
-              label="Content"
-              className={classes.textField}
-              margin="normal"
-              value={content}
-              onChange={this.handleChange('content')}
-              autoComplete="off"
-            />
+            <FormControl className={classes.margin}>
+              <InputLabel
+                htmlFor="custom-css-standard-input"
+                classes={{
+                  root: classes.cssLabel,
+                  focused: classes.cssFocused,
+                }}
+              >
+                Name
+              </InputLabel>
+              <Input
+                id="custom-css-standard-input"
+                classes={{
+                  underline: classes.cssUnderline,
+                }}
+                value={name}
+                onChange={this.handleChange('name')}
+                autoComplete="off"
+              />
+            </FormControl>
+            <FormControl className={classes.margin}>
+              <InputLabel
+                htmlFor="custom-css-standard-input"
+                classes={{
+                  root: classes.cssLabel,
+                  focused: classes.cssFocused,
+                }}
+              >
+                Email
+              </InputLabel>
+              <Input
+                id="custom-css-standard-input"
+                classes={{
+                  underline: classes.cssUnderline,
+                }}
+                value={email}
+                onChange={this.handleChange('email')}
+                autoComplete="off"
+              />
+            </FormControl>
+            <FormControl className={classes.margin}>
+              <InputLabel
+                htmlFor="custom-css-standard-input"
+                classes={{
+                  root: classes.cssLabel,
+                  focused: classes.cssFocused,
+                }}
+              >
+                Address
+              </InputLabel>
+              <Input
+                id="custom-css-standard-input"
+                classes={{
+                  underline: classes.cssUnderline,
+                }}
+                value={address}
+                onChange={this.handleChange('address')}
+                autoComplete="off"
+              />
+            </FormControl>
+            <FormControl className={classes.margin}>
+              <InputLabel
+                htmlFor="custom-css-standard-input"
+                classes={{
+                  root: classes.cssLabel,
+                  focused: classes.cssFocused,
+                }}
+              >
+                Phone
+              </InputLabel>
+              <Input
+                id="custom-css-standard-input"
+                classes={{
+                  underline: classes.cssUnderline,
+                }}
+                value={phoneNumber}
+                onChange={this.handleChange('phoneNumber')}
+                autoComplete="off"
+              />
+            </FormControl>
+            <FormControl className={classes.margin}>
+              <InputLabel
+                htmlFor="custom-css-standard-input"
+                classes={{
+                  root: classes.cssLabel,
+                  focused: classes.cssFocused,
+                }}
+              >
+                Content
+              </InputLabel>
+              <Input
+                id="custom-css-standard-input"
+                classes={{
+                  underline: classes.cssUnderline,
+                }}
+                value={content}
+                onChange={this.handleChange('content')}
+                autoComplete="off"
+              />
+            </FormControl>
             <div className="form-bottom">
               <div
                 className="tell-more"
@@ -217,7 +284,7 @@ class ContactForm extends Component {
             <div className="second-form-subtitle">Company size</div>
             <div
               style={{
-                display: 'flex', flexWrap: 'wrap', marginTop: '12px', marginBottom: '48px', padding: '16px',
+                display: 'flex', flexWrap: 'wrap', marginTop: '12px', marginBottom: '16px', padding: '16px',
               }}
             >
               {listCompanySize.map((item, i) => (
@@ -239,7 +306,7 @@ class ContactForm extends Component {
 
             <div className="second-form-subtitle">Company location</div>
             <div style={{
-              display: 'flex', flexWrap: 'wrap', marginTop: '12px', marginBottom: '48px', padding: '16px',
+              display: 'flex', flexWrap: 'wrap', marginTop: '12px', marginBottom: '16px', padding: '16px',
             }}
             >
               {listCompanyLocation.map((item, i) => (
@@ -270,7 +337,7 @@ class ContactForm extends Component {
           <div className="contact-form">
             <div className="third-form-title">What area are you interested in?</div>
             <div style={{
-              display: 'flex', flexWrap: 'wrap', marginTop: '12px', marginBottom: '48px', padding: '16px',
+              display: 'flex', flexWrap: 'wrap', marginTop: '12px', marginBottom: '0px', padding: '16px',
             }}
             >
               {listInterested.map((item, i) => (
@@ -290,7 +357,7 @@ class ContactForm extends Component {
               ))}
             </div>
             <TextField
-              id="outlined-multiline-static"
+              id="outlined-textarea"
               label="Project Description"
               multiline
               rows="20"
@@ -300,9 +367,16 @@ class ContactForm extends Component {
               margin="normal"
               variant="outlined"
             />
-            <div className="form-bottom">
+            <div
+              className="form-bottom"
+              style={{
+                flexDirection: 'unset',
+              }}
+            >
               <div />
-              <div className="form-bottom-right-second-form">
+              <div
+                className="form-bottom-right-third-form"
+              >
                 Save
               </div>
             </div>

@@ -1,101 +1,103 @@
-.work-container {
+.work-section {
   background-color: #1c1c1d;
   color: #ffffff;
   height: 100vh;
-  padding: 106px 136px 0px 136px;
-
   @media only screen and (max-width: 1024px) {
     height: 100%;
   }
-
-  @media only screen and (max-width: 768px) {
-    flex-wrap: wrap;
-  }
-
-  @media only screen and (max-width: 414px) {
-    flex-wrap: wrap;
-    padding: 60px 32px 60px 32px;
-  }
-  
-
-  .work-content {
-    display: flex;
-    // justify-content: space-evenly;
-    flex-wrap: wrap;
-
-    .project-img {
-      flex: 0 0 45%;
-      margin-right: 64px;
+  .work-container {
+    padding: 0px 136px 0px 136px;
+    @media only screen and (max-width: 1440px) {
+      padding: 124px 136px 0px 136px;
     }
-  
-    .project-details {
+    @media only screen and (max-width: 1024px) {
+      flex-wrap: wrap;
+      padding: 60px 64px 60px 64px;
+    }
+
+    @media only screen and (max-width: 414px) {
+      flex-wrap: wrap;
+      padding: 60px 32px 60px 32px;
+    }
+    .work-content {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      @media only screen and (max-width: 1024px) {
-        margin-top: 48px;
+      // justify-content: space-evenly;
+      flex-wrap: wrap;
+  
+      .project-img {
+        flex: 0 0 45%;
+        margin-right: 64px;
       }
-      .section-title {
-        height: 46px;
-        margin-top: 16px;
-        // font-family: ProximaNova;
-        font-size: 48px;
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        color: #ffffff;
-        text-transform: uppercase;
-      }
-
-      .project-name {
-        height: 39px;
-        margin-top: 32px;
-        // font-family: ProximaNova;
-        font-size: 32px;
-        font-weight: 600;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        color: #ffffff;
-      }
-
-      .project-description {
-        width: 450px;
-        height: 65px;
-        margin-top: 8px;
-        @media only screen and (max-width: 768px) {
-          width: 100%;
+    
+      .project-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media only screen and (max-width: 1024px) {
           margin-top: 48px;
         }
-        // font-family: ProximaNova;
-        font-size: 14px;
-        font-weight: 600;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        color: #757575;
-      }
-
-      .description-item {
-        span {
+        .section-title {
+          height: 46px;
+          margin-top: 16px;
+          // font-family: ProximaNova;
+          font-size: 48px;
           font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #ffffff;
+          text-transform: uppercase;
+        }
+  
+        .project-name {
+          margin-top: 32px;
+          // font-family: ProximaNova;
+          font-size: 32px;
+          font-weight: 600;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
           color: #ffffff;
         }
-        margin-top: 24px;
-        // font-family: ProximaNova;
-        font-size: 14px;
-        font-weight: 600;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        color: #757575;
+  
+        .project-description {
+          width: 450px;
+          height: 65px;
+          margin-top: 8px;
+          @media only screen and (max-width: 768px) {
+            width: 100%;
+            margin-top: 48px;
+          }
+          // font-family: ProximaNova;
+          font-size: 14px;
+          font-weight: 600;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #757575;
+        }
+  
+        .description-item {
+          span {
+            font-weight: bold;
+            color: #ffffff;
+          }
+          margin-top: 24px;
+          // font-family: ProximaNova;
+          font-size: 14px;
+          font-weight: 600;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #757575;
+        }
       }
     }
+
   }
 }
 
@@ -110,7 +112,7 @@
 @media only screen and (max-width: 768px) {
   .project-img {
     img {
-      width: 200%;
+      width: 150%;
     }
   }
 }

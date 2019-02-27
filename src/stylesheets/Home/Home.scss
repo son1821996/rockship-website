@@ -4,6 +4,7 @@ header {
   position: relative;
   transition: height 3s;
 
+
   .header-content {
     position: absolute;
     margin-left: auto;
@@ -12,9 +13,11 @@ header {
     top: 15%;
     bottom: 0;
     .welcome-title {
-      height: 49px;
       // font-family: 'ProximaNova';
       font-size: 40px;
+      @media only screen and (max-width: 414px) {
+        font-size: 32px;
+      }
       font-weight: bold;
       font-style: normal;
       font-stretch: normal;
@@ -41,7 +44,6 @@ header {
       transition: transform 2s;
     }
     .header-bottom {
-      transition: transform 3s;
       .ship {
         display: block;
         margin-left: auto;
@@ -51,12 +53,23 @@ header {
         top: 27%;
         left: 46.3%;
         z-index: 10;
-        transition: transform 3s;
 
         @media only screen and (max-width: 1440px) {
           margin-top: 0;
           left: 44.5%;
-          top: 17%;
+          top: 24%;
+        }
+
+        @media only screen and (max-width: 768px) {
+          margin-top: 0;
+          left: 40%;
+          top: 42%;
+        }
+
+        @media only screen and (max-width: 576px) {
+          margin-top: 0;
+          left: 32.5%;
+          top: 24%;
         }
       }
       .grey-cloud {
@@ -64,7 +77,14 @@ header {
         position: absolute;
         bottom: 0;
         z-index: 1;
-        transition: transform 3s;
+        height: 380px;
+        @media only screen and (max-width: 1440px) {
+          height: 280px;
+        }
+        background-image: url('../../img/grey-cloud.png');
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
       }
 
       .white-clound {
@@ -72,7 +92,14 @@ header {
         position: absolute;
         bottom: 0;
         z-index: 2;
-        transition: transform 3s;
+        height: 200px;
+        @media only screen and (max-width: 1440px) {
+          height: 150px;
+        }
+        background-image: url('../../img/white-cloud.png');
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
       }
 
       .a {
