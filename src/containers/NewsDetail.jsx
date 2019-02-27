@@ -49,7 +49,9 @@ class NewsDetail extends Component {
                 src="../img/news-logo.png"
                 srcSet="../img/news-logo@2x.png 2x, ../img/news-logo@3x.png 3x,"
               />
-              <span>NEWS</span>
+              <Link to="/news">
+                <span>NEWS</span>
+              </Link>
             </div>
             <div className="dash" style={{ backgroundColor: '#000000', height: '4px', width: '57px' }} />
             <div className="article-header">
