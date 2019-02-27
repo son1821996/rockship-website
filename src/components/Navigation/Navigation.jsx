@@ -71,6 +71,9 @@ class Navigation extends Component {
                   <Link to="/">Home</Link>
                 </li>
                 <li className="nav_item">
+                  <Link to="/contact">Contact</Link>
+                </li>
+                <li className="nav_item">
                   <Link to="/portfolio">Portfolio</Link>
                 </li>
                 <li className="nav_item">

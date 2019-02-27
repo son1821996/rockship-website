@@ -11,16 +11,18 @@ class Clients extends Component {
 
   render() {
     return (
-      <section className="clients-talk">
-        <div className="section-title">
-          <div className="dash" style={{ backgroundColor: '#ffffff', height: '4px', width: '57px' }} />
-          <div>
-            <h1 className="title">
-            What clients talk about us
-            </h1>
+      <section className="clients-section">
+        <div className="clients-container">
+          <div className="section-title">
+            <div className="dash" style={{ backgroundColor: '#ffffff', height: '4px', width: '57px' }} />
+            <div>
+              <h1 className="title">
+              What clients talk about us
+              </h1>
+            </div>
           </div>
+          <ClientItems />
         </div>
-        <ClientItems />
       </section>
     );
   }

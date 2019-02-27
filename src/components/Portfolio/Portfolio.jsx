@@ -22,36 +22,38 @@ class Work extends Component {
   render() {
     const { projects } = this.state;
     return (
-      <section className="work-container">
-        {projects.map(project => (
-          <div className="work-content">
-            <div className="project-img">
-              <img alt="project-img" src={project.img} />
+      <section className="work-section">
+        <div className="work-container">
+          {projects.map(project => (
+            <div className="work-content">
+              <div className="project-img">
+                <img alt="project-img" src={project.img} />
+              </div>
+              <div className="project-details">
+                <div className="dash" style={{ backgroundColor: '#ffffff', height: '4px', width: '60px' }} />
+                <div className="section-title">
+                  Work
+                </div>
+                <div className="project-name">
+                  {project.title}
+                </div>
+                <div className="project-description">
+                  {project.description}
+                </div>
+                <div className="description-item">
+                  <span>Responsibility: </span>
+                  {project.responsibility}
+                </div>
+                <div className="description-item">
+                  <span>
+                Technology:&nbsp;
+                  </span>
+                  {project.tech}
+                </div>
+              </div>
             </div>
-            <div className="project-details">
-              <div className="dash" style={{ backgroundColor: '#ffffff', height: '4px', width: '60px' }} />
-              <div className="section-title">
-                Work
-              </div>
-              <div className="project-name">
-                {project.title}
-              </div>
-              <div className="project-description">
-                {project.description}
-              </div>
-              <div className="description-item">
-                <span>Responsibility: </span>
-                {project.responsibility}
-              </div>
-              <div className="description-item">
-                <span>
-              Technology:&nbsp;
-                </span>
-                {project.tech}
-              </div>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </section>
     );
   }

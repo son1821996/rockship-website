@@ -1,3 +1,6 @@
+label {
+  color: #ffffff !important;
+}
 .contact-form {
   display: flex;
   flex: 0 0 45%;
@@ -6,8 +9,8 @@
   margin-right: 64px;
   height: 580px;
 
-  @media only screen and (max-width: 768px) {
-    flex: 0 0 90%;
+  @media only screen and (max-width: 1280px) {
+    flex: 0 0 100%;
     margin-right: 0px;
     margin-top: 16px;
   }
@@ -22,54 +25,37 @@
     color: #ffffff;
     position: relative;
     top: 50px;
-    @media only screen and (max-width: 414px) {
-      top: 60px;
+    @media only screen and (max-width: 768px) {
+      top: 0px;
+    }
+    @media only screen and (max-width: 576px) {
+      top: 0px;
     }
 
     label {
-      color: #ffffff;
+      color: #ffffff !important;
     }
   }
 
   textarea {
     color: #ffffff;
     position: relative;
-    top: 170px;
-    @media only screen and (max-width: 768px) {
-      top: 100px;
+    top: 60px;
+    height: 90px;
+    @media only screen and (max-width: 1024px) {
+      top: 0px;
     }
-
-    @media only screen and (max-width: 768px) {
-      top: 110px;
-    }
-  }
-
-  .MuiInput-underline-31:after {
-    border-bottom: 2px solid #ffffff;
-  }
-
-  .MuiInput-underline-92:after {
-    border-bottom: 2px solid #ffffff;
-  }
-
-  .MuiInput-underline-207:after {
-    border-bottom: 2px solid #ffffff;
-  }
-
-  .MuiInput-underline-444:after {
-    border-bottom: 2px solid #ffffff;
-  }
-
-  .MuiInput-underline-268:after {
-    border-bottom: 2px solid #ffffff;
-  }
-
-  .MuiInput-underline-322 {
-    border-bottom: 2px solid #ffffff;
   }
 
   fieldset {
-    border-color: #ffffff;
+    border-color: #ffffff !important;
+    height: 156px;
+    @media only screen and (max-width: 1024px) {
+      height: 180px;
+    }
+    @media only screen and (max-width: 1024px) {
+      height: 130px;
+    }
   }
 
   .MuiFormControl-root-66 {
@@ -99,9 +85,8 @@
   }
 
   .form-bottom {
-    margin-top: 56px;
     display: flex;
-    @media only screen and (max-width: 414px) {
+    @media only screen and (max-width: 576px) {
       flex-direction: column;
     }
     // font-family: ProximaNova;
@@ -148,15 +133,30 @@
       display: inline-block;
       font-size: 16px;
       border-bottom: 1px solid #ffffff;
-      font-size: 14px;
       cursor: pointer;
       margin-top: 48px;
-      @media only screen and (max-width: 414px) {
+      @media only screen and (max-width: 768px) {
         margin-top: 24px;
         width: 20%;
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 8px;
+      }
+    }
+
+    .form-bottom-right-third-form {
+      font-size: 16px;
+      border-bottom: 1px solid #ffffff;
+      cursor: pointer;
+      padding-bottom: 16px;
+      position: relative;
+      top: 120px;
+      margin-bottom: 24px;
+      @media only screen and (max-width: 768px) {
+        top: 70px;
+      }
+      @media only screen and (max-width: 576px) {
+        top: 5px;
       }
     }
   }
@@ -182,8 +182,8 @@
     text-transform: uppercase;
     margin-top: 40px;
     height: 17px;
-    @media only screen and (max-width: 414px) {
-      margin-top: 50px;
+    @media only screen and (max-width: 768px) {
+      margin-top: 24px;
     }
     // font-family: ProximaNova;
     font-size: 14px;
@@ -209,9 +209,12 @@
   .radio-item {
     display: flex;
     align-items: center;
-    flex: 0 0 44%;
+    flex: 0 0 43%;
     @media only screen and (max-width: 1440px) {
       flex: 0 0 40%;
+    }
+    @media only screen and (max-width: 1024px) {
+      flex: 1 0 40%;
     }
     @media only screen and (max-width: 414px) {
       flex: 0 0 90%;
@@ -241,6 +244,10 @@
       width: 20px;
       background-color: #5d5d5d;
       border-radius: 50%;
+
+      span {
+        border-radius: 4px;
+      }
 
       &:after {
         content: "";
@@ -277,7 +284,7 @@
   .checkbox-item {
     display: flex;
     align-items: center;
-    flex: 0 0 44%;
+    flex: 0 0 43%;
     @media only screen and (max-width: 1440px) {
       flex: 0 0 40%;
     }
@@ -314,6 +321,7 @@
     height: 20px;
     width: 20px;
     background-color: #5d5d5d;
+    border-radius: 4px;
   }
   
   /* On mouse-over, add a grey background color */

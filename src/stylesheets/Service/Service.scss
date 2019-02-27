@@ -1,94 +1,46 @@
 .service {
-  display: flex;
+  
   background-color: #1c1c1d;
   color: #ffffff;
-  padding: 56px 136px 0px 136px;
   height: 100vh;
-  // flex-wrap: wrap;
   @media only screen and (max-width: 1024px) {
     height: 100%;
-    flex-direction: column;
-    padding: 54px 76px 54px 76px;
   }
-
-  @media only screen and (max-width: 414px) {
-    flex-wrap: wrap;
-    padding: 60px 32px 60px 32px;
-  }
-
-  .service-introduce {
-    margin-top: 50px;
-    flex: 0 0 45%;
-    margin-right: 64px;
+  // flex-wrap: wrap;
+  .service-container {
     display: flex;
-    flex-direction: column;
-    @media only screen and (max-width: 768px) {
-      flex: 0 0 20%;
+    padding: 56px 136px 0px 136px;
+    @media only screen and (max-width: 1024px) {
+      flex-direction: column;
+      padding: 54px 76px 54px 76px;
     }
-    h1 {
-      text-transform: uppercase;
-      text-align: center;
-      width: 195px;
-      height: 46px;
-      // font-family: ProximaNova;
-      font-size: 48px;
-      font-weight: bold;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      color: #ffffff;
+    @media only screen and (max-width: 414px) {
+      flex-wrap: wrap;
+      padding: 60px 32px 60px 32px;
     }
-    p {
-      // font-family: ProximaNova;
-      font-size: 14px;
-      font-weight: 600;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      color: #ffffff;
-    }
-  }
-
-  .service-list {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 0 0 65%;
-    
-    .service-item {
-      height: 264px;
-      padding: 16px 16px;
-      flex: 0 0 40%;
-      margin-right: 32px;
-      margin-top: 32px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.28);
-      background-color: #181818;
-
-      @media only screen and (max-width: 1440px) {
-        margin-right: 20px;
-        flex: 0 0 39%;
+    .service-introduce {
+      margin-top: 50px;
+      flex: 0 0 45%;
+      margin-right: 64px;
+      display: flex;
+      flex-direction: column;
+      @media only screen and (max-width: 768px) {
+        flex: 0 0 20%;
       }
-
-
-      @media only screen and (max-width: 568px) {
-        margin-right: 0;
-        flex: 0 0 70%;
-      }
-
-
-      .title {
+      h1 {
+        text-transform: uppercase;
+        text-align: center;
+        width: 195px;
+        height: 46px;
         // font-family: ProximaNova;
-        font-size: 20px;
+        font-size: 48px;
         font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: normal;
         letter-spacing: normal;
         color: #ffffff;
-        margin-top: 16px;
       }
-
       p {
         // font-family: ProximaNova;
         font-size: 14px;
@@ -97,14 +49,65 @@
         font-stretch: normal;
         line-height: normal;
         letter-spacing: normal;
-        color: #757575;
-        line-height: 18px;
-        margin-top: 8px;
+        color: #ffffff;
       }
-
-      img {
-        width: 32px;
-        height: 32px;;
+    }
+  
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      flex: 0 0 65%;
+      
+      .service-item {
+        height: 264px;
+        padding: 16px 16px;
+        flex: 0 0 40%;
+        margin-right: 32px;
+        margin-top: 32px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.28);
+        background-color: #181818;
+  
+        @media only screen and (max-width: 1440px) {
+          margin-right: 20px;
+          flex: 0 0 39%;
+        }
+  
+  
+        @media only screen and (max-width: 568px) {
+          margin-right: 0;
+          flex: 0 0 70%;
+        }
+  
+  
+        .title {
+          // font-family: ProximaNova;
+          font-size: 20px;
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #ffffff;
+          margin-top: 16px;
+        }
+  
+        p {
+          // font-family: ProximaNova;
+          font-size: 14px;
+          font-weight: 600;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #757575;
+          line-height: 18px;
+          margin-top: 8px;
+        }
+  
+        img {
+          width: 32px;
+          height: 32px;;
+        }
       }
     }
   }
