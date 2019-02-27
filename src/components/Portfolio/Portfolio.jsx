@@ -1,5 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
+import { Carousel } from 'react-responsive-carousel';
+
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../../stylesheets/Portfolio/Portfolio.scss';
 
 class Work extends Component {
@@ -15,6 +18,14 @@ class Work extends Component {
           responsibility: 'Backend/API, Architecture, iOS',
           tech: 'Python, Swift, Nginx, Stella',
         },
+        {
+          id: 2,
+          img: './img/work.png',
+          title: 'Cung Em Di That Xa',
+          description: 'Liveo is a platform for celebrities to engage with their fans effectively. With Liveo, fan have access to exclusive contents of the stars.',
+          responsibility: 'Backend/API, Architecture, iOS',
+          tech: 'Python, Swift, Nginx, Stella',
+        },
       ],
     };
   }
@@ -22,39 +33,53 @@ class Work extends Component {
   render() {
     const { projects } = this.state;
     return (
-      <section className="work-section">
-        <div className="work-container">
-          {projects.map(project => (
-            <div className="work-content">
-              <div className="project-img">
-                <img alt="project-img" src={project.img} />
-              </div>
-              <div className="project-details">
-                <div className="dash" style={{ backgroundColor: '#ffffff', height: '4px', width: '60px' }} />
-                <div className="section-title">
-                  Work
+      <Fragment>
+        <section className="work-section">
+          <div className="work-container">
+            <Carousel
+              showThumbs={false}
+              showIndicators={false}
+              infiniteLoop
+              showStatus={false}
+            >
+              {projects.map(project => (
+                <div className="work-content">
+                  <div className="project-img">
+                    <img alt="project-img" src={project.img} />
+                  </div>
+                  <div className="project-details">
+                    <div
+                      className="dash"
+                      style={{
+                        backgroundColor: '#ffffff', height: '4px', width: '60px', marginLeft: '1px',
+                      }}
+                    />
+                    <div className="section-title">
+                      Work
+                    </div>
+                    <div className="project-name">
+                      {project.title}
+                    </div>
+                    <div className="project-description">
+                      {project.description}
+                    </div>
+                    <div className="description-item">
+                      <span>Responsibility: </span>
+                      {project.responsibility}
+                    </div>
+                    <div className="description-item">
+                      <span>
+                    Technology:&nbsp;
+                      </span>
+                      {project.tech}
+                    </div>
+                  </div>
                 </div>
-                <div className="project-name">
-                  {project.title}
-                </div>
-                <div className="project-description">
-                  {project.description}
-                </div>
-                <div className="description-item">
-                  <span>Responsibility: </span>
-                  {project.responsibility}
-                </div>
-                <div className="description-item">
-                  <span>
-                Technology:&nbsp;
-                  </span>
-                  {project.tech}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+              ))}
+            </Carousel>
+          </div>
+        </section>
+      </Fragment>
     );
   }
 }
