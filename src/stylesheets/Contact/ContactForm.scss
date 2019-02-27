@@ -1,6 +1,10 @@
 label {
   color: #ffffff !important;
 }
+
+#outlined-full-width {
+  width: 100%;
+}
 .contact-form {
   display: flex;
   flex: 0 0 45%;
@@ -19,28 +23,9 @@ label {
     margin-top: 40px;
   }
 
-  .ContactForm-textField-2 {
-    margin-left: 0;
-    width: 100%;
-    color: #ffffff;
-    position: relative;
-    top: 50px;
-    @media only screen and (max-width: 768px) {
-      top: 0px;
-    }
-    @media only screen and (max-width: 576px) {
-      top: 0px;
-    }
-
-    label {
-      color: #ffffff !important;
-    }
-  }
-
   textarea {
     color: #ffffff;
     position: relative;
-    top: 60px;
     height: 90px;
     @media only screen and (max-width: 1024px) {
       top: 0px;
@@ -152,11 +137,8 @@ label {
       position: relative;
       top: 120px;
       margin-bottom: 24px;
-      @media only screen and (max-width: 768px) {
-        top: 70px;
-      }
       @media only screen and (max-width: 576px) {
-        top: 5px;
+        top: 0px;
       }
     }
   }

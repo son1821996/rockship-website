@@ -9,8 +9,9 @@
   .clients-container {
     display: flex;
     padding: 56px 136px 0px 136px;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1024px) {
       flex-wrap: wrap;
+      padding: 56px 136px 64px 136px;
     }
     @media only screen and (max-width: 414px) {
       padding: 60px 32px 60px 20px;

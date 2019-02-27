@@ -19,8 +19,10 @@ const styles = theme => ({
   textField: {
     marginLeft: theme.spacing.unit,
     marginRight: theme.spacing.unit,
-    width: 200,
+    width: '100%',
     color: '#ffffff',
+    position: 'relative',
+    top: '90px',
   },
   cssLabel: {
     '&$cssFocused': {
@@ -36,7 +38,7 @@ const styles = theme => ({
     marginTop: 19,
   },
   menu: {
-    width: 200,
+    width: '100%',
   },
 });
 
@@ -356,17 +358,20 @@ class ContactForm extends Component {
                 </label>
               ))}
             </div>
-            <TextField
-              id="outlined-textarea"
-              label="Project Description"
-              multiline
-              rows="20"
-              defaultValue={description}
-              onChange={this.handleChange('description')}
-              className={classes.textField}
-              margin="normal"
-              variant="outlined"
-            />
+            <div>
+              <TextField
+                id="outlined-full-width"
+                label="Project Description"
+                multiline
+                rows="20"
+                defaultValue={description}
+                onChange={this.handleChange('description')}
+                className={classes.textField}
+                margin="normal"
+                fullWidth
+                variant="outlined"
+              />
+            </div>
             <div
               className="form-bottom"
               style={{
