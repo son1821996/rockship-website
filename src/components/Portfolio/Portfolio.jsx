@@ -26,6 +26,14 @@ class Work extends Component {
           responsibility: 'Backend/API, Architecture, iOS',
           tech: 'Python, Swift, Nginx, Stella',
         },
+        {
+          id: 3,
+          img: './img/work.png',
+          title: 'Cung Em Di That Xa',
+          description: 'Liveo is a platform for celebrities to engage with their fans effectively. With Liveo, fan have access to exclusive contents of the stars.',
+          responsibility: 'Backend/API, Architecture, iOS',
+          tech: 'Python, Swift, Nginx, Stella',
+        },
       ],
     };
   }
@@ -41,6 +49,7 @@ class Work extends Component {
               showIndicators={false}
               infiniteLoop
               showStatus={false}
+              transitionTime={500}
             >
               {projects.map(project => (
                 <div className="work-content">

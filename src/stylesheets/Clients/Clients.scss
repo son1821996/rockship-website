@@ -74,7 +74,7 @@
       .control-prev {
         left: 0;
         @media only screen and (max-width: 1024px) {
-          right: 32px;
+          right: 50px;
           left: unset;
         }
       }
@@ -82,7 +82,7 @@
       .control-next {
         left: 32px;
         @media only screen and (max-width: 1024px) {
-          right: 0;
+          right: 18px;
           left: unset;
         }
       }

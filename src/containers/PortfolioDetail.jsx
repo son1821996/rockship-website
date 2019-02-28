@@ -17,7 +17,7 @@ class PortfolioDetails extends Component {
         <section className="portfolio-detail-container-section">
           <Sidebar />
           <div className="portfolio-detail-section">
-            aaaaaaaaaaaaaa
+            <embed src="/the-road-to-learn-react.pdf#view=FitH" type="application/pdf" width="100vh" height="100%" />
           </div>
         </section>
         <Footer />
