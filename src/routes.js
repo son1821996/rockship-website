@@ -28,6 +28,7 @@ export default class Routes extends Component {
           <Route exact path="/portfolio" component={PortfolioContainer} />
           <Route exact path="/portfolio/details" component={PortfolioDetails} />
           <Route exact path="/career" component={Career} />
+          <Route exact path="/career" component={Career} />
           <Route exact path="/item" component={ClientItems} />
         </Switch>
       </Router>
