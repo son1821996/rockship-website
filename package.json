@@ -48,6 +48,7 @@
     "react-dev-utils": "^7.0.3",
     "react-dom": "^16.8.2",
     "react-fullpage": "^0.1.19",
+    "react-parallax": "^2.2.0",
     "react-pdf": "^4.0.0-beta.6",
     "react-responsive-carousel": "^3.1.47",
     "react-router-dom": "^4.3.1",

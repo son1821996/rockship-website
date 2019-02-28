@@ -44,62 +44,69 @@ header {
       transition: transform 2s;
     }
     .header-bottom {
-      .ship {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 98px;
-        position: absolute;
-        top: 27%;
-        left: 46.3%;
-        z-index: 10;
-
-        @media only screen and (max-width: 1440px) {
-          margin-top: 0;
-          left: 44.5%;
-          top: 24%;
+      .normal {
+        display: none;
+        @media only screen and (max-width: 1439px) {
+          display: block;
+          .ship {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 98px;
+            position: absolute;
+            top: 27%;
+            left: 46.3%;
+            z-index: 10;
+    
+            @media only screen and (max-width: 1440px) {
+              margin-top: 0;
+              left: 44.5%;
+              top: 24%;
+            }
+    
+            @media only screen and (max-width: 768px) {
+              margin-top: 0;
+              left: 40%;
+              top: 42%;
+            }
+    
+            @media only screen and (max-width: 576px) {
+              margin-top: 0;
+              left: 32.5%;
+              top: 24%;
+            }
+          }
+          .grey-cloud {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            height: 380px;
+            @media only screen and (max-width: 1440px) {
+              height: 280px;
+            }
+            background-image: url('../../img/grey-cloud.png');
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position:center;
+          }
+    
+          .white-clound {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            z-index: 2;
+            height: 200px;
+            @media only screen and (max-width: 1440px) {
+              height: 150px;
+            }
+            background-image: url('../../img/white-cloud.png');
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position:center;
+          }
         }
 
-        @media only screen and (max-width: 768px) {
-          margin-top: 0;
-          left: 40%;
-          top: 42%;
-        }
-
-        @media only screen and (max-width: 576px) {
-          margin-top: 0;
-          left: 32.5%;
-          top: 24%;
-        }
-      }
-      .grey-cloud {
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        z-index: 1;
-        height: 380px;
-        @media only screen and (max-width: 1440px) {
-          height: 280px;
-        }
-        background-image: url('../../img/grey-cloud.png');
-        background-repeat:no-repeat;
-        background-size:cover;
-        background-position:center;
-      }
-
-      .white-clound {
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        z-index: 2;
-        height: 200px;
-        @media only screen and (max-width: 1440px) {
-          height: 150px;
-        }
-        background-image: url('../../img/white-cloud.png');
-        background-repeat:no-repeat;
-        background-size:cover;
-        background-position:center;
       }
 
       .a {
@@ -214,6 +221,58 @@ header {
           bottom: 18px;
         }
       }
+        
+      .react-parallax  {
+        overflow: unset !important;
+        @media only screen and (max-width: 1439px) {
+          display: none;
+        }
+        .grey-cloud-para {
+          height: 282px !important;
+          @media only screen and (max-width: 1440px) {
+            height: 200px !important;
+            top: 98%;
+          }
+          width: 100% !important;
+          top: 75%;
+        }
+        .ship-para {
+          height: 480px !important;
+          width: auto !important;
+          top: 90%;
+          @media only screen and (max-width: 1440px) {
+            top: 120%;
+          }
+          
+        }
+
+        .react-parallax-content {
+          .clound-height {
+            height: 60vh;
+            @media only screen and (max-width: 1440px) {
+              height: 68vh;
+            }
+          }
+        }
+
+        .grey-cloud-para-after {
+          height: 154px !important;
+          width: 100% !important;
+          top: 136%;
+        }
+      }
+
+      .cloud {
+        overflow: hidden !important;
+      }
+
+      .cloud-after {
+        bottom: 400px;
+        @media only screen and (max-width: 1440px) {
+          bottom: 200px;
+        }
+      };
+
     }
   }
 }
