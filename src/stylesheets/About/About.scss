@@ -3,16 +3,16 @@
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  margin-top: 50px;
+  height: 80vh;
+  margin-top: 56px;
   padding-bottom: 65px;
-  padding: 0px 136px 0px 136px;
+  padding: 56px 136px 0px 136px;
   z-index: 99;
   position: relative;
   @media only screen and (max-width: 1024px) {
     margin-top: 20px;
     padding-bottom: 65px;
-    padding: 0px 136px 0px 136px;
+    padding: 60px 64px 60px 64px;
     height: 100%;
   }
   @media only screen and (max-width: 414px) {
