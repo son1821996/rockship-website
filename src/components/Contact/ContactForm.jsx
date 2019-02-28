@@ -19,8 +19,10 @@ const styles = theme => ({
   textField: {
     marginLeft: theme.spacing.unit,
     marginRight: theme.spacing.unit,
-    width: 200,
+    width: '100%',
     color: '#ffffff',
+    position: 'relative',
+    top: '40px',
   },
   cssLabel: {
     '&$cssFocused': {
@@ -36,7 +38,7 @@ const styles = theme => ({
     marginTop: 19,
   },
   menu: {
-    width: 200,
+    width: '100%',
   },
 });
 
@@ -283,9 +285,7 @@ class ContactForm extends Component {
             <div className="second-form-title">Company name</div>
             <div className="second-form-subtitle">Company size</div>
             <div
-              style={{
-                display: 'flex', flexWrap: 'wrap', marginTop: '12px', marginBottom: '16px', padding: '16px',
-              }}
+              className="choose-option-section"
             >
               {listCompanySize.map((item, i) => (
                 // eslint-disable-next-line jsx-a11y/label-has-associated-control
@@ -305,10 +305,7 @@ class ContactForm extends Component {
             </div>
 
             <div className="second-form-subtitle">Company location</div>
-            <div style={{
-              display: 'flex', flexWrap: 'wrap', marginTop: '12px', marginBottom: '16px', padding: '16px',
-            }}
-            >
+            <div className="choose-option-section">
               {listCompanyLocation.map((item, i) => (
                 // eslint-disable-next-line jsx-a11y/label-has-associated-control
                 <label className="checkbox-item">
@@ -357,7 +354,7 @@ class ContactForm extends Component {
               ))}
             </div>
             <TextField
-              id="outlined-textarea"
+              id="outlined-full-width"
               label="Project Description"
               multiline
               rows="20"
@@ -365,6 +362,7 @@ class ContactForm extends Component {
               onChange={this.handleChange('description')}
               className={classes.textField}
               margin="normal"
+              fullWidth
               variant="outlined"
             />
             <div

@@ -1,4 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import { Carousel } from 'react-responsive-carousel';
+
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 
 class ClientItems extends Component {
   constructor(props) {
@@ -22,33 +26,199 @@ class ClientItems extends Component {
   }
 
   render() {
+    // eslint-disable-next-line no-unused-vars
     const { clientInfo } = this.state;
     return (
-      <div className="clients-quote">
-        {clientInfo.map(item => (
-          <div>
-            <div className="quote-item" key={item.id}>
+      <Fragment>
+        <Carousel
+          showThumbs={false}
+          showIndicators={false}
+          infiniteLoop
+          showStatus={false}
+        >
+          <div className="clients-quote">
+            <div className="quote-item">
               <div className="number">
-                {item.id}
+                01
               </div>
               <p>
-                {item.quote}
+              Rockship helped us with the development of our frontend for meta.us.
+              I have found them to be flexible and willing to go the
+              extra mile in meeting client needs.
+              We were in the last weeks of getting our product ready
+              to launch and Rockship quickly committed more
+              manpower to help us achieve our goal, even going so far
+              as working on weekends with us.
               </p>
               <div className="clients-info">
                 <img src="./img/potrait.jpeg" alt="clients-img" className="clients-img" />
                 <div className="clients-details">
                   <div className="clients-name">
-                    {item.name}
+                  Lubosek Hnilo
                   </div>
                   <div className="clients-position">
-                    {item.position}
+                  CEO at meta.us
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="quote-item">
+              <div className="number">
+                01
+              </div>
+              <p>
+              Rockship helped us with the development of our frontend for meta.us.
+              I have found them to be flexible and willing to go the
+              extra mile in meeting client needs.
+              We were in the last weeks of getting our product ready
+              to launch and Rockship quickly committed more
+              manpower to help us achieve our goal, even going so far
+              as working on weekends with us.
+              </p>
+              <div className="clients-info">
+                <img src="./img/potrait.jpeg" alt="clients-img" className="clients-img" />
+                <div className="clients-details">
+                  <div className="clients-name">
+                  Lubosek Hnilo
+                  </div>
+                  <div className="clients-position">
+                  CEO at meta.us
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        ))}
-      </div>
+          <div className="clients-quote">
+            <div className="quote-item">
+              <div className="number">
+                01
+              </div>
+              <p>
+              Rockship helped us with the development of our frontend for meta.us.
+              I have found them to be flexible and willing to go the
+              extra mile in meeting client needs.
+              We were in the last weeks of getting our product ready
+              to launch and Rockship quickly committed more
+              manpower to help us achieve our goal, even going so far
+              as working on weekends with us.
+              </p>
+              <div className="clients-info">
+                <img src="./img/potrait.jpeg" alt="clients-img" className="clients-img" />
+                <div className="clients-details">
+                  <div className="clients-name">
+                  Lubosek Hnilo
+                  </div>
+                  <div className="clients-position">
+                  CEO at meta.us
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="quote-item">
+              <div className="number">
+                01
+              </div>
+              <p>
+              Rockship helped us with the development of our frontend for meta.us.
+              I have found them to be flexible and willing to go the
+              extra mile in meeting client needs.
+              We were in the last weeks of getting our product ready
+              to launch and Rockship quickly committed more
+              manpower to help us achieve our goal, even going so far
+              as working on weekends with us.
+              </p>
+              <div className="clients-info">
+                <img src="./img/potrait.jpeg" alt="clients-img" className="clients-img" />
+                <div className="clients-details">
+                  <div className="clients-name">
+                  Lubosek Hnilo
+                  </div>
+                  <div className="clients-position">
+                  CEO at meta.us
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="clients-quote">
+            <div className="quote-item">
+              <div className="number">
+                01
+              </div>
+              <p>
+              Rockship helped us with the development of our frontend for meta.us.
+              I have found them to be flexible and willing to go the
+              extra mile in meeting client needs.
+              We were in the last weeks of getting our product ready
+              to launch and Rockship quickly committed more
+              manpower to help us achieve our goal, even going so far
+              as working on weekends with us.
+              </p>
+              <div className="clients-info">
+                <img src="./img/potrait.jpeg" alt="clients-img" className="clients-img" />
+                <div className="clients-details">
+                  <div className="clients-name">
+                  Lubosek Hnilo
+                  </div>
+                  <div className="clients-position">
+                  CEO at meta.us
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="quote-item">
+              <div className="number">
+                01
+              </div>
+              <p>
+              Rockship helped us with the development of our frontend for meta.us.
+              I have found them to be flexible and willing to go the
+              extra mile in meeting client needs.
+              We were in the last weeks of getting our product ready
+              to launch and Rockship quickly committed more
+              manpower to help us achieve our goal, even going so far
+              as working on weekends with us.
+              </p>
+              <div className="clients-info">
+                <img src="./img/potrait.jpeg" alt="clients-img" className="clients-img" />
+                <div className="clients-details">
+                  <div className="clients-name">
+                  Lubosek Hnilo
+                  </div>
+                  <div className="clients-position">
+                  CEO at meta.us
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Carousel>
+        {/* <div className="clients-quote">
+          {clientInfo.map(item => (
+            <div>
+              <div className="quote-item" key={item.id}>
+                <div className="number">
+                  {item.id}
+                </div>
+                <p>
+                  {item.quote}
+                </p>
+                <div className="clients-info">
+                  <img src="./img/potrait.jpeg" alt="clients-img" className="clients-img" />
+                  <div className="clients-details">
+                    <div className="clients-name">
+                      {item.name}
+                    </div>
+                    <div className="clients-position">
+                      {item.position}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div> */}
+      </Fragment>
     );
   }
 }
