@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Position from '../Possition/Position';
 
 import '../../stylesheets/Career/OpenPositionSection.scss';
 
@@ -56,6 +57,16 @@ class OpenPositionSection extends Component {
       frontEndActivated,
       backEndActivated,
     } = this.state;
+
+    let positionInRockship = null;
+
+    if (iosActivated === true
+        || androidActivated === true
+        || frontEndActivated === true
+        || backEndActivated === true) {
+      positionInRockship = <Position {...this.state} />;
+    }
+
     return (
       <div className="open-position-section">
         <div className="position-at-rockship">
@@ -175,28 +186,7 @@ class OpenPositionSection extends Component {
           </div>
         </div>
         <div className="apply-position">
-          <div className="apply-position-first">
-            <div className="apply-for one">
-              <div />
-            </div>
-            <div className="apply-for two">
-              <div />
-            </div>
-            <div className="apply-for three">
-              <div />
-            </div>
-          </div>
-          <div className="apply-position-second">
-            <div className="apply-for four">
-              <div />
-            </div>
-            <div className="apply-for five">
-              <div />
-            </div>
-            <div className="apply-for six">
-              <div />
-            </div>
-          </div>
+          {positionInRockship}
         </div>
       </div>
     );

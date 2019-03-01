@@ -96,42 +96,5 @@
         margin-top: 52px;
         height: 473px;
         width: 100%;
-        .apply-position-first{
-            height: 182px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            .apply-for{
-                height: 182px;
-                width: 330px;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.28);
-                background-color: #181818;
-            }
-            .one{
-                margin-right: 90px;
-            }
-            .three{
-                margin-left: 90px;
-            }
-        }
-        .apply-position-second{
-            margin-top: 30px;
-            height: 182px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            .apply-for{
-                height: 182px;
-                width: 330px;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.28);
-                background-color: #181818;
-            }
-            .four{
-                margin-right: 90px;
-            }
-            .six{
-                margin-left: 90px;
-            }
-        }
     }
 }
