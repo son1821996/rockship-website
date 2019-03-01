@@ -23,7 +23,7 @@ class Footer extends Component {
           }}
           />
           <div className="logo">
-            <a href="http://facebook.com">
+            <a href="https://www.facebook.com/rockship.co/">
               <img
                 alt="logo"
                 src="/img/facebook.png"
@@ -31,7 +31,7 @@ class Footer extends Component {
                 className="logo"
               />
             </a>
-            <a href="http://google.com">
+            <a href="https://medium.com/rockship">
               <img
                 alt="logo"
                 src="/img/medium.png"
@@ -39,7 +39,7 @@ class Footer extends Component {
                 className="logo"
               />
             </a>
-            <a href="https://www.linkedin.com/">
+            <a href="https://www.linkedin.com/company/rockship/">
               <img
                 alt="logo"
                 src="/img/linked.png"

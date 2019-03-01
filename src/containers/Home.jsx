@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import { Parallax } from 'react-parallax';
 
 import Navigation from '../components/Navigation/Navigation';
 import Service from '../components/Service/Service';
@@ -18,6 +19,7 @@ class Home extends Component {
       isClickToScroll: false,
     };
   }
+
 
   handleClick = () => {
     this.setState({
@@ -56,18 +58,48 @@ class Home extends Component {
             and Help you Find The Way
             </div>
             <div className="header-bottom">
-              <img
-                alt="ship"
-                src="/img/rockship.png"
-                srcSet="/img/rockship@2x.png 2x, /img/rockship@3x.png 3x,"
-                className="ship"
-              />
-              <div
-                className="white-clound"
-              />
-              <div
-                className="grey-cloud"
-              />
+              <div className="normal">
+                <img
+                  alt="ship"
+                  src="./img/rockship.png"
+                  srcSet="./img/rockship@2x.png 2x, ./img/rockship@3x.png 3x,"
+                  className="ship"
+                />
+                <div
+                  className="white-clound"
+                />
+                <div
+                  className="grey-cloud"
+                />
+              </div>
+              <div className="parallax">
+                <Parallax
+                  blur={0}
+                  bgImage="./img/rockship.png"
+                  bgImageAlt="the cat"
+                  bgStyle={{
+                    backgroundPosition: 'center',
+                  }}
+                  bgClassName="ship-para"
+                  strength={-600}
+                  bgImageSizes={100}
+                >
+                  &nbsp;
+                  <div style={{ height: '40vh' }} />
+                </Parallax>
+                <Parallax
+                  blur={0}
+                  bgImage="./img/grey-cloud.png"
+                  bgImageAlt="the cat"
+                  bgClassName="grey-cloud-para"
+                  strength={500}
+                  bgImageSizes={100}
+                  className="cloud"
+                >
+                  &nbsp;
+                  <div className="clound-height" style={{ height: '60vh' }} />
+                </Parallax>
+              </div>
               <div
                 className="a"
                 onClick={this.handleClick}
