@@ -12,7 +12,7 @@ class Work extends Component {
       projects: [
         {
           id: 1,
-          img: './img/work.png',
+          img: '/img/work.png',
           title: 'Liveo Streaming App',
           description: 'Liveo is a platform for celebrities to engage with their fans effectively. With Liveo, fan have access to exclusive contents of the stars.',
           responsibility: 'Backend/API, Architecture, iOS',
@@ -20,7 +20,7 @@ class Work extends Component {
         },
         {
           id: 2,
-          img: './img/work.png',
+          img: '/img/work.png',
           title: 'Cung Em Di That Xa',
           description: 'Liveo is a platform for celebrities to engage with their fans effectively. With Liveo, fan have access to exclusive contents of the stars.',
           responsibility: 'Backend/API, Architecture, iOS',
@@ -28,7 +28,7 @@ class Work extends Component {
         },
         {
           id: 3,
-          img: './img/work.png',
+          img: '/img/work.png',
           title: 'Cung Em Di That Xa',
           description: 'Liveo is a platform for celebrities to engage with their fans effectively. With Liveo, fan have access to exclusive contents of the stars.',
           responsibility: 'Backend/API, Architecture, iOS',

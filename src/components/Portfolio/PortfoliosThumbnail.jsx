@@ -9,28 +9,28 @@ class PortfoliosThumbnail extends Component {
       portfolios: [
         {
           id: 1,
-          img: './img/work.jpg',
+          img: '/img/work.jpg',
           projectName: 'Liveo',
           title: 'Lorem ipsum dolor sit amet',
           shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla laoreet tempor arcu ut viverra. Maecenas nec odio sem. Ut feugiat leo nisl, a semper erat convallis sed. Nunc rhoncus posuere elementum. Vivamus lacinia ex felis, ac porttitor lacus vestibulum sed. ',
         },
         {
           id: 2,
-          img: './img/work.jpg',
+          img: '/img/work.jpg',
           projectName: 'Liveo',
           title: 'Lorem ipsum dolor sit amet',
           shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla laoreet tempor arcu ut viverra. Maecenas nec odio sem. Ut feugiat leo nisl, a semper erat convallis sed. Nunc rhoncus posuere elementum. Vivamus lacinia ex felis, ac porttitor lacus vestibulum sed. ',
         },
         {
           id: 3,
-          img: './img/work.jpg',
+          img: '/img/work.jpg',
           projectName: 'Liveo',
           title: 'Lorem ipsum dolor sit amet',
           shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla laoreet tempor arcu ut viverra. Maecenas nec odio sem. Ut feugiat leo nisl, a semper erat convallis sed. Nunc rhoncus posuere elementum. Vivamus lacinia ex felis, ac porttitor lacus vestibulum sed. ',
         },
         {
           id: 4,
-          img: './img/work.jpg',
+          img: '/img/work.jpg',
           projectName: 'Liveo',
           title: 'Lorem ipsum dolor sit amet',
           shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla laoreet tempor arcu ut viverra. Maecenas nec odio sem. Ut feugiat leo nisl, a semper erat convallis sed. Nunc rhoncus posuere elementum. Vivamus lacinia ex felis, ac porttitor lacus vestibulum sed. ',
@@ -44,7 +44,7 @@ class PortfoliosThumbnail extends Component {
         },
         {
           id: 6,
-          img: './img/work.jpg',
+          img: '/img/work.jpg',
           projectName: 'Liveo',
           title: 'Lorem ipsum dolor sit amet',
           shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla laoreet tempor arcu ut viverra. Maecenas nec odio sem. Ut feugiat leo nisl, a semper erat convallis sed. Nunc rhoncus posuere elementum. Vivamus lacinia ex felis, ac porttitor lacus vestibulum sed. ',

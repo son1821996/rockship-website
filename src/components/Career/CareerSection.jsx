@@ -32,23 +32,23 @@ class CareerSection extends Component {
               <div className="first-time">
                 <img
                   alt="rectangle-copy-3"
-                  src="./img/rectangle-copy-3.png"
-                  srcSet="./img/rectangle-copy-3@2x.png 2x, ./img/rectangle-copy-3@3x.png 3x,"
+                  src="/img/rectangle-copy-3.png"
+                  srcSet="/img/rectangle-copy-3@2x.png 2x, /img/rectangle-copy-3@3x.png 3x,"
                 />
               </div>
               <div className="left-pic-group">
                 <div className="shrimp">
                   <img
                     alt="rectangle-copy-6"
-                    src="./img/rectangle-copy-6.png"
-                    srcSet="./img/rectangle-copy-6@2x.png 2x, ./img/rectangle-copy-6@3x.png 3x,"
+                    src="/img/rectangle-copy-6.png"
+                    srcSet="/img/rectangle-copy-6@2x.png 2x, /img/rectangle-copy-6@3x.png 3x,"
                   />
                 </div>
                 <div className="sea">
                   <img
                     alt="rectangle-copy-5"
-                    src="./img/rectangle-copy-5.png"
-                    srcSet="./img/rectangle-copy-5@2x.png 2x, ./img/rectangle-copy-5@3x.png 3x,"
+                    src="/img/rectangle-copy-5.png"
+                    srcSet="/img/rectangle-copy-5@2x.png 2x, /img/rectangle-copy-5@3x.png 3x,"
                   />
                 </div>
               </div>
@@ -57,15 +57,15 @@ class CareerSection extends Component {
               <div className="grape">
                 <img
                   alt="rectangle-copy-7"
-                  src="./img/rectangle-copy-7.png"
-                  srcSet="./img/rectangle-copy-7@2x.png 2x, ./img/rectangle-copy-7@3x.png 3x,"
+                  src="/img/rectangle-copy-7.png"
+                  srcSet="/img/rectangle-copy-7@2x.png 2x, /img/rectangle-copy-7@3x.png 3x,"
                 />
               </div>
               <div className="rock">
                 <img
                   alt="rectangle-copy-4"
-                  src="./img/rectangle-copy-4.png"
-                  srcSet="./img/rectangle-copy-4@2x.png 2x, ./img/rectangle-copy-4@3x.png 3x,"
+                  src="/img/rectangle-copy-4.png"
+                  srcSet="/img/rectangle-copy-4@2x.png 2x, /img/rectangle-copy-4@3x.png 3x,"
                 />
               </div>
             </div>
@@ -77,8 +77,8 @@ class CareerSection extends Component {
               <div className="icon-frame">
                 <img
                   alt="about"
-                  src="./img/teamate.png"
-                  srcSet="./img/teamate@2x.png 2x, ./img/teamate@3x.png 3x,"
+                  src="/img/teamate.png"
+                  srcSet="/img/teamate@2x.png 2x, /img/teamate@3x.png 3x,"
                   className="icon-frame"
                 />
               </div>
@@ -121,8 +121,8 @@ class CareerSection extends Component {
               <div className="icon-frame">
                 <img
                   alt="about"
-                  src="./img/why-choose.png"
-                  srcSet="./img/why-choose@2x.png 2x, ./img/why-choose@3x.png 3x,"
+                  src="/img/why-choose.png"
+                  srcSet="/img/why-choose@2x.png 2x, /img/why-choose@3x.png 3x,"
                   className="icon-frame"
                 />
               </div>

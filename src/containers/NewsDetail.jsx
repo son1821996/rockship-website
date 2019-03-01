@@ -20,17 +20,17 @@ class NewsDetail extends Component {
         {
           id: 1,
           title: 'The Reason We Haven’t Found Planet Nine',
-          img: '../img/article.jpg',
+          img: '/img/article.jpg',
         },
         {
           id: 2,
           title: 'The Reason We Haven’t Found Planet Nine',
-          img: '../img/article2.jpeg',
+          img: '/img/article2.jpeg',
         },
         {
           id: 3,
           title: 'The Reason We Haven’t Found Planet Nine',
-          img: '../img/article3.jpg',
+          img: '/img/article3.jpg',
         },
       ],
     };
@@ -46,8 +46,8 @@ class NewsDetail extends Component {
             <div className="logo-section">
               <img
                 alt="news-logo"
-                src="../img/news-logo.png"
-                srcSet="../img/news-logo@2x.png 2x, ../img/news-logo@3x.png 3x,"
+                src="/img/news-logo.png"
+                srcSet="/img/news-logo@2x.png 2x, /img/news-logo@3x.png 3x,"
               />
               <Link to="/news">
                 <span>NEWS</span>
@@ -65,7 +65,7 @@ class NewsDetail extends Component {
             <div className="short-description">
               {acticle[0].shortDesc}
             </div>
-            <img alt="big-img" src="../img/mac.jpg" className="big-img" />
+            <img alt="big-img" src="/img/mac.jpg" className="big-img" />
             <div className="news-content">
               <div className="left-content">
                 <div className="left-content-title title">

@@ -26,24 +26,24 @@ class Footer extends Component {
             <a href="http://facebook.com">
               <img
                 alt="logo"
-                src="./img/facebook.png"
-                srcSet="./img/facebook@2x.png 2x, ./img/facebook@3x.png 3x,"
+                src="/img/facebook.png"
+                srcSet="/img/facebook@2x.png 2x, /img/facebook@3x.png 3x,"
                 className="logo"
               />
             </a>
             <a href="http://google.com">
               <img
                 alt="logo"
-                src="./img/medium.png"
-                srcSet="./img/medium@2x.png 2x, ./img/medium@3x.png 3x,"
+                src="/img/medium.png"
+                srcSet="/img/medium@2x.png 2x, /img/medium@3x.png 3x,"
                 className="logo"
               />
             </a>
             <a href="https://www.linkedin.com/">
               <img
                 alt="logo"
-                src="./img/linked.png"
-                srcSet="./img/linked@2x.png 2x, ./img/linked@3x.png 3x,"
+                src="/img/linked.png"
+                srcSet="/img/linked@2x.png 2x, /img/linked@3x.png 3x,"
                 className="logo"
               />
             </a>

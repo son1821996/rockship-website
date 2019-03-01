@@ -58,8 +58,8 @@ class Home extends Component {
             <div className="header-bottom">
               <img
                 alt="ship"
-                src="./img/rockship.png"
-                srcSet="./img/rockship@2x.png 2x, ./img/rockship@3x.png 3x,"
+                src="/img/rockship.png"
+                srcSet="/img/rockship@2x.png 2x, /img/rockship@3x.png 3x,"
                 className="ship"
               />
               <div

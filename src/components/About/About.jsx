@@ -22,9 +22,14 @@ class About extends Component {
           <div className="about-item">
             <img
               alt="about"
-              src="./img/about1.png"
-              srcSet="./img/about1@2x.png 2x, ./img/about1@3x.png 3x,"
-              style={{ width: '188px', height: '135px' }}
+              src="/img/about1.png"
+              srcSet="/img/about1@2x.png 2x, /img/about1@3x.png 3x,"
+              style={{
+                width: '188px',
+                height: '135px',
+                position: 'relative',
+                bottom: '50px',
+              }}
               className="flag-ship"
             />
             <h3>
@@ -47,16 +52,16 @@ class About extends Component {
             >
               <img
                 alt="about"
-                src="./img/about2.png"
-                srcSet="./img/about2@2x.png 2x, ./img/about2@3x.png 3x,"
+                src="/img/about2.png"
+                srcSet="/img/about2@2x.png 2x, /img/about2@3x.png 3x,"
                 style={{
                   width: '69px', height: '135px', display: 'inline-block', marginLeft: 'unset', marginRight: 'unset',
                 }}
               />
               <img
                 alt="about"
-                src="./img/astronaut.png"
-                srcSet="./img/astronaut@2x.png 2x, ./img/astronaut@3x.png 3x,"
+                src="/img/astronaut.png"
+                srcSet="/img/astronaut@2x.png 2x, /img/astronaut@3x.png 3x,"
                 style={{
                   width: '55px',
                   height: '44px',
@@ -64,7 +69,7 @@ class About extends Component {
                   marginLeft: 'unset',
                   marginRight: 'unset',
                   position: 'absolute',
-                  bottom: '0',
+                  bottom: '60',
                   left: '75px',
                 }}
                 className="astronaut-img"
@@ -81,9 +86,9 @@ class About extends Component {
           <div className="about-item">
             <img
               alt="about"
-              src="./img/about3.png"
+              src="/img/about3.png"
               style={{ width: '90px', height: '135px' }}
-              srcSet="./img/about3@2x.png 2x, ./img/about3@3x.png 3x,"
+              srcSet="/img/about3@2x.png 2x, /img/about3@3x.png 3x,"
             />
             <h3>
               Hungry & Growth
