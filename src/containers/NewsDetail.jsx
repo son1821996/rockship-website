@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import Navigation from '../components/Navigation/Navigation';
 import Sidebar from '../components/Sidebar/Sidebar';
 import Footer from '../components/Footer/Footer';
 
@@ -20,34 +21,51 @@ class NewsDetail extends Component {
         {
           id: 1,
           title: 'The Reason We Haven’t Found Planet Nine',
-          img: '../img/article.jpg',
+          img: '/img/article.jpg',
         },
         {
           id: 2,
           title: 'The Reason We Haven’t Found Planet Nine',
-          img: '../img/article2.jpeg',
+          img: '/img/article2.jpeg',
         },
         {
           id: 3,
           title: 'The Reason We Haven’t Found Planet Nine',
-          img: '../img/article3.jpg',
+          img: '/img/article3.jpg',
         },
       ],
+      width: 0,
     };
   }
 
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions = () => {
+    this.setState({
+      width: window.innerWidth,
+    });
+  }
+
   render() {
-    const { acticle, relatedArticle } = this.state;
+    const { acticle, relatedArticle, width } = this.state;
     return (
       <Fragment>
+        {width <= 1024 ? <Navigation /> : ''}
         <section className="news-detail-container">
           <Sidebar />
           <div className="news-detail-section">
             <div className="logo-section">
               <img
                 alt="news-logo"
-                src="../img/news-logo.png"
-                srcSet="../img/news-logo@2x.png 2x, ../img/news-logo@3x.png 3x,"
+                src="/img/news-logo.png"
+                srcSet="/img/news-logo@2x.png 2x, /img/news-logo@3x.png 3x,"
               />
               <Link to="/news">
                 <span>NEWS</span>
@@ -65,7 +83,7 @@ class NewsDetail extends Component {
             <div className="short-description">
               {acticle[0].shortDesc}
             </div>
-            <img alt="big-img" src="../img/mac.jpg" className="big-img" />
+            <img alt="big-img" src="/img/mac.jpg" className="big-img" />
             <div className="news-content">
               <div className="left-content">
                 <div className="left-content-title title">

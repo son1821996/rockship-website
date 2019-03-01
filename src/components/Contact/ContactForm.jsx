@@ -164,7 +164,7 @@ class ContactForm extends Component {
           </div>
         )}
         {isShowFirstForm && (
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <div className="form-control" style={{ display: 'flex', flexDirection: 'column' }}>
             <FormControl className={classes.margin}>
               <InputLabel
                 htmlFor="custom-css-standard-input"

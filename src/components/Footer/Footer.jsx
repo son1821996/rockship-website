@@ -23,27 +23,27 @@ class Footer extends Component {
           }}
           />
           <div className="logo">
-            <a href="http://facebook.com">
+            <a href="https://www.facebook.com/rockship.co/">
               <img
                 alt="logo"
-                src="./img/facebook.png"
-                srcSet="./img/facebook@2x.png 2x, ./img/facebook@3x.png 3x,"
+                src="/img/facebook.png"
+                srcSet="/img/facebook@2x.png 2x, /img/facebook@3x.png 3x,"
                 className="logo"
               />
             </a>
-            <a href="http://google.com">
+            <a href="https://medium.com/rockship">
               <img
                 alt="logo"
-                src="./img/medium.png"
-                srcSet="./img/medium@2x.png 2x, ./img/medium@3x.png 3x,"
+                src="/img/medium.png"
+                srcSet="/img/medium@2x.png 2x, /img/medium@3x.png 3x,"
                 className="logo"
               />
             </a>
-            <a href="https://www.linkedin.com/">
+            <a href="https://www.linkedin.com/company/rockship/">
               <img
                 alt="logo"
-                src="./img/linked.png"
-                srcSet="./img/linked@2x.png 2x, ./img/linked@3x.png 3x,"
+                src="/img/linked.png"
+                srcSet="/img/linked@2x.png 2x, /img/linked@3x.png 3x,"
                 className="logo"
               />
             </a>

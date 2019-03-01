@@ -23,7 +23,7 @@ class Navigation extends Component {
       <Fragment>
         <div className="navigation">
           <div className="nav-left" style={{ display: 'flex' }}>
-            <Link to="/"><img alt="logo" src="./img/logo.png" className="logo" /></Link>
+            <Link to="/"><img alt="logo" src="/img/logo.png" className="logo" /></Link>
             <ul className="navigation_list">
               <li className="nav_item">
                 <Link to="/">Home</Link>
@@ -49,13 +49,13 @@ class Navigation extends Component {
         <div className="navigation-mobile">
           <div className="nav-mobile-content">
             <div className="nav-left" style={{ display: 'flex' }}>
-              <Link to="/"><img alt="logo" src="./img/logo.png" className="logo" /></Link>
+              <Link to="/"><img alt="logo" src="/img/logo.png" className="logo" /></Link>
             </div>
             <div className="nav-right">
               <img
                 alt="burger menu"
-                src="./img/burger.png"
-                srcSet="./img/burger@2x.png 2x, ./img/burger@3x.png 3x,"
+                src="/img/burger.png"
+                srcSet="/img/burger@2x.png 2x, /img/burger@3x.png 3x,"
                 onClick={this.handleClickToShowSidebar}
                 style={{
                   transform: `${isShowSidebar ? 'translateX(-540%)' : 'unset'}`,

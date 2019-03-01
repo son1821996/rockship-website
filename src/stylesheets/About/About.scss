@@ -60,7 +60,7 @@
       text-align: center;
 
       .flag-ship {
-        transition: transform .5s;
+        animation: color-me-in-flag 5s infinite;
       }
 
       .flag-ship:hover {
@@ -68,7 +68,31 @@
       }
 
       .astronaut-img {
-        transition: transform 1s;
+        animation: color-me-in-astronaut 5s infinite;
+      }
+
+      @keyframes color-me-in-flag {
+        0% {
+          transform: translatey(0);
+        }
+        50% {
+          transform: translatey(10%);
+        }
+        100% {
+          transform: translatey(30%);
+        }
+      }
+
+      @keyframes color-me-in-astronaut {
+        0% {
+          transform: translatey(0);
+        }
+        50% {
+          transform: translatey(50%);
+        }
+        100% {
+          transform: translatey(140%);
+        }
       }
 
       .astronaut-img:hover {

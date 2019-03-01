@@ -20,6 +20,7 @@ class Home extends Component {
     };
   }
 
+
   handleClick = () => {
     this.setState({
       isClickToScroll: true,
@@ -97,18 +98,6 @@ class Home extends Component {
                 >
                   &nbsp;
                   <div className="clound-height" style={{ height: '60vh' }} />
-                </Parallax>
-                <Parallax
-                  blur={0}
-                  bgImage="./img/grey-cloud.png"
-                  bgImageAlt="the cat"
-                  bgClassName="grey-cloud-para-after"
-                  strength={500}
-                  bgImageSizes={100}
-                  className="cloud-after"
-                >
-                &nbsp;
-                  <div style={{ height: '50vh' }} />
                 </Parallax>
               </div>
               <div

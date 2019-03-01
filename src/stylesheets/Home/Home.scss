@@ -46,7 +46,7 @@ header {
     .header-bottom {
       .normal {
         display: none;
-        @media only screen and (max-width: 1439px) {
+        @media only screen and (max-width: 1298px) {
           display: block;
           .ship {
             display: block;
@@ -224,7 +224,7 @@ header {
         
       .react-parallax  {
         overflow: unset !important;
-        @media only screen and (max-width: 1439px) {
+        @media only screen and (max-width: 1298px) {
           display: none;
         }
         .grey-cloud-para {

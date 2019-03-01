@@ -151,6 +151,7 @@ label {
       padding-bottom: 16px;
       position: relative;
       top: 120px;
+      left: 2%;
       margin-bottom: 16px;
       @media only screen and (max-width: 576px) {
         top: 0px;
@@ -201,6 +202,8 @@ label {
     line-height: normal;
     letter-spacing: normal;
     color: #ffffff;
+    position: relative;
+    top: 3.5px;
   }
 
   .radio-item {

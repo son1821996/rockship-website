@@ -18,6 +18,12 @@
     align-items: center;
   }
 
+  .footer-left {
+    @media only screen and (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
   .footer-right {
     display: flex;
     align-items: center;

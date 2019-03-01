@@ -51,7 +51,7 @@ class ClientItems extends Component {
               as working on weekends with us.
               </p>
               <div className="clients-info">
-                <img src="./img/potrait.jpeg" alt="clients-img" className="clients-img" />
+                <img src="/img/potrait.jpeg" alt="clients-img" className="clients-img" />
                 <div className="clients-details">
                   <div className="clients-name">
                   Lubosek Hnilo
@@ -76,59 +76,7 @@ class ClientItems extends Component {
               as working on weekends with us.
               </p>
               <div className="clients-info">
-                <img src="./img/potrait.jpeg" alt="clients-img" className="clients-img" />
-                <div className="clients-details">
-                  <div className="clients-name">
-                  Lubosek Hnilo
-                  </div>
-                  <div className="clients-position">
-                  CEO at meta.us
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="clients-quote">
-            <div className="quote-item">
-              <div className="number">
-                01
-              </div>
-              <p>
-              Rockship helped us with the development of our frontend for meta.us.
-              I have found them to be flexible and willing to go the
-              extra mile in meeting client needs.
-              We were in the last weeks of getting our product ready
-              to launch and Rockship quickly committed more
-              manpower to help us achieve our goal, even going so far
-              as working on weekends with us.
-              </p>
-              <div className="clients-info">
-                <img src="./img/potrait.jpeg" alt="clients-img" className="clients-img" />
-                <div className="clients-details">
-                  <div className="clients-name">
-                  Lubosek Hnilo
-                  </div>
-                  <div className="clients-position">
-                  CEO at meta.us
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="quote-item">
-              <div className="number">
-                01
-              </div>
-              <p>
-              Rockship helped us with the development of our frontend for meta.us.
-              I have found them to be flexible and willing to go the
-              extra mile in meeting client needs.
-              We were in the last weeks of getting our product ready
-              to launch and Rockship quickly committed more
-              manpower to help us achieve our goal, even going so far
-              as working on weekends with us.
-              </p>
-              <div className="clients-info">
-                <img src="./img/potrait.jpeg" alt="clients-img" className="clients-img" />
+                <img src="/img/potrait.jpeg" alt="clients-img" className="clients-img" />
                 <div className="clients-details">
                   <div className="clients-name">
                   Lubosek Hnilo
@@ -155,7 +103,7 @@ class ClientItems extends Component {
               as working on weekends with us.
               </p>
               <div className="clients-info">
-                <img src="./img/potrait.jpeg" alt="clients-img" className="clients-img" />
+                <img src="/img/potrait.jpeg" alt="clients-img" className="clients-img" />
                 <div className="clients-details">
                   <div className="clients-name">
                   Lubosek Hnilo
@@ -180,7 +128,59 @@ class ClientItems extends Component {
               as working on weekends with us.
               </p>
               <div className="clients-info">
-                <img src="./img/potrait.jpeg" alt="clients-img" className="clients-img" />
+                <img src="/img/potrait.jpeg" alt="clients-img" className="clients-img" />
+                <div className="clients-details">
+                  <div className="clients-name">
+                  Lubosek Hnilo
+                  </div>
+                  <div className="clients-position">
+                  CEO at meta.us
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="clients-quote">
+            <div className="quote-item">
+              <div className="number">
+                01
+              </div>
+              <p>
+              Rockship helped us with the development of our frontend for meta.us.
+              I have found them to be flexible and willing to go the
+              extra mile in meeting client needs.
+              We were in the last weeks of getting our product ready
+              to launch and Rockship quickly committed more
+              manpower to help us achieve our goal, even going so far
+              as working on weekends with us.
+              </p>
+              <div className="clients-info">
+                <img src="/img/potrait.jpeg" alt="clients-img" className="clients-img" />
+                <div className="clients-details">
+                  <div className="clients-name">
+                  Lubosek Hnilo
+                  </div>
+                  <div className="clients-position">
+                  CEO at meta.us
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="quote-item">
+              <div className="number">
+                01
+              </div>
+              <p>
+              Rockship helped us with the development of our frontend for meta.us.
+              I have found them to be flexible and willing to go the
+              extra mile in meeting client needs.
+              We were in the last weeks of getting our product ready
+              to launch and Rockship quickly committed more
+              manpower to help us achieve our goal, even going so far
+              as working on weekends with us.
+              </p>
+              <div className="clients-info">
+                <img src="/img/potrait.jpeg" alt="clients-img" className="clients-img" />
                 <div className="clients-details">
                   <div className="clients-name">
                   Lubosek Hnilo
