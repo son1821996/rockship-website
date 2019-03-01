@@ -28,6 +28,10 @@
     color: #5c5c5c;
   }
 
+  .form-control > div {
+    padding: 8px;
+  }
+
   .contact-content {
     display: flex;
     flex-wrap: wrap-reverse;

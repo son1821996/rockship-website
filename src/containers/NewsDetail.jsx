@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import Navigation from '../components/Navigation/Navigation';
 import Sidebar from '../components/Sidebar/Sidebar';
 import Footer from '../components/Footer/Footer';
 
@@ -33,13 +34,30 @@ class NewsDetail extends Component {
           img: '/img/article3.jpg',
         },
       ],
+      width: 0,
     };
   }
 
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions = () => {
+    this.setState({
+      width: window.innerWidth,
+    });
+  }
+
   render() {
-    const { acticle, relatedArticle } = this.state;
+    const { acticle, relatedArticle, width } = this.state;
     return (
       <Fragment>
+        {width <= 1024 ? <Navigation /> : ''}
         <section className="news-detail-container">
           <Sidebar />
           <div className="news-detail-section">
