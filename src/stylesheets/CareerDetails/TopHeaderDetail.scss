@@ -1,0 +1,86 @@
+.career-detail-apply-header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    .top-header-wraper{
+        @media screen and (min-width: 1024px) {
+            margin-left: 120px;
+            width: 90%;
+        }
+        @media screen and (max-width: 1024px) {
+            margin-top: 80px;
+            width: 100%;
+        }
+        .job-title-group{
+            display: flex;
+            margin-top: 28px;
+            .job-logo{
+                width: 24px;
+                height: 24px;
+                background-color: aqua;
+            }
+            .job-title{
+                width: 80px;
+                height: 20px;
+                vertical-align: middle;
+                //font-family: ProximaNova;
+                font-size: 20px;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                margin-left: 16px;
+                color: #000000;
+            }
+        }
+        .title-group-head{
+            width: 100%;
+            height: 66px;
+            display: flex;
+            margin-top: 40px;
+            .title-of-job{
+                width: 50%;
+                height: 100%;
+                .line{
+                    width: 57px;
+                    height: 4px;
+                    background-color: #5d5d5d;
+                }
+                .head-title{
+                    width: 420px;
+                    height: 39px;
+                    font-family: ProximaNova;
+                    font-size: 32px;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    margin-top: 16px;
+                    color: #000000;
+                }
+            }
+            .what-we-want{
+                width: 50%;
+                height: 17px;
+                font-family: ProximaNova;
+                font-size: 14px;
+                font-weight: 600;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: right;
+                color: #000000;
+                margin-top: 40px;
+            }
+        }
+        .giant-img{
+            width: 100%;
+            height: auto;
+            margin-top: 40px;
+        }
+    }
+}

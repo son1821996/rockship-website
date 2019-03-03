@@ -1,0 +1,141 @@
+.career-detail-apply-bottom{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    .giant-wraper{
+        @media screen and (min-width: 1024px) {
+            margin-left: 120px;
+            width: 90%;
+        }
+        @media screen and (max-width: 1024px) {
+            width: 100%;
+            margin-left: -50px;
+        }
+        .bottom-wraper{
+            display: flex;
+            justify-content: center;
+            .left-content{
+                width: 40%;
+                .responsibility{
+                    width: 100%;
+                    height: 29px;
+                    font-family: ProximaNova;
+                    font-size: 24px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #000000;
+                    margin-left: 30px;
+                }
+                .list-of-responesible{
+                    width: 100%;
+                    font-family: ProximaNova;
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #555555;
+                    margin-left: 45px;
+                    margin-top: 20px;
+                    .first-line{
+                        margin-top: 10px;
+                        span{
+                            padding-right: 30px;
+                        }
+                    }
+                }
+                .what-you-do{
+                    width: 100%;
+                    font-family: ProximaNova;
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #555555;
+                    margin-left: 75px;
+                    .first-line{
+                        margin-top: 10px;
+                        span{
+                            padding-right: 5px;
+                        }
+                    }
+                }
+                .expectation{
+                    margin-top: 40px;
+                    width: 100%;
+                    height: 29px;
+                    font-family: ProximaNova;
+                    font-size: 24px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #000000;
+                    margin-left: 30px;
+                }
+                .what-we-give{
+                    margin-top: 40px;
+                    width: 100%;
+                    height: 29px;
+                    font-family: ProximaNova;
+                    font-size: 24px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #000000;
+                    margin-left: 30px;
+                }
+                .enviroment{
+                    width: 100%;
+                    font-family: ProximaNova;
+                    font-size: 18px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #000000;
+                    margin-left: 40px;
+                    margin-top: 16px;
+                }
+                .enviroment-list{
+                    width: 100%;
+                    font-family: ProximaNova;
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: #555555;
+                    margin-left: 45px;
+                    margin-top: 20px;
+                    .first-line{
+                        margin-top: 10px;
+                        span{
+                            padding-right: 30px;
+                        }
+                    }
+                }
+            }
+            .right-content{
+                width: 40%;
+            }
+        }
+        .temporary-footer{
+            width: 100%;
+            height: 144px;
+        }
+    }
+}
