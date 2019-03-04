@@ -50,6 +50,9 @@
   }
 
   .nav-right {
+    transition: all .5s ease-out;
+    position: relative;
+    display: inline-block;
     a {
       text-decoration: none;
       height: 20px;
@@ -59,12 +62,30 @@
       line-height: normal;
       letter-spacing: normal;
       color: #ffffff;
-      transition: color  .3s ease-out;
 
-      &:hover {
-        color: steelblue;
-      }
+      
     }
+    &:hover {
+      background-color: steelblue;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      top:0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: white;
+      transform-origin:left;
+      transition:width 0.5s ease;
+      z-index:-1;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  
+    padding: 5px;
     margin-right: 33px;
     margin-top: 10px;
     padding-bottom: 8px;

@@ -4,7 +4,7 @@ import { Parallax } from 'react-parallax';
 import Navigation from '../components/Navigation/Navigation';
 import Service from '../components/Service/Service';
 import Clients from '../components/Clients/Clients';
-
+import ScrollButton from '../components/ScrollButton/ScrollButton';
 
 import '../stylesheets/Home/Home.scss';
 import Contact from '../components/Contact/Contact';
@@ -127,6 +127,7 @@ class Home extends Component {
         <Portfolio />
         <Clients />
         <Contact />
+        <ScrollButton scrollStepInPx="100" delayInMs="16.66" />
         <Footer />
       </Fragment>
     );

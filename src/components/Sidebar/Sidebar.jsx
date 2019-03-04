@@ -28,7 +28,7 @@ const Sidebar = (props) => {
     <Link to={linkBack}>
       <div className="sidebar-container">
         <Link to="/">
-          <img src="../../img/logo.png" alt="logo" />
+          <img src="/img/logo.png" alt="logo" />
         </Link>
         <KeyboardBackspace style={{ color: '#ffffff' }} />
       </div>
