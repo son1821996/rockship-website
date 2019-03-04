@@ -39,6 +39,11 @@
           color: #ffffff;
           margin-left: 85px;
           text-transform: uppercase;
+          transition: color .3s ease-out;
+
+          &:hover {
+            color: steelblue;
+          }
         }
       }
     }  
@@ -54,6 +59,11 @@
       line-height: normal;
       letter-spacing: normal;
       color: #ffffff;
+      transition: color  .3s ease-out;
+
+      &:hover {
+        color: steelblue;
+      }
     }
     margin-right: 33px;
     margin-top: 10px;
@@ -118,6 +128,7 @@
           a {
             color: #ffffff;
             text-decoration: none;
+
           }
         }
       }
