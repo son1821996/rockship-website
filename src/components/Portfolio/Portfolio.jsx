@@ -52,7 +52,7 @@ class Work extends Component {
               transitionTime={500}
             >
               {projects.map(project => (
-                <div className="work-content">
+                <div className="work-content" key={project.id}>
                   <div className="project-img">
                     <img alt="project-img" src={project.img} />
                   </div>

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React, { Component } from 'react';
 import { object } from 'prop-types';
 import FormControl from '@material-ui/core/FormControl';
@@ -25,9 +26,7 @@ const styles = theme => ({
     top: '40px',
   },
   cssLabel: {
-    '&$cssFocused': {
-      color: '#ffffff',
-    },
+    color: '#ffffff',
   },
   cssUnderline: {
     '&:after': {
@@ -170,7 +169,6 @@ class ContactForm extends Component {
                 htmlFor="custom-css-standard-input"
                 classes={{
                   root: classes.cssLabel,
-                  focused: classes.cssFocused,
                 }}
               >
                 Name
@@ -190,7 +188,6 @@ class ContactForm extends Component {
                 htmlFor="custom-css-standard-input"
                 classes={{
                   root: classes.cssLabel,
-                  focused: classes.cssFocused,
                 }}
               >
                 Email
@@ -210,7 +207,6 @@ class ContactForm extends Component {
                 htmlFor="custom-css-standard-input"
                 classes={{
                   root: classes.cssLabel,
-                  focused: classes.cssFocused,
                 }}
               >
                 Address
@@ -230,7 +226,6 @@ class ContactForm extends Component {
                 htmlFor="custom-css-standard-input"
                 classes={{
                   root: classes.cssLabel,
-                  focused: classes.cssFocused,
                 }}
               >
                 Phone
@@ -250,7 +245,6 @@ class ContactForm extends Component {
                 htmlFor="custom-css-standard-input"
                 classes={{
                   root: classes.cssLabel,
-                  focused: classes.cssFocused,
                 }}
               >
                 Content
@@ -289,13 +283,11 @@ class ContactForm extends Component {
             >
               {listCompanySize.map((item, i) => (
                 // eslint-disable-next-line jsx-a11y/label-has-associated-control
-                <label className="radio-item">
+                <label className="radio-item" key={`key_${i}`}>
                   <input
                     type="radio"
                     name="company-size"
                     value={item}
-                    // eslint-disable-next-line react/no-array-index-key
-                    key={`key_${i}`}
                     onChange={this.onChangeSizeCompany}
                   />
                   <span className="value-on-web">{item}</span>

@@ -16,24 +16,32 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isClickToScroll: false,
+      width: 0,
     };
   }
 
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
 
-  handleClick = () => {
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions = () => {
     this.setState({
-      isClickToScroll: true,
+      width: window.innerWidth,
     });
   }
 
   render() {
-    const { isClickToScroll } = this.state;
+    const { width } = this.state;
     return (
       <Fragment>
         <header
           style={{
-            height: `${isClickToScroll ? '40vh' : '100vh'}`,
+            height: `${(width >= 812 && width <= 823) || (width >= 568 && width <= 667) || width === 731 ? '200vh' : ''}`,
           }}
         >
           <Navigation />
@@ -42,17 +50,17 @@ class Home extends Component {
           >
             <div
               className="welcome-title"
-              style={{
-                transform: `${isClickToScroll ? 'translateY(-230%)' : 'unset'}`,
-              }}
+              // style={{
+              //   transform: `${isClickToScroll ? 'translateY(-230%)' : 'unset'}`,
+              // }}
             >
             Welcome to Rockship
             </div>
             <div
               className="welcome-sub"
-              style={{
-                transform: `${isClickToScroll ? 'translateY(-400%)' : 'unset'}`,
-              }}
+              // style={{
+              //   transform: `${isClickToScroll ? 'translateY(-400%)' : 'unset'}`,
+              // }}
             >
             We are here to Acelerate Your Business
             and Help you Find The Way
@@ -82,7 +90,7 @@ class Home extends Component {
                   }}
                   bgClassName="ship-para"
                   strength={-600}
-                  bgImageSizes={100}
+                  // bgImageSizes={100}
                 >
                   &nbsp;
                   <div style={{ height: '40vh' }} />
@@ -93,7 +101,7 @@ class Home extends Component {
                   bgImageAlt="the cat"
                   bgClassName="grey-cloud-para"
                   strength={500}
-                  bgImageSizes={100}
+                  // bgImageSizes={100}
                   className="cloud"
                 >
                   &nbsp;

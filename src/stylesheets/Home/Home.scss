@@ -3,6 +3,7 @@ header {
   background-color: #1c1c1d;
   position: relative;
   transition: height 3s;
+  height: 100vh;
 
 
   .header-content {
@@ -63,15 +64,28 @@ header {
               left: 44.5%;
               top: 24%;
             }
-    
-            @media only screen and (max-width: 768px) {
-              margin-top: 0;
-              left: 40%;
-              top: 42%;
+
+            @media only screen and (max-width: 1024px) {
+              left: 43%;
+              top: 24%;
+            }
+
+            @media only screen and (max-width: 992px) {
+              left: 40.5%;
+              top: 24%;
+            }
+
+            @media only screen and (max-width: 667px) {
+              left: 39.5%;
+              top: 24%;
             }
     
-            @media only screen and (max-width: 576px) {
-              margin-top: 0;
+            @media only screen and (max-width: 568px) {
+              left: 37.5%;
+              top: 24%;
+            }
+
+            @media only screen and (max-width: 414px) {
               left: 32.5%;
               top: 24%;
             }
@@ -131,7 +145,7 @@ header {
           position: relative;
           animation: vertical-line 2s ease-in-out infinite;
           &:before {
-            width: 2px;
+            width: 1.5px;
             height: 12px;
             background-color: black;
             display: inline-block;
@@ -141,7 +155,7 @@ header {
             animation: vertical-bf 2s ease-in-out infinite;
           }
           &:after {
-            width: 2px;
+            width: 1.5px;
             height: 12px;
             background-color: black;
             display: inline-block;
@@ -161,7 +175,7 @@ header {
         }
         75% {
           opacity: 1;
-          height: 35px;
+          height: 25px;
           transform: translateY(0px);
         }
         100% {
@@ -173,29 +187,29 @@ header {
       @keyframes vertical-bf {
         0% {
           opacity: 0;
-          transform: translateY(-25px) rotate(-45deg);
+          transform: translateY(-15px) rotate(-45deg);
         }
         75% {
           opacity: 1;
-          transform: translateY(25px) rotate(-45deg);
+          transform: translateY(15px) rotate(-45deg);
         }
         100% {
           opacity: 0;
-          transform: translateY(30px) rotate(-45deg);
+          transform: translateY(25px) rotate(-45deg);
         }
       }
       @keyframes vertical-af {
         0% {
           opacity: 0;
-          transform: translateY(-25px) rotate(45deg);
+          transform: translateY(-15px) rotate(45deg);
         }
         75% {
           opacity: 1;
-          transform: translateY(25px) rotate(45deg);
+          transform: translateY(15px) rotate(45deg);
         }
         100% {
           opacity: 0;
-          transform: translateY(30px) rotate(45deg);
+          transform: translateY(25px) rotate(45deg);
         }
       }
 
@@ -217,7 +231,11 @@ header {
         left: 46.5%;
         transition: opacity 1.5s;
         @media only screen and (max-width: 1440px) {
-          left: 46%; 
+          left: 45%; 
+          bottom: 18px;
+        }
+        @media only screen and (max-width: 414px) {
+          left: 36%; 
           bottom: 18px;
         }
       }
