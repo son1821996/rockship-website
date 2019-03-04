@@ -7,6 +7,7 @@ class position extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      direction: 'career/ios/details',
       jobTitle: 'IOs developer',
       openingPosition: [
         {
@@ -74,18 +75,22 @@ class position extends Component {
     if (iosActivated === true) {
       this.setState({
         jobTitle: 'IOs developer',
+        direction: 'career/ios/details',
       });
     } else if (androidActivated === true) {
       this.setState({
         jobTitle: 'Android developer',
+        direction: '/career/android/details',
       });
     } else if (frontEndActivated === true) {
       this.setState({
         jobTitle: 'Frontend developer',
+        direction: '/career/front-end/details',
       });
     } else if (backEndActivated === true) {
       this.setState({
         jobTitle: 'Backend developer',
+        direction: '/career/back-end/details',
       });
     }
   }
@@ -94,13 +99,14 @@ class position extends Component {
     const {
       openingPosition,
       jobTitle,
+      direction,
     } = this.state;
     return (
       <Fragment>
         <div className="Position">
           {openingPosition.map(openingPositionItem => (
             <div className="apply-for" key={openingPositionItem.id}>
-              <Link to="/news/details">
+              <Link to={direction} {...position}>
                 <div className="job-wraper">
                   <div className="job-title">
                     {jobTitle}

@@ -14,13 +14,21 @@ const Sidebar = (props) => {
     linkBack = '/news';
   } else if (match.url === '/portfolio/details') {
     linkBack = '/portfolio';
+  } else if (match.url === '/career/back-end/details') {
+    linkBack = '/career';
+  } else if (match.url === '/career/ios/details') {
+    linkBack = '/career';
+  } else if (match.url === '/career/android/details') {
+    linkBack = '/career';
+  } else if (match.url === '/career/front-end/details') {
+    linkBack = '/career';
   }
 
   return (
     <Link to={linkBack}>
       <div className="sidebar-container">
         <Link to="/">
-          <img src="../img/logo.png" alt="logo" />
+          <img src="../../img/logo.png" alt="logo" />
         </Link>
         <KeyboardBackspace style={{ color: '#ffffff' }} />
       </div>
