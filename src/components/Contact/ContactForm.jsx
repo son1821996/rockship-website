@@ -300,13 +300,12 @@ class ContactForm extends Component {
             <div className="choose-option-section">
               {listCompanyLocation.map((item, i) => (
                 // eslint-disable-next-line jsx-a11y/label-has-associated-control
-                <label className="checkbox-item">
+                <label className="checkbox-item" key={`key_${i}`}>
                   <input
                     type="checkbox"
                     name="company-location"
                     value={item}
                     // eslint-disable-next-line react/no-array-index-key
-                    key={`key_${i}`}
                     onChange={this.onChangeSizeLocation}
                   />
                   <span className="value-on-web">{item}</span>
@@ -331,7 +330,7 @@ class ContactForm extends Component {
             >
               {listInterested.map((item, i) => (
                 // eslint-disable-next-line jsx-a11y/label-has-associated-control
-                <label className="checkbox-item">
+                <label className="checkbox-item" key={`key_${i}`}>
                   <input
                     type="checkbox"
                     name="company-location"

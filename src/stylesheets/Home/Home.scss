@@ -75,6 +75,11 @@ header {
               top: 24%;
             }
 
+            @media only screen and (max-width: 823px) {
+              left: 41.5%;
+              top: 24%;
+            }
+
             @media only screen and (max-width: 667px) {
               left: 39.5%;
               top: 24%;
@@ -246,6 +251,7 @@ header {
           display: none;
         }
         .grey-cloud-para {
+          z-index: 9;
           height: 282px !important;
           @media only screen and (max-width: 1440px) {
             height: 200px !important;
@@ -258,6 +264,7 @@ header {
           height: 480px !important;
           width: auto !important;
           top: 90%;
+          z-index: 10;
           @media only screen and (max-width: 1440px) {
             top: 120%;
           }
@@ -272,24 +279,11 @@ header {
             }
           }
         }
-
-        .grey-cloud-para-after {
-          height: 154px !important;
-          width: 100% !important;
-          top: 136%;
-        }
       }
 
       .cloud {
         overflow: hidden !important;
       }
-
-      .cloud-after {
-        bottom: 400px;
-        @media only screen and (max-width: 1440px) {
-          bottom: 200px;
-        }
-      };
 
     }
   }
