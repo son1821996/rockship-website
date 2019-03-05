@@ -15,7 +15,7 @@
   }
   .greeting {
     height: 24px;
-    // font-family: ProximaNova;
+    font-family: 'ProximaNovaSemiBold';
     font-size: 20px;
     font-weight: 600;
     font-style: normal;
@@ -34,9 +34,10 @@
       flex-direction: column;
       margin-top: 22px;
       .contact-title {
+        text-transform: uppercase;
         margin-top: 20px;
         height: 50px;
-        // font-family: ProximaNova;
+        font-family: 'ProximaNovaBold';
         font-size: 48px;
         font-weight: bold;
         font-style: normal;
@@ -47,7 +48,7 @@
       }
 
       p {
-        // font-family: ProximaNova;
+        font-family: 'ProximaNovaSemiBold';
         font-size: 14px;
         font-weight: 600;
         font-style: normal;

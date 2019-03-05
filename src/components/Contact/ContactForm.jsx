@@ -145,7 +145,7 @@ class ContactForm extends Component {
       isShowFirstForm, isShowSecondForm, isShowThirdForm,
     } = this.state;
     const { classes } = this.props;
-    const listCompanySize = ['Single founder', '3 - 10 engineers', '10 - 50 engineers', '>50 engineers'];
+    const listCompanySize = ['Single founder', '3 - 10 engineers', '10 - 50 engineers', '> 50 engineers'];
     const listCompanyLocation = ['US', 'Europe', 'East Asia', 'Other'];
     const listInterested = ['Live Streaming', ' Cryptocurrency Exchange', ' Payment Integration', ' VoIP routing app', ' Facility Booking System', 'Other'];
     return (
@@ -374,7 +374,7 @@ class ContactForm extends Component {
                 <div
                   className="form-bottom-right-third-form"
                 >
-                  Save
+                  Submit
                 </div>
               </div>
             </div>

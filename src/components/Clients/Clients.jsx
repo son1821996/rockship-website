@@ -17,7 +17,7 @@ class Clients extends Component {
             <div className="dash" style={{ backgroundColor: '#ffffff', height: '4px', width: '57px' }} />
             <div>
               <h1 className="title">
-              What clients talk about us
+              Clients testimonial
               </h1>
             </div>
           </div>

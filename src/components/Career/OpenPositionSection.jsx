@@ -76,7 +76,7 @@ class OpenPositionSection extends Component {
                 <div />
               </div>
               <div className="title">
-                Open Positions
+                Opening Positions
               </div>
               <div className="line one">
                 Getting on board

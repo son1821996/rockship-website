@@ -42,13 +42,6 @@ class PortfoliosThumbnail extends Component {
           title: 'peniex',
           shortDescription: 'Peniex is provide mechanism and flow for the user to deposit the coins and advertise to buy or sell on our platform. If the order matches, the buy side will do the direct bank transfer to the seller and the seller will confirm the transaction and the crypto currency will be transferred to the other client on-chains. ',
         },
-        {
-          id: 6,
-          img: '/img/work.jpg',
-          projectName: 'Liveo',
-          title: 'Lorem ipsum dolor sit amet',
-          shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla laoreet tempor arcu ut viverra. Maecenas nec odio sem. Ut feugiat leo nisl, a semper erat convallis sed. Nunc rhoncus posuere elementum. Vivamus lacinia ex felis, ac porttitor lacus vestibulum sed. ',
-        },
       ],
     };
   }

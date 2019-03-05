@@ -35,10 +35,10 @@ class Navigation extends Component {
                 <Link to="/news">News</Link>
               </li>
               <li className="nav_item">
-                <Link to="/">Blog</Link>
+                <a href="https://medium.com/rockship">Blog</a>
               </li>
               <li className="nav_item">
-                <Link to="/career">Career</Link>
+                <Link to="/career">Join us</Link>
               </li>
             </ul>
           </div>

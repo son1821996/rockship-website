@@ -9,39 +9,9 @@ class NewsThumbnail extends Component {
       news: [
         {
           id: 1,
-          img: '/img/news.jpg',
-          title: 'Lorem ipsum dolor sit amet',
-          shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla laoreet tempor arcu ut viverra. Maecenas nec odio sem. Ut feugiat leo nisl, a semper erat convallis sed. Nunc rhoncus posuere elementum. Vivamus lacinia ex felis, ac porttitor lacus vestibulum sed. ',
-        },
-        {
-          id: 2,
-          img: '/img/news.jpg',
-          title: 'Lorem ipsum dolor sit amet',
-          shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla laoreet tempor arcu ut viverra. Maecenas nec odio sem. Ut feugiat leo nisl, a semper erat convallis sed. Nunc rhoncus posuere elementum. Vivamus lacinia ex felis, ac porttitor lacus vestibulum sed. ',
-        },
-        {
-          id: 3,
-          img: '/img/news.jpg',
-          title: 'Lorem ipsum dolor sit amet',
-          shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla laoreet tempor arcu ut viverra. Maecenas nec odio sem. Ut feugiat leo nisl, a semper erat convallis sed. Nunc rhoncus posuere elementum. Vivamus lacinia ex felis, ac porttitor lacus vestibulum sed. ',
-        },
-        {
-          id: 4,
-          img: '/img/news.jpg',
-          title: 'Lorem ipsum dolor sit amet',
-          shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla laoreet tempor arcu ut viverra. Maecenas nec odio sem. Ut feugiat leo nisl, a semper erat convallis sed. Nunc rhoncus posuere elementum. Vivamus lacinia ex felis, ac porttitor lacus vestibulum sed. ',
-        },
-        {
-          id: 5,
-          img: '/img/news.jpg',
-          title: 'Lorem ipsum dolor sit amet',
-          shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla laoreet tempor arcu ut viverra. Maecenas nec odio sem. Ut feugiat leo nisl, a semper erat convallis sed. Nunc rhoncus posuere elementum. Vivamus lacinia ex felis, ac porttitor lacus vestibulum sed. ',
-        },
-        {
-          id: 6,
-          img: '/img/news.jpg',
-          title: 'Lorem ipsum dolor sit amet',
-          shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla laoreet tempor arcu ut viverra. Maecenas nec odio sem. Ut feugiat leo nisl, a semper erat convallis sed. Nunc rhoncus posuere elementum. Vivamus lacinia ex felis, ac porttitor lacus vestibulum sed. ',
+          img: '/img/logo3.png',
+          title: 'Rockship ra mắt nền tảng học tập trực tuyến Etown',
+          shortDescription: 'Ngày 24 - 26/8/2018, Rockship đã kết hợp cùng Mạng lưới Khởi nghiệp trẻ Việt Nam VYE cho ra mắt nền tảng học tập và đào tạo trực tuyến mang tên Etown. ',
         },
       ],
     };
