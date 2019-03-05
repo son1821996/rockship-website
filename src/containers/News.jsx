@@ -17,7 +17,7 @@ class PortfolioContainer extends Component {
     return (
       <Fragment>
         <Navigation />
-        <section className="page-section" style={{ height: '83vh' }}>
+        <section className="page-section">
           <div className="page-header">
             <div className="header-left" style={{ display: 'flex', flexDirection: 'column' }}>
               <div

@@ -21,8 +21,8 @@ class CareerSection extends Component {
             </div>
             <div className="join-rockship">
               Join
-              <strong>
-              &nbsp;Rockship&nbsp;
+              <strong style={{ fontWeight: 'bolder' }}>
+              &nbsp;ROCKSHIP&nbsp;
               </strong>
               and explore your unlimited possibilities
             </div>

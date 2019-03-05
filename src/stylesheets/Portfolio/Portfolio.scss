@@ -27,6 +27,19 @@
       .project-img {
         flex: 0 0 45%;
         margin-right: 64px;
+        
+        img {
+          width: 734px;
+          height: 668px;
+          @media only screen and (max-width: 1024px) {
+            width: auto;
+            height: 652px;
+          }
+          @media only screen and (max-width: 414px) {
+            width: auto;
+            height: 410px;
+          }
+        }
       }
     
       .project-details {
@@ -131,19 +144,19 @@
         }
 
         @media only screen and (max-width: 768px) {
-          top: 64%;
+          top: 71%;
         }
 
         @media only screen and (max-width: 667px) {
-          top: 61%;
+          top: 69%;
         }
 
         @media only screen and (max-width: 414px) {
-          top: 48%;
+          top: 57%;
         }
 
         @media only screen and (max-width: 375px) {
-          top: 44%;
+          top: 56%;
         }
 
 
@@ -153,7 +166,7 @@
       }
 
       .control-prev {
-        left: 35.5%;
+        left: 42.5%;
         background-color: #ffffff;
         &::before {
           border-right: 8px solid #000000;
@@ -168,7 +181,7 @@
       }
 
       .control-next {
-        left: 38%;
+        left: 45%;
         opacity: 1;
         background-color: #000000;
         @media only screen and (max-width: 1024px) {
@@ -177,7 +190,7 @@
         }
         &::before {
           position: relative;
-          left: -1px;
+          left: -2px;
         }
       }
     }

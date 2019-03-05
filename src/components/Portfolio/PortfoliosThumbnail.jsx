@@ -9,7 +9,7 @@ class PortfoliosThumbnail extends Component {
       portfolios: [
         {
           id: 1,
-          img: '/img/liveo-thumb.png',
+          img: '/img/liveo.jpg',
           projectName: 'liveo',
           title: 'liveo',
           shortDescription: 'Liveo is a platform for celebrities to engage with their fans effectively. With Liveo, fan have access to exclusive contents of the stars. ',
@@ -23,24 +23,31 @@ class PortfoliosThumbnail extends Component {
         },
         {
           id: 3,
-          img: '/img/icon.png',
-          projectName: 'ico',
-          title: 'ico',
-          shortDescription: 'ICO is a new format of raising funds for technology ventures. ICO will provide the people who believe in the technology to get early access to the product the venture intends to sell. Most of the tokens sold via ICO are usually utility tokens whereas end users can use it for the future service the company sets up. ',
-        },
-        {
-          id: 4,
           img: '/img/heimdall.png',
           projectName: 'heimdall',
           title: 'heimdall',
           shortDescription: 'Heimdall is an ultimate tool developed for online and offline merchants to charge end user. ',
         },
         {
-          id: 5,
+          id: 4,
           img: './img/peniex.png',
           projectName: 'peniex',
           title: 'peniex',
           shortDescription: 'Peniex is provide mechanism and flow for the user to deposit the coins and advertise to buy or sell on our platform. If the order matches, the buy side will do the direct bank transfer to the seller and the seller will confirm the transaction and the crypto currency will be transferred to the other client on-chains. ',
+        },
+        {
+          id: 5,
+          img: './img/binumi.png',
+          projectName: 'bitnumi',
+          title: 'bitnumi',
+          shortDescription: 'Binumi is a new way to make amazing videos in seconds! Combine your own video moments with millions of professional video, image and music clips. Select from thousands of story ideas, choose a template and then personalize your video. And share your stories with family and friends. ',
+        },
+        {
+          id: 6,
+          img: './img/fitnfix.png',
+          projectName: 'fitnfix',
+          title: 'fitnfix',
+          shortDescription: 'It’s a fun way to Discover high quality trainers and fitness activities with just one tap. Customized and Relevant activities are tailored for you based on your interests and goals. Working out has never been so much fun when you can “socialize” about it as well.',
         },
       ],
     };

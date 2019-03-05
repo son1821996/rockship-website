@@ -135,7 +135,7 @@ header {
         border-radius: 48px;
         position: absolute;
         z-index: 20;
-        left: 49%;
+        left: 49.5%;
         bottom: 80px;
         transition: opacity 1.5s;
         @media only screen and (max-width: 1440px) {
@@ -145,7 +145,7 @@ header {
         .b {
           width: 2px;
           background-color: black;
-          margin-left: 9px;
+          margin-left: 7.7px;
           margin-top: 5px;
           position: relative;
           animation: vertical-line 2s ease-in-out infinite;
@@ -233,14 +233,23 @@ header {
         text-align: center;
         color: #848484;
         z-index: 20;
-        left: 46.5%;
+        left: 47%;
         transition: opacity 1.5s;
         @media only screen and (max-width: 1440px) {
           left: 45%; 
           bottom: 18px;
         }
+        @media only screen and (max-width: 768px) {
+          left: 43%; 
+          bottom: 18px;
+        }
         @media only screen and (max-width: 414px) {
-          left: 36%; 
+          left: 39%; 
+          bottom: 18px;
+        }
+
+        @media only screen and (max-width: 375px) {
+          left: 37%; 
           bottom: 18px;
         }
       }

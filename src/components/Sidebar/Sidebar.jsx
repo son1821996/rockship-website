@@ -10,9 +10,9 @@ const Sidebar = (props) => {
   const { match } = props;
 
   let linkBack;
-  if (match.url === '/news/details') {
+  if (match.url === '/news/details/1' || match.url === '/news/details/2' || match.url === '/news/details/3') {
     linkBack = '/news';
-  } else if (match.url === '/portfolio/liveo' || match.url === '/portfolio/iura') {
+  } else if (match.url === '/portfolio/liveo' || match.url === '/portfolio/iura' || match.url === '/portfolio/peniex') {
     linkBack = '/portfolio';
   } else if (match.url === '/career/back-end/details') {
     linkBack = '/career';
