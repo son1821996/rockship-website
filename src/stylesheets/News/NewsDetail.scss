@@ -20,12 +20,13 @@
 
       a {
         text-decoration: none;
+
       }
 
       span {
         margin-left: 16px;
         height: 20px;
-        // font-family: ProximaNova;
+        font-family: 'ProximaNovaSemiBold';
         font-size: 16px;
         font-weight: 600;
         font-style: normal;
@@ -53,7 +54,7 @@
       }
       .news-title {
         margin-top: 16px;
-        // font-family: ProximaNova;
+        font-family: 'ProximaNovaBold';
         font-size: 32px;
         font-weight: bold;
         font-style: normal;
@@ -70,7 +71,7 @@
       }
 
       .date {
-        // font-family: ProximaNova;
+        font-family: 'ProximaNovaSemiBold';
         font-size: 14px;
         font-weight: 600;
         font-style: normal;
@@ -85,7 +86,7 @@
     .short-description {
       margin-top: 24px;
       width: 80%;
-      // font-family: ProximaNova;
+      font-family: 'ProximaNovaRegular';
       font-size: 20px;
       font-weight: normal;
       font-style: normal;
@@ -113,7 +114,7 @@
       }
 
       .title {
-        // font-family: ProximaNova;
+        font-family: 'ProximaNovaRegular';
         font-size: 24px;
         font-weight: normal;
         font-style: normal;
@@ -132,7 +133,7 @@
 
         p {
           width: 90%;
-          // font-family: ProximaNova;
+          font-family: 'ProximaNovaSemiBold';
           font-size: 14px;
           font-weight: 600;
           font-style: normal;
@@ -150,7 +151,7 @@
         .related-article-list {
           .related-article-item {
             .related-article-title {
-              // font-family: ProximaNova;
+              font-family: 'ProximaNovaRegular';
               a {
                 margin-top: 42px;
                 font-size: 20px;

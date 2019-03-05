@@ -86,7 +86,7 @@ label {
     @media only screen and (max-width: 576px) {
       flex-direction: column;
     }
-    // font-family: ProximaNova;
+    font-family: 'ProximaNovaSemiBold';
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -97,6 +97,7 @@ label {
 
     .tell-more {
       display: flex;
+      font-family: 'ProximaNovaSemiBold';
       align-items: center;
       svg {
         margin-left: 8px;
@@ -117,7 +118,7 @@ label {
       font-size: 16px;
       border-bottom: 1px solid #ffffff;
       font-size: 14px;
-      width: 60px;
+      width: 63px;
       cursor: pointer;
     }
 
@@ -165,7 +166,7 @@ label {
 
   .second-form-title {
     height: 24px;
-    // font-family: ProximaNova;
+    font-family: 'ProximaNovaLight';
     font-size: 20px;
     font-weight: 300;
     font-style: normal;
@@ -183,7 +184,7 @@ label {
     @media only screen and (max-width: 768px) {
       margin-top: 24px;
     }
-    // font-family: ProximaNova;
+    font-family: 'ProximaNovaSemiBold';
     font-size: 14px;
     font-weight: 600;
     font-style: normal;
@@ -194,7 +195,7 @@ label {
   }
 
   .value-on-web {
-    // font-family: ProximaNova;
+    font-family: 'ProximaNovaSemiBold';
     font-size: 14px;
     font-weight: 600;
     font-style: normal;
@@ -360,7 +361,7 @@ label {
   }
 
   .third-form-title {
-    // font-family: ProximaNova;
+    font-family: 'ProximaNovaSemiBold';
     font-size: 14px;
     font-weight: 600;
     font-style: normal;

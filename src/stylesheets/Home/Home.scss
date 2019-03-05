@@ -14,7 +14,7 @@ header {
     top: 15%;
     bottom: 0;
     .welcome-title {
-      // font-family: 'ProximaNova';
+      font-family: 'ProximaNovaBold';
       font-size: 40px;
       @media only screen and (max-width: 414px) {
         font-size: 32px;
@@ -32,7 +32,7 @@ header {
       text-align: center;
       height: 40px;
       width: 295px;
-      // font-family: ProximaNova;
+      font-family: 'ProximaNovaSemiBold';
       font-size: 16px;
       font-weight: 600;
       font-style: normal;
@@ -223,7 +223,7 @@ header {
         bottom: 45px;
         text-align: center;
         height: 15px;
-        // font-family: ProximaNova;
+        font-family: 'ProximaNovaSemiBold';
         font-size: 12px;
         font-weight: 600;
         font-style: normal;

@@ -20,7 +20,7 @@ class Work extends Component {
         },
         {
           id: 2,
-          img: '/img/work.png',
+          img: '/img/iura.png',
           title: 'IURA',
           description: 'IURA is an application that allows users to connect with lawyers to get legal advice and answers for their problems. IURA integrates a customer relationship management system (CRM) which is a great tool for lawyers to build and maintain relationships with their clients.',
           responsibility: 'Backend/API, Architecture, iOS',

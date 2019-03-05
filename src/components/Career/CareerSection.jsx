@@ -22,7 +22,7 @@ class CareerSection extends Component {
             <div className="join-rockship">
               Join
               <strong>
-                  Rockship
+              &nbsp;Rockship&nbsp;
               </strong>
               and explore your unlimited possibilities
             </div>

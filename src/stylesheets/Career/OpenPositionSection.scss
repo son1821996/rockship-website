@@ -23,7 +23,7 @@
                 .title{
                     width: 399px;
                     height: 46px;
-                    font-family: ProximaNova;
+                    font-family: 'ProximaNovaBold';
                     font-size: 48px;
                     font-weight: bold;
                     font-style: normal;
@@ -32,11 +32,12 @@
                     letter-spacing: normal;
                     color: #ffffff;
                     margin-top: 16px;
+                    text-transform: uppercase;
                 }
                 .line{
                     width: 273px;
                     height: 17px;
-                    font-family: ProximaNova;
+                    font-family: 'ProximaNovaRegular';
                     font-size: 14px;
                     font-weight: normal;
                     font-style: normal;
@@ -81,7 +82,7 @@
                         width: 128px;
                         height: 17px;
                         margin-top: 24px;
-                        font-family: ProximaNova;
+                        font-family: 'ProximaNovaBold';
                         font-size: 14px;
                         font-weight: bold;
                         text-align: center;

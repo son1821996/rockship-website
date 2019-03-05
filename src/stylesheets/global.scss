@@ -1,11 +1,7 @@
-@import url('https://rsms.me/inter/inter-ui.css');
-html { font-family: 'Inter UI', sans-serif; }
 @supports (font-variation-settings: normal) {
   html {
-    font-family: 'Inter UI var alt', sans-serif;
     height: 100%;
     body{
-      font-family: 'Inter UI var alt', sans-serif;
       min-height: 100%;
       margin: 0;
       div {
@@ -18,4 +14,28 @@ html { font-family: 'Inter UI', sans-serif; }
         box-sizing: inherit;
     }
   }
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../fonts/Mark\ Simonson\ -\ Proxima\ Nova\ Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url("../fonts/Mark\ Simonson\ -\ Proxima\ Nova\ Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'ProximaNovaSemiBold';
+  src: url("../fonts/Mark\ Simonson\ -\ Proxima\ Nova\ Semibold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url("../fonts/Mark\ Simonson\ -\ Proxima\ Nova\ Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'ProximaNovaLight';
+  src: url("../fonts/Mark\ Simonson\ -\ Proxima\ Nova\ Light.otf") format("opentype");
 }
