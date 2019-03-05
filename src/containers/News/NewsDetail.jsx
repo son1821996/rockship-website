@@ -18,23 +18,23 @@ class NewsDetail extends Component {
           publishedDate: 'Feb 20 2019',
         },
       ],
-      relatedArticle: [
-        {
-          id: 1,
-          title: 'The Reason We Haven’t Found Planet Nine',
-          img: '/img/article.jpg',
-        },
-        {
-          id: 2,
-          title: 'The Reason We Haven’t Found Planet Nine',
-          img: '/img/article2.jpeg',
-        },
-        {
-          id: 3,
-          title: 'The Reason We Haven’t Found Planet Nine',
-          img: '/img/article3.jpg',
-        },
-      ],
+      // relatedArticle: [
+      //   {
+      //     id: 1,
+      //     title: 'The Reason We Haven’t Found Planet Nine',
+      //     img: '/img/article.jpg',
+      //   },
+      //   {
+      //     id: 2,
+      //     title: 'The Reason We Haven’t Found Planet Nine',
+      //     img: '/img/article2.jpeg',
+      //   },
+      //   {
+      //     id: 3,
+      //     title: 'The Reason We Haven’t Found Planet Nine',
+      //     img: '/img/article3.jpg',
+      //   },
+      // ],
       width: 0,
     };
   }
@@ -55,7 +55,7 @@ class NewsDetail extends Component {
   }
 
   render() {
-    const { acticle, relatedArticle, width } = this.state;
+    const { acticle, width } = this.state;
     return (
       <Fragment>
         {width <= 1024 ? <Navigation /> : ''}
@@ -116,7 +116,7 @@ class NewsDetail extends Component {
                 tuyến chất lượng cao cho đông đảo học viên tại Việt Nam
                 </p>
               </div>
-              <div className="right-content">
+              {/* <div className="right-content">
                 <div className="right-content-title title">
                 Related Article
                 </div>
@@ -134,7 +134,7 @@ class NewsDetail extends Component {
                     </div>
                   ))}
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
