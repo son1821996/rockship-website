@@ -50,6 +50,7 @@ class Work extends Component {
               infiniteLoop
               showStatus={false}
               transitionTime={500}
+              autoPlay
             >
               {projects.map(project => (
                 <div className="work-content" key={project.id}>

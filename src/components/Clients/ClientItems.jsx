@@ -35,6 +35,7 @@ class ClientItems extends Component {
           showIndicators={false}
           infiniteLoop
           showStatus={false}
+          autoPlay
         >
           <div className="clients-quote">
             <div className="quote-item">

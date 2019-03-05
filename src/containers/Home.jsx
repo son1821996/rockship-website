@@ -69,8 +69,8 @@ class Home extends Component {
               <div className="normal">
                 <img
                   alt="ship"
-                  src="./img/rockship.png"
-                  srcSet="./img/rockship@2x.png 2x, ./img/rockship@3x.png 3x,"
+                  src="/img/rockship.png"
+                  srcSet="/img/rockship@2x.png 2x, /img/rockship@3x.png 3x,"
                   className="ship"
                 />
                 <div
@@ -83,7 +83,7 @@ class Home extends Component {
               <div className="parallax">
                 <Parallax
                   blur={0}
-                  bgImage="./img/rockship.png"
+                  bgImage="/img/rockship.png"
                   bgImageAlt="the cat"
                   bgStyle={{
                     backgroundPosition: 'center',
@@ -97,7 +97,7 @@ class Home extends Component {
                 </Parallax>
                 <Parallax
                   blur={0}
-                  bgImage="./img/grey-cloud.png"
+                  bgImage="/img/group-3.png"
                   bgImageAlt="the cat"
                   bgClassName="grey-cloud-para"
                   strength={500}
