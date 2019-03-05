@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+import 'animate.css/animate.min.css';
+import ScrollAnimation from 'react-animate-on-scroll';
+
 class ServiceItem extends Component {
   constructor(props) {
     super(props);
@@ -36,19 +39,25 @@ class ServiceItem extends Component {
   render() {
     const { listService } = this.state;
     return (
-      <div className="service-list">
-        {listService.map(item => (
-          <div className="service-item" key={item.id}>
-            <img alt="service-images" src={item.icon} />
-            <h1 className="title">
-              {item.title}
-            </h1>
-            <p>
-              {item.description}
-            </p>
-          </div>
-        ))}
-      </div>
+      <ScrollAnimation
+        animateIn="bounceInRight"
+        animateOut="fadeOut"
+        animateOnce
+      >
+        <div className="service-list">
+          {listService.map(item => (
+            <div className="service-item" key={item.id}>
+              <img alt="service-images" src={item.icon} />
+              <h1 className="title">
+                {item.title}
+              </h1>
+              <p>
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </ScrollAnimation>
     );
   }
 }

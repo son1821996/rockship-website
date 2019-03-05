@@ -21,18 +21,26 @@ class Work extends Component {
         {
           id: 2,
           img: '/img/work.png',
-          title: 'Cung Em Di That Xa',
-          description: 'Liveo is a platform for celebrities to engage with their fans effectively. With Liveo, fan have access to exclusive contents of the stars.',
+          title: 'IURA',
+          description: 'IURA is an application that allows users to connect with lawyers to get legal advice and answers for their problems. IURA integrates a customer relationship management system (CRM) which is a great tool for lawyers to build and maintain relationships with their clients.',
           responsibility: 'Backend/API, Architecture, iOS',
-          tech: 'Python, Swift, Nginx, Stella',
+          tech: 'Python, Swift, Java',
         },
         {
           id: 3,
           img: '/img/work.png',
-          title: 'Cung Em Di That Xa',
-          description: 'Liveo is a platform for celebrities to engage with their fans effectively. With Liveo, fan have access to exclusive contents of the stars.',
-          responsibility: 'Backend/API, Architecture, iOS',
-          tech: 'Python, Swift, Nginx, Stella',
+          title: 'Heimdall',
+          description: 'Heimdall is an ultimate tool developed for online and offline merchants to charge end user. ',
+          responsibility: 'iOS, Android, Admin Dashboard, backend development, landing website',
+          tech: 'Golang, ReactJS, Docker, CI/CD',
+        },
+        {
+          id: 4,
+          img: '/img/work.png',
+          title: 'PENIEX',
+          description: 'Peniex is provide mechanism and flow for the user to deposit the coins and advertise to buy or sell on our platform. If the order matches, the buy side will do the direct bank transfer to the seller and the seller will confirm the transaction and the crypto currency will be transferred to the other client on-chains. ',
+          responsibility: 'iOS, Android, Admin Dashboard, backend development, landing website',
+          tech: 'Docker, MongoDB',
         },
       ],
     };
@@ -50,6 +58,7 @@ class Work extends Component {
               infiniteLoop
               showStatus={false}
               transitionTime={500}
+              // autoPlay
             >
               {projects.map(project => (
                 <div className="work-content" key={project.id}>
