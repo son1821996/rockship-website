@@ -9,7 +9,8 @@ import Home from './containers/Home';
 import ContactContainer from './containers/ContactContainer';
 import News from './containers/News';
 import PortfolioContainer from './containers/PortfolioContainer';
-import PortfolioDetails from './containers/PortfolioDetail';
+import Liveo from './containers/Portfolio/Liveo';
+import Iura from './containers/Portfolio/Iura';
 import NewsDetail from './containers/NewsDetail';
 import Career from './containers/Career';
 import CareerDetail from './containers/CareerDetail';
@@ -26,7 +27,8 @@ export default class Routes extends Component {
           <Route exact path="/news" component={News} />
           <Route exact path="/news/details" component={NewsDetail} />
           <Route exact path="/portfolio" component={PortfolioContainer} />
-          <Route exact path="/portfolio/details" component={PortfolioDetails} />
+          <Route exact path="/portfolio/liveo" component={Liveo} />
+          <Route exact path="/portfolio/iura" component={Iura} />
           <Route exact path="/career" component={Career} />
           <Route exact path="/career/back-end/details" component={CareerDetail} />
           <Route exact path="/career/ios/details" component={CareerDetail} />

@@ -12,7 +12,7 @@ const Sidebar = (props) => {
   let linkBack;
   if (match.url === '/news/details') {
     linkBack = '/news';
-  } else if (match.url === '/portfolio/details') {
+  } else if (match.url === '/portfolio/liveo' || match.url === '/portfolio/iura') {
     linkBack = '/portfolio';
   } else if (match.url === '/career/back-end/details') {
     linkBack = '/career';
