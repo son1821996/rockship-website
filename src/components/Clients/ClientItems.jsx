@@ -79,7 +79,7 @@ class ClientItems extends Component {
               as working on weekends with us.
               </p>
               <div className="clients-info">
-                <img src="/img/potrait.jpeg" alt="clients-img" className="clients-img" />
+                <img src="/img/potrait.png" alt="clients-img" className="clients-img" />
                 <div className="clients-details">
                   <div className="clients-name">
                   Lubosek Hnilo

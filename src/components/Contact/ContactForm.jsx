@@ -148,7 +148,6 @@ class ContactForm extends Component {
     const listCompanySize = ['Single founder', '3 - 10 engineers', '10 - 50 engineers', '> 50 engineers'];
     const listCompanyLocation = ['US', 'Europe', 'East Asia', 'Other'];
     const listInterested = ['Live Streaming', ' Cryptocurrency Exchange', ' Payment Integration', ' VoIP routing app', ' Facility Booking System', 'Other'];
-    console.log('interested', interested);
     return (
       <form onSubmit={this.onSubmit} className="contact-form">
         <ScrollAnimation
