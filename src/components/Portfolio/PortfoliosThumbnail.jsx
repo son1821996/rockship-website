@@ -9,7 +9,7 @@ class PortfoliosThumbnail extends Component {
       portfolios: [
         {
           id: 1,
-          img: '/img/liveo.jpg',
+          img: '/img/livio-01.png',
           projectName: 'liveo',
           title: 'liveo',
           shortDescription: 'Liveo is a platform for celebrities to engage with their fans effectively. With Liveo, fan have access to exclusive contents of the stars. ',

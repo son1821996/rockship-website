@@ -2,7 +2,7 @@
   background-color: #1c1c1d;
   color: #ffffff;
   height: 100vh;
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1440px) {
     height: 100%;
   }
   .work-container {
@@ -23,14 +23,17 @@
       display: flex;
       // justify-content: space-evenly;
       flex-wrap: wrap;
+      @media only screen and (max-width: 1366px) {
+        flex-wrap: wrap;
+      }
   
       .project-img {
         flex: 0 0 45%;
         margin-right: 64px;
         
         img {
-          width: 734px;
-          height: 668px;
+          width: 690px;
+          height: 627px;
           @media only screen and (max-width: 1024px) {
             width: auto;
             height: 652px;
@@ -48,7 +51,7 @@
         justify-content: center;
         align-items: flex-start;
         width: 40%;
-        @media only screen and (max-width: 1024px) {
+        @media only screen and (max-width: 1440px) {
           margin-top: 48px;
           width: 100%;
         }
@@ -135,6 +138,10 @@
           top: 90%;
         }
 
+        @media only screen and (max-width: 1366px) {
+          top: 71%;
+        }
+
         @media only screen and (max-width: 1024px) {
           top: 74%;
         }
@@ -166,13 +173,16 @@
       }
 
       .control-prev {
-        left: 42.5%;
+        left: 39.8%;
         background-color: #ffffff;
         &::before {
           border-right: 8px solid #000000;
         }
         @media only screen and (max-width: 1440px) {
           left: 34%;
+        }
+        @media only screen and (max-width: 1366px) {
+          left: 41%;
         }
         @media only screen and (max-width: 1024px) {
           right: 36px;
@@ -181,7 +191,7 @@
       }
 
       .control-next {
-        left: 45%;
+        left: 42.3%;
         opacity: 1;
         background-color: #000000;
         @media only screen and (max-width: 1024px) {
