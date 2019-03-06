@@ -17,6 +17,7 @@ import NewsDetail2 from './containers/News/NewsDetail2';
 import NewsDetail3 from './containers/News/NewsDetail3';
 import Career from './containers/Career';
 import CareerDetail from './containers/CareerDetail';
+import ApplicationPage from './containers/ApplicationPage';
 
 // eslint-disable-next-line react/prefer-stateless-function
 export default class Routes extends Component {
@@ -40,6 +41,7 @@ export default class Routes extends Component {
           <Route exact path="/career/ios/details" component={CareerDetail} />
           <Route exact path="/career/android/details" component={CareerDetail} />
           <Route exact path="/career/front-end/details" component={CareerDetail} />
+          <Route exact path="/Career/Appy-page" component={ApplicationPage} />
         </Switch>
       </Router>
     );

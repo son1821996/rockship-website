@@ -1,0 +1,114 @@
+.application-form{   
+    .apply-header{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #ffffff;
+        .top-header-wraper{
+            @media screen and (min-width: 1024px) {
+                margin-left: 120px;
+                width: 90%;
+            }
+            @media screen and (max-width: 1024px) {
+                margin-top: 80px;
+                width: 100%;
+            }
+            .title-group{
+                display: flex;
+                margin-top: 28px;
+                .logo{
+                    width: 24px;
+                    height: 24px;
+                }
+                .title{
+                    width: 80px;
+                    height: 20px;
+                    vertical-align: middle;
+                    font-family: ProximaNova;
+                    font-size: 20px;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    margin-left: 16px;
+                    color: #000000;
+                }
+            }
+            .title-group-head{
+                width: 100%;
+                height: 66px;
+                display: flex;
+                margin-top: 40px;
+                .title-of-job{
+                    width: 50%;
+                    height: 100%;
+                    .line{
+                        width: 57px;
+                        height: 4px;
+                        background-color: #5d5d5d;
+                    }
+                    .head-title{
+                        width: 420px;
+                        height: 39px;
+                        font-family: ProximaNova;
+                        font-size: 32px;
+                        font-weight: bold;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        margin-top: 16px;
+                        color: #000000;
+                    }
+                }
+                .what-we-want{
+                    width: 50%;
+                    height: 17px;
+                    font-family: ProximaNova;
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: right;
+                    color: #000000;
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+    .form-container-apply{
+        height: 300px;
+        width: 100%;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+    }
+    .button-container{
+        height: 48px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #ffffff;
+        .button{
+            height: 48px;
+            width: 183px;
+            background-color: #000000;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,159 @@
+label {
+    color: #000000 !important;
+    font-size: 16px;
+  }
+.form {
+    height: 200px;
+    width: 80%;
+    justify-content: center;
+    background-color: #ffffff;
+    margin-left: 120px;
+    .right{
+        width: 50%;
+        justify-content: space-around;
+        textarea {
+            color: #ffffff;
+            position: relative;
+            height: 120px;
+            top: 20px;
+            @media only screen and (max-width: 1024px) {
+                top: 0px;
+            }
+        }
+        fieldset {
+            border-color: #ffffff !important;
+            height: 156px;
+            @media only screen and (max-width: 1024px) {
+                height: 180px;
+            }
+            @media only screen and (max-width: 576px) {
+                height: 90px;
+            }
+        }
+    
+        .MuiFormControl-root-66 {
+            position: relative;
+            top: 70px;
+            @media only screen and (max-width: 414px) {
+                top: 100px;
+            }
+        }
+    
+        input {
+            height: 24px;
+            // font-family: ProximaNova;
+            font-size: 20px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+        }
+    
+        input::after {
+            border-bottom: 1px solid #000;
+            width: 500px;
+            width: 100%;
+        }
+    
+        .form-bottom {
+            display: flex;
+            padding-left: 0 !important;
+            @media only screen and (max-width: 576px) {
+                flex-direction: column;
+            }
+            font-family: 'ProximaNovaSemiBold';
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            justify-content: space-between;
+    
+            .tell-more {
+                display: flex;
+                font-family: 'ProximaNovaSemiBold';
+                align-items: center;
+                svg {
+                margin-left: 8px;
+                }
+            }
+        }
+    }
+    .left{
+        width: 50%;
+        justify-content: space-around;
+        textarea {
+            color: #ffffff;
+            position: relative;
+            height: 120px;
+            top: 20px;
+            @media only screen and (max-width: 1024px) {
+                top: 0px;
+            }
+        }
+        fieldset {
+            border-color: #ffffff !important;
+            height: 156px;
+            @media only screen and (max-width: 1024px) {
+                height: 180px;
+            }
+            @media only screen and (max-width: 576px) {
+                height: 90px;
+            }
+        }
+    
+        .MuiFormControl-root-66 {
+            position: relative;
+            top: 70px;
+            @media only screen and (max-width: 414px) {
+                top: 100px;
+            }
+        }
+    
+        input {
+            height: 24px;
+            // font-family: ProximaNova;
+            font-size: 20px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+        }
+    
+        input::after {
+            border-bottom: 1px solid #000;
+            width: 500px;
+            width: 100%;
+        }
+    
+        .form-bottom {
+            display: flex;
+            padding-left: 0 !important;
+            @media only screen and (max-width: 576px) {
+                flex-direction: column;
+            }
+            font-family: 'ProximaNovaSemiBold';
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            justify-content: space-between;
+    
+            .tell-more {
+                display: flex;
+                font-family: 'ProximaNovaSemiBold';
+                align-items: center;
+                svg {
+                margin-left: 8px;
+                }
+            }
+        }
+    }
+}

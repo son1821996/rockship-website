@@ -22,6 +22,8 @@ const Sidebar = (props) => {
     linkBack = '/career';
   } else if (match.url === '/career/front-end/details') {
     linkBack = '/career';
+  } else if (match.url === '/Career/Appy-page') {
+    linkBack = '/career/front-end/details';
   }
 
   return (
