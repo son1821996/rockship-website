@@ -25,6 +25,7 @@ const styling = theme => ({
     },
     '&:after': {
       borderBottomColor: '#d8d8d8',
+      opacity: '0.5',
     },
   },
 });
@@ -57,6 +58,7 @@ class Form extends Component {
               classes={{
                 root: classes.cssLabelForm,
               }}
+              style={{ fontFamily: 'ProximaNovaLight' }}
             >
               Your name:
             </InputLabel>
@@ -76,6 +78,7 @@ class Form extends Component {
               classes={{
                 root: classes.cssLabelForm,
               }}
+              style={{ fontFamily: 'ProximaNovaLight' }}
             >
               Enter your email address
             </InputLabel>
@@ -97,6 +100,7 @@ class Form extends Component {
               classes={{
                 root: classes.cssLabelForm,
               }}
+              style={{ fontFamily: 'ProximaNovaLight' }}
             >
               Enter your phone number
             </InputLabel>
@@ -116,6 +120,7 @@ class Form extends Component {
               classes={{
                 root: classes.cssLabelForm,
               }}
+              style={{ fontFamily: 'ProximaNovaLight' }}
             >
               Select your CV
             </InputLabel>

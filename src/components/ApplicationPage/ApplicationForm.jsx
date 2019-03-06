@@ -29,7 +29,7 @@ class ApplicationForm extends Component {
               <div className="title-of-job">
                 <div className="line" />
                 <div className="head-title">
-                  SOFTWARE ENGINEERING
+                  APPLICATION FORM
                 </div>
               </div>
               <div className="what-we-want">
