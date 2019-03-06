@@ -38,10 +38,14 @@ class ContactContainer extends Component {
               <p>
               contact@rockship.co
               </p>
-              <iframe
-                title="map"
-                src="https://snazzymaps.com/embed/497"
-              />
+              <div style={{ width: '100%' }}>
+                <iframe title="map" width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=64%2F1%20vo%20oanh%20+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0">
+                  <a href="https://www.maps.ie/map-my-route/">
+                    Draw map route
+                  </a>
+                </iframe>
+              </div>
+              <br />
             </div>
           </div>
         </section>

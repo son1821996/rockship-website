@@ -141,13 +141,14 @@ class ContactForm extends Component {
 
   render() {
     const {
-      name, email, address, phoneNumber, content, description,
-      isShowFirstForm, isShowSecondForm, isShowThirdForm,
+      name, email, address, phoneNumber, content, description, companySize,
+      isShowFirstForm, isShowSecondForm, isShowThirdForm, interested, companyLocation,
     } = this.state;
     const { classes } = this.props;
     const listCompanySize = ['Single founder', '3 - 10 engineers', '10 - 50 engineers', '> 50 engineers'];
     const listCompanyLocation = ['US', 'Europe', 'East Asia', 'Other'];
     const listInterested = ['Live Streaming', ' Cryptocurrency Exchange', ' Payment Integration', ' VoIP routing app', ' Facility Booking System', 'Other'];
+    console.log('interested', interested);
     return (
       <form onSubmit={this.onSubmit} className="contact-form">
         <ScrollAnimation
@@ -297,6 +298,7 @@ class ContactForm extends Component {
                       name="company-size"
                       value={item}
                       onChange={this.onChangeSizeCompany}
+                      checked={companySize.includes(item)}
                     />
                     <span className="value-on-web">{item}</span>
                     <span className="checkmark" />
@@ -315,6 +317,7 @@ class ContactForm extends Component {
                       value={item}
                       // eslint-disable-next-line react/no-array-index-key
                       onChange={this.onChangeSizeLocation}
+                      checked={companyLocation.includes(item)}
                     />
                     <span className="value-on-web">{item}</span>
                     <span className="checkmark" />
@@ -346,6 +349,7 @@ class ContactForm extends Component {
                       // eslint-disable-next-line react/no-array-index-key
                       key={`key_${i}`}
                       onChange={this.onChangeInterested}
+                      checked={interested.includes(item)}
                     />
                     <span className="value-on-web">{item}</span>
                     <span className="checkmark" />
