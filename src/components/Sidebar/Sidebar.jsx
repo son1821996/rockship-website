@@ -22,7 +22,7 @@ const Sidebar = (props) => {
     linkBack = '/career';
   } else if (match.url === '/career/front-end/details') {
     linkBack = '/career';
-  } else if (match.url === '/Career/Appy-page') {
+  } else if (match.url === '/career/apply-page') {
     linkBack = '/career/front-end/details';
   }
 

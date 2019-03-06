@@ -37,7 +37,7 @@ class ApplySection extends Component {
           </span>
         </div>
         <div className="button-apply">
-          <Link to="/Career/Appy-page">
+          <Link to="/career/apply-page">
             <div className="button-title">
               Apply now
             </div>
