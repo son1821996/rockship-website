@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import '../../stylesheets/CareerDetails/ApplySection.scss';
 
@@ -36,9 +37,11 @@ class ApplySection extends Component {
           </span>
         </div>
         <div className="button-apply">
-          <div className="button-title">
-            Apply now
-          </div>
+          <Link to="/Career/Appy-page">
+            <div className="button-title">
+              Apply now
+            </div>
+          </Link>
         </div>
         <div className="benefit">
           Benefit
