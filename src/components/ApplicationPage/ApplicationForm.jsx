@@ -14,8 +14,6 @@ class ApplicationForm extends Component {
   render() {
     const { match } = this.props;
 
-    console.log(match);
-
     let logo;
     let titleJob;
     let technical;
