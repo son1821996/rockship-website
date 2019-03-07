@@ -74,6 +74,7 @@ class Form extends Component {
                 underline: classes.cssUnderlineForm,
               }}
               value={name}
+              name="YourName"
               onChange={this.handleChange('name')}
               autoComplete="off"
             />
@@ -94,6 +95,7 @@ class Form extends Component {
                 underline: classes.cssUnderlineForm,
               }}
               value={email}
+              name="Email"
               onChange={this.handleChange('email')}
               autoComplete="off"
             />
@@ -116,6 +118,7 @@ class Form extends Component {
                 underline: classes.cssUnderlineForm,
               }}
               value={phone}
+              name="PhoneNumber"
               onChange={this.handleChange('phone')}
               autoComplete="off"
             />
