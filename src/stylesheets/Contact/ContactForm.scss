@@ -23,6 +23,14 @@ label {
     margin-top: 40px;
   }
 
+  .contact-form-1 > div {
+    margin-top: 8px;
+  }
+
+  label {
+  color: #ffffff !important;
+  }
+
   .choose-option-section {
     display: flex;
     flex-wrap: wrap;
@@ -133,7 +141,7 @@ label {
       font-size: 16px;
       border-bottom: 1px solid #ffffff;
       cursor: pointer;
-      margin-top: 70px;
+      margin-top: 10px;
       @media only screen and (max-width: 768px) {
         margin-top: 24px;
         width: 20%;
@@ -146,9 +154,13 @@ label {
       }
     }
 
-    .form-bottom-right-third-form {
+    button.form-bottom-right-third-form {
       font-size: 16px;
       border-bottom: 1px solid #ffffff;
+      background-color: #1c1c1d;
+      border: none;
+      color: white;
+      padding: 15px 0px;
       cursor: pointer;
       padding-bottom: 8px;
       position: relative;

@@ -148,8 +148,9 @@ class ContactForm extends Component {
     const listCompanySize = ['Single founder', '3 - 10 engineers', '10 - 50 engineers', '> 50 engineers'];
     const listCompanyLocation = ['US', 'Europe', 'East Asia', 'Other'];
     const listInterested = ['Live Streaming', ' Cryptocurrency Exchange', ' Payment Integration', ' VoIP routing app', ' Facility Booking System', 'Other'];
+
     return (
-      <form onSubmit={this.onSubmit} className="contact-form">
+      <form method="GET" className="contact-form" action="https://script.google.com/macros/s/AKfycbxAAMQs86MWDhSBtxJiphPislOJFAfCNWtUvcEu4GKVt_W39-pZ/exec">
         <ScrollAnimation
           animateIn="slideInUp"
           animateOut="fadeOut"
@@ -170,218 +171,216 @@ class ContactForm extends Component {
             &lt; Tell us more about your business!
             </div>
           )}
-          {isShowFirstForm && (
-            <div className="form-control" style={{ display: 'flex', flexDirection: 'column' }}>
-              <FormControl className={classes.margin}>
-                <InputLabel
-                  htmlFor="custom-css-standard-input"
-                  classes={{
-                    root: classes.cssLabel,
-                  }}
-                >
-                  Name
-                </InputLabel>
-                <Input
-                  id="custom-css-standard-input"
-                  classes={{
-                    underline: classes.cssUnderline,
-                  }}
-                  value={name}
-                  onChange={this.handleChange('name')}
-                  autoComplete="off"
-                />
-              </FormControl>
-              <FormControl className={classes.margin}>
-                <InputLabel
-                  htmlFor="custom-css-standard-input"
-                  classes={{
-                    root: classes.cssLabel,
-                  }}
-                >
-                  Email
-                </InputLabel>
-                <Input
-                  id="custom-css-standard-input"
-                  classes={{
-                    underline: classes.cssUnderline,
-                  }}
-                  value={email}
-                  onChange={this.handleChange('email')}
-                  autoComplete="off"
-                />
-              </FormControl>
-              <FormControl className={classes.margin}>
-                <InputLabel
-                  htmlFor="custom-css-standard-input"
-                  classes={{
-                    root: classes.cssLabel,
-                  }}
-                >
-                  Address
-                </InputLabel>
-                <Input
-                  id="custom-css-standard-input"
-                  classes={{
-                    underline: classes.cssUnderline,
-                  }}
-                  value={address}
-                  onChange={this.handleChange('address')}
-                  autoComplete="off"
-                />
-              </FormControl>
-              <FormControl className={classes.margin}>
-                <InputLabel
-                  htmlFor="custom-css-standard-input"
-                  classes={{
-                    root: classes.cssLabel,
-                  }}
-                >
-                  Phone
-                </InputLabel>
-                <Input
-                  id="custom-css-standard-input"
-                  classes={{
-                    underline: classes.cssUnderline,
-                  }}
-                  value={phoneNumber}
-                  onChange={this.handleChange('phoneNumber')}
-                  autoComplete="off"
-                />
-              </FormControl>
-              <FormControl className={classes.margin}>
-                <InputLabel
-                  htmlFor="custom-css-standard-input"
-                  classes={{
-                    root: classes.cssLabel,
-                  }}
-                >
-                  Content
-                </InputLabel>
-                <Input
-                  id="custom-css-standard-input"
-                  classes={{
-                    underline: classes.cssUnderline,
-                  }}
-                  value={content}
-                  onChange={this.handleChange('content')}
-                  autoComplete="off"
-                />
-              </FormControl>
-              <div className="form-bottom">
-                <div
-                  className="tell-more"
-                  style={{ alignItems: 'center', cursor: 'pointer' }}
-                  onClick={this.onClickToShowSecondForm}
-                >
-                  <span>Tell us more about your business!</span>
-                  <ArrowRightAlt />
-                </div>
-                <button type="submit" className="form-bottom-right">
-                  Send us
-                </button>
-              </div>
-            </div>
-          )}
-          {isShowSecondForm && (
-            <div className="contact-form">
-              <div className="second-form-title">Company name</div>
-              <div className="second-form-subtitle">Company size</div>
-              <div
-                className="choose-option-section"
-              >
-                {listCompanySize.map((item, i) => (
-                  // eslint-disable-next-line jsx-a11y/label-has-associated-control
-                  <label className="radio-item" key={`key_${i}`}>
-                    <input
-                      type="radio"
-                      name="company-size"
-                      value={item}
-                      onChange={this.onChangeSizeCompany}
-                      checked={companySize.includes(item)}
-                    />
-                    <span className="value-on-web">{item}</span>
-                    <span className="checkmark" />
-                  </label>
-                ))}
-              </div>
-
-              <div className="second-form-subtitle">Company location</div>
-              <div className="choose-option-section">
-                {listCompanyLocation.map((item, i) => (
-                  // eslint-disable-next-line jsx-a11y/label-has-associated-control
-                  <label className="checkbox-item" key={`key_${i}`}>
-                    <input
-                      type="checkbox"
-                      name="company-location"
-                      value={item}
-                      // eslint-disable-next-line react/no-array-index-key
-                      onChange={this.onChangeSizeLocation}
-                      checked={companyLocation.includes(item)}
-                    />
-                    <span className="value-on-web">{item}</span>
-                    <span className="checkmark" />
-                  </label>
-                ))}
-              </div>
-              <div className="form-bottom">
-                <div />
-                <div className="form-bottom-right-second-form" onClick={this.onClickToShowThirdForm}>
-                  Next
-                </div>
-              </div>
-            </div>
-          )}
-          {isShowThirdForm && (
-            <div className="contact-form">
-              <div className="third-form-title">What area are you interested in?</div>
-              <div style={{
-                display: 'flex', flexWrap: 'wrap', marginTop: '12px', marginBottom: '0px', padding: '16px',
-              }}
-              >
-                {listInterested.map((item, i) => (
-                  // eslint-disable-next-line jsx-a11y/label-has-associated-control
-                  <label className="checkbox-item" key={`key_${i}`}>
-                    <input
-                      type="checkbox"
-                      name="company-location"
-                      value={item}
-                      // eslint-disable-next-line react/no-array-index-key
-                      key={`key_${i}`}
-                      onChange={this.onChangeInterested}
-                      checked={interested.includes(item)}
-                    />
-                    <span className="value-on-web">{item}</span>
-                    <span className="checkmark" />
-                  </label>
-                ))}
-              </div>
-              <TextField
-                id="outlined-full-width"
-                label="Project Description"
-                multiline
-                rows="20"
-                defaultValue={description}
-                onChange={this.handleChange('description')}
-                className={classes.textField}
-                margin="normal"
-                fullWidth
-                variant="outlined"
-              />
-              <div
-                className="form-bottom"
-                style={{
-                  flexDirection: 'unset',
+          <div className={`contact-form-1 ${isShowFirstForm ? '' : 'none-display'}`} style={{ display: 'flex', flexDirection: 'column' }}>
+            <FormControl className={classes.margin}>
+              <InputLabel
+                htmlFor="custom-css-standard-input"
+                classes={{
+                  root: classes.cssLabel,
                 }}
               >
-                <div />
-                <div
-                  className="form-bottom-right-third-form"
-                >
-                  Submit
-                </div>
+                Name
+              </InputLabel>
+              <Input
+                id="custom-css-standard-input"
+                classes={{
+                  underline: classes.cssUnderline,
+                }}
+                name="Name"
+                value={name}
+                onChange={this.handleChange('name')}
+                autoComplete="off"
+              />
+            </FormControl>
+            <FormControl className={classes.margin}>
+              <InputLabel
+                htmlFor="custom-css-standard-input"
+                classes={{
+                  root: classes.cssLabel,
+                }}
+              >
+                Email
+              </InputLabel>
+              <Input
+                id="custom-css-standard-input"
+                classes={{
+                  underline: classes.cssUnderline,
+                }}
+                name="Email"
+                value={email}
+                onChange={this.handleChange('email')}
+                autoComplete="off"
+              />
+            </FormControl>
+            <FormControl className={classes.margin}>
+              <InputLabel
+                htmlFor="custom-css-standard-input"
+                classes={{
+                  root: classes.cssLabel,
+                }}
+              >
+                Address
+              </InputLabel>
+              <Input
+                id="custom-css-standard-input"
+                classes={{
+                  underline: classes.cssUnderline,
+                }}
+                name="Address"
+                value={address}
+                onChange={this.handleChange('address')}
+                autoComplete="off"
+              />
+            </FormControl>
+            <FormControl className={classes.margin}>
+              <InputLabel
+                htmlFor="custom-css-standard-input"
+                classes={{
+                  root: classes.cssLabel,
+                }}
+              >
+                Phone
+              </InputLabel>
+              <Input
+                id="custom-css-standard-input"
+                classes={{
+                  underline: classes.cssUnderline,
+                }}
+                name="Phone"
+                value={phoneNumber}
+                onChange={this.handleChange('phoneNumber')}
+                autoComplete="off"
+              />
+            </FormControl>
+            <FormControl className={classes.margin}>
+              <InputLabel
+                htmlFor="custom-css-standard-input"
+                classes={{
+                  root: classes.cssLabel,
+                }}
+              >
+                Content
+              </InputLabel>
+              <Input
+                id="custom-css-standard-input"
+                classes={{
+                  underline: classes.cssUnderline,
+                }}
+                name="Content"
+                value={content}
+                onChange={this.handleChange('content')}
+                autoComplete="off"
+              />
+            </FormControl>
+            <div className="form-bottom">
+              <div
+                className="tell-more"
+                style={{ alignItems: 'center', cursor: 'pointer' }}
+                onClick={this.onClickToShowSecondForm}
+              >
+                <span>Tell us more about your business!</span>
+                <ArrowRightAlt />
+              </div>
+              <button type="submit" className="form-bottom-right">
+                Send us
+              </button>
+            </div>
+          </div>
+          <div className={`contact-form-2 ${isShowSecondForm ? '' : 'none-display'}`}>
+            <div className="second-form-title">Company name</div>
+            <div className="second-form-subtitle">Company size</div>
+            <div
+              className="choose-option-section"
+            >
+              {listCompanySize.map((item, i) => (
+                // eslint-disable-next-line jsx-a11y/label-has-associated-control
+                <label className="radio-item" key={`key_${i}`}>
+                  <input
+                    type="radio"
+                    name="CompanySize"
+                    value={item}
+                    onChange={this.onChangeSizeCompany}
+                    checked={companySize.includes(item)}
+                  />
+                  <span className="value-on-web">{item}</span>
+                  <span className="checkmark" />
+                </label>
+              ))}
+            </div>
+
+            <div className="second-form-subtitle">Company location</div>
+            <div className="choose-option-section">
+              {listCompanyLocation.map((item, i) => (
+                // eslint-disable-next-line jsx-a11y/label-has-associated-control
+                <label className="checkbox-item" key={`key_${i}`}>
+                  <input
+                    type="checkbox"
+                    name="CompanyLocation"
+                    value={item}
+                    // eslint-disable-next-line react/no-array-index-key
+                    onChange={this.onChangeSizeLocation}
+                    checked={companyLocation.includes(item)}
+                  />
+                  <span className="value-on-web">{item}</span>
+                  <span className="checkmark" />
+                </label>
+              ))}
+            </div>
+            <div className="form-bottom">
+              <div />
+              <div className="form-bottom-right-second-form" onClick={this.onClickToShowThirdForm}>
+                Next
               </div>
             </div>
-          )}
+          </div>
+          <div className={`contact-form-3 ${isShowThirdForm ? '' : 'none-display'}`}>
+            <div className="third-form-title">What area are you interested in?</div>
+            <div style={{
+              display: 'flex', flexWrap: 'wrap', marginTop: '12px', marginBottom: '0px', padding: '16px',
+            }}
+            >
+              {listInterested.map((item, i) => (
+                // eslint-disable-next-line jsx-a11y/label-has-associated-control
+                <label className="checkbox-item" key={`key_${i}`}>
+                  <input
+                    type="checkbox"
+                    name="InterestedIn"
+                    value={item}
+                    // eslint-disable-next-line react/no-array-index-key
+                    key={`key_${i}`}
+                    onChange={this.onChangeInterested}
+                    checked={interested.includes(item)}
+                  />
+                  <span className="value-on-web">{item}</span>
+                  <span className="checkmark" />
+                </label>
+              ))}
+            </div>
+            <TextField
+              id="outlined-full-width"
+              label="Project Description"
+              multiline
+              name="Description"
+              rows="20"
+              defaultValue={description}
+              onChange={this.handleChange('description')}
+              className={classes.textField}
+              margin="normal"
+              fullWidth
+              variant="outlined"
+            />
+            <div
+              className="form-bottom"
+              style={{
+                flexDirection: 'unset',
+              }}
+            >
+              <div />
+              <button type="submit" className="form-bottom-right-third-form">
+                Send us
+              </button>
+            </div>
+          </div>
         </ScrollAnimation>
       </form>
     );

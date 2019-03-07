@@ -2,7 +2,7 @@
   background-color: #1c1c1d;
   color: #ffffff;
   padding: 0px 136px 0px 136px;
-  height: 85vh;
+  height: 90vh;
   @media only screen and (max-width: 1024px) {
     height: auto;
     padding: 60px 64px 60px 64px;
@@ -28,7 +28,11 @@
     color: #5c5c5c;
   }
 
-  .form-control > div {
+  .none-display { 
+    display: none !important;
+  }
+
+  .contact-form > div {
     padding: 8px;
   }
 

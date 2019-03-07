@@ -4,9 +4,15 @@
     body{
       min-height: 100%;
       margin: 0;
+      padding: 0;
       position: relative;
       div {
         outline-style: none;
+      }
+      &::after {
+        content:'';
+        display:block;
+        height: 80px;
       }
     }
     *,
