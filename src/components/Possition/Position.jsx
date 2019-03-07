@@ -12,37 +12,19 @@ class position extends Component {
       openingPosition: [
         {
           id: '1',
-          location: 'Lorem ipsum dolor sit amets',
+          location: '24/1k Vo Oanh Street',
           workAs: 'full time ',
           strangeNumber: 3,
         },
         {
           id: '2',
-          location: 'Lorem ipsum dolor sit amet',
+          location: '24/1k Vo Oanh Street',
           workAs: 'full time ',
           strangeNumber: 3,
         },
         {
           id: '3',
-          location: 'Lorem ipsum dolor sit amet',
-          workAs: 'full time ',
-          strangeNumber: 3,
-        },
-        {
-          id: '4',
-          location: 'Lorem ipsum dolor sit amet',
-          workAs: 'full time ',
-          strangeNumber: 3,
-        },
-        {
-          id: '5',
-          location: 'Lorem ipsum dolor sit amet',
-          workAs: 'full time ',
-          strangeNumber: 3,
-        },
-        {
-          id: '6',
-          location: 'Lorem ipsum dolor sit amet',
+          location: '24/1k Vo Oanh Street',
           workAs: 'full time ',
           strangeNumber: 3,
         },

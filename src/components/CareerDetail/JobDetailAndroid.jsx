@@ -3,7 +3,7 @@ import ApplySection from './ApplySection';
 
 import '../../stylesheets/CareerDetails/BottomDetailPage.scss';
 
-class BottomDetailPage extends Component {
+class JobDetailAndroid extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -21,31 +21,19 @@ class BottomDetailPage extends Component {
               <div className="list-of-responesible">
                 <div className="first-line">
                   <span>•</span>
-                  Build efficient, testable, scalable, and reusable modules
+                  Design and build advanced applications for the Android platform
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Solve complex performance problems and architectural challenges
+                  Work on bug fixing and improving application performance
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Not only be cooperative and friendly,
-                  but also proactive and responsible and great believer of teamwork
+                  Ensuring the best possible performance, the quality of the application
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  For Senior Engineering Positions:
-                </div>
-              </div>
-              <div className="what-you-do">
-                <div className="first-line">
-                  <span>-</span>
-                  Play a lead role either in terms of technical development and architecture,
-                  or in terms of team management
-                </div>
-                <div className="first-line">
-                  <span>-</span>
-                  Mentor and nurture engineers.
+                  Helping maintain code.
                 </div>
               </div>
               <div className="expectation">
@@ -54,32 +42,23 @@ class BottomDetailPage extends Component {
               <div className="list-of-responesible">
                 <div className="first-line">
                   <span>•</span>
-                  Willing to work with new technologies in big and challenge projects
+                  Skillful in developing Android application
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  2+ years experience with programming languages like Golang,
-                  Python or NodeJS (We’re open any language)
+                  Proficiency in Java
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Participate in the entire application lifecycle, focusing on coding
+                  Excellent logic skills
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Write clean code to develop functional web applications
+                  Able to communicate and collaborate effectively with the team
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Optimization of the application for maximum speed, scalability and re-usability
-                </div>
-                <div className="first-line">
-                  <span>•</span>
-                  Ability to find solutions to the new challenges daily
-                </div>
-                <div className="first-line">
-                  <span>•</span>
-                  Always have a willing to learn and can-do attitude
+                  Have 1 years’ experience in Android development.
                 </div>
               </div>
               <div className="what-we-give">
@@ -95,15 +74,33 @@ class BottomDetailPage extends Component {
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Working with the team of talented and passionate engineers
+                  Flexible working environment
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Optimization of the application for maximum speed, scalability and re-usability
+                  Casual office environment (Gym, Swimming Pool, BBQ every weekends)
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Optimization of the application for maximum speed, scalability and re-usability
+                  Opportunity to work with other excellent & hungry engineers
+                </div>
+                <div className="first-line">
+                  <span>•</span>
+                  Opportunity to learn about Software Engineering best practices
+                </div>
+                <div className="first-line">
+                  <span>•</span>
+                  Opportunity to experience various technology stacks and learn from experts in
+                  that technology stack
+                </div>
+                <div className="first-line">
+                  <span>•</span>
+                  Opportunity to work on different business models and understand how
+                  choosing a technological solution will impact the business decision
+                </div>
+                <div className="first-line">
+                  <span>•</span>
+                  Annual salary reviews based on performance and contribution
                 </div>
               </div>
               <div className="enviroment">
@@ -135,4 +132,4 @@ class BottomDetailPage extends Component {
   }
 }
 
-export default BottomDetailPage;
+export default JobDetailAndroid;

@@ -5,14 +5,14 @@
         display: flex;
         justify-content: center;
         background-color: #ffffff;
-        .top-header-wraper{
-            @media screen and (min-width: 1024px) {
+        .top-header-wraper-form{
+            @media screen and (min-width: 1025px) {
                 margin-left: 120px;
-                width: 90%;
+                width: 85%;
             }
-            @media screen and (max-width: 1024px) {
+            @media screen and (max-width: 1025px) {
                 margin-top: 80px;
-                width: 100%;
+                width: 80%;
             }
             .title-group{
                 display: flex;

@@ -3,7 +3,7 @@ import ApplySection from './ApplySection';
 
 import '../../stylesheets/CareerDetails/BottomDetailPage.scss';
 
-class BottomDetailPage extends Component {
+class JobDetailIOs extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -21,31 +21,68 @@ class BottomDetailPage extends Component {
               <div className="list-of-responesible">
                 <div className="first-line">
                   <span>•</span>
-                  Build efficient, testable, scalable, and reusable modules
+                  Advanced knowledge in mobile development with Objective-C and Swift
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Solve complex performance problems and architectural challenges
+                  Strong OOP knowledge. Familiar with Clean Architecture, Unit-testing
+                  and best practices in software development, algorithm design, design
+                  patterns, performance tuning.
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Not only be cooperative and friendly,
-                  but also proactive and responsible and great believer of teamwork
+                  Experience in Reactive Programming using RxSwift, RxCocoa ...etc
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  For Senior Engineering Positions:
-                </div>
-              </div>
-              <div className="what-you-do">
-                <div className="first-line">
-                  <span>-</span>
-                  Play a lead role either in terms of technical development and architecture,
-                  or in terms of team management
+                  Some 3rd party library we use: Facebook SDK, Alamofire, Moya,
+                  Kingfisher, SDWebImage, Google Maps SDK, Fabric, Google Analytics
+                  Services, SocketIO, Stripe...etc
                 </div>
                 <div className="first-line">
-                  <span>-</span>
-                  Mentor and nurture engineers.
+                  <span>•</span>
+                  Tools we use: Github, GitLab, Jenkins, Zeplin, Jira, Basecamp,
+                  Confluence, Slack, latest XCode, Fastlane, Postman, Sketch.
+                </div>
+                <div className="first-line">
+                  <span>•</span>
+                  Hands-on experience with advanced custom UI controls/animations,
+                  concurrency (GCD, thread, queue, and scheduling technique), database
+                  (Core Data or Realm) and memory management (ARC)
+                </div>
+                <div className="first-line">
+                  <span>•</span>
+                  Understanding of software quality assurance principles
+                </div>
+                <div className="first-line">
+                  <span>•</span>
+                  Excellent analytical, problem-solving, code optimization, code
+                  organization, and debugging skills
+                </div>
+                <div className="first-line">
+                  <span>•</span>
+                  Strong English communication skill across teams (management, product,
+                  software, review code, etc.)
+                </div>
+                <div className="first-line">
+                  <span>•</span>
+                  Understanding of mobile development security
+                </div>
+                <div className="first-line">
+                  <span>•</span>
+                  Experience in Continuous Delivery for iOS using Fastlane and Jenkins
+                </div>
+                <div className="first-line">
+                  <span>•</span>
+                  A technical mindset with great attention to detail
+                </div>
+                <div className="first-line">
+                  <span>•</span>
+                  High quality organizational and leadership skills
+                </div>
+                <div className="first-line">
+                  <span>•</span>
+                  Outstanding communication and presentation abilities
                 </div>
               </div>
               <div className="expectation">
@@ -54,32 +91,29 @@ class BottomDetailPage extends Component {
               <div className="list-of-responesible">
                 <div className="first-line">
                   <span>•</span>
-                  Willing to work with new technologies in big and challenge projects
+                  Design and build advanced applications on iOS
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  2+ years experience with programming languages like Golang,
-                  Python or NodeJS (We’re open any language)
+                  Ensure the performance, quality, and responsiveness of applications
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Participate in the entire application lifecycle, focusing on coding
+                  Collaborate with a team to define, design, and ship new features
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Write clean code to develop functional web applications
+                  Identify and correct bottlenecks
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Optimization of the application for maximum speed, scalability and re-usability
+                  Continuously discover, evaluate, and implement new technologies to
+                  maximize development efficiency
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Ability to find solutions to the new challenges daily
-                </div>
-                <div className="first-line">
-                  <span>•</span>
-                  Always have a willing to learn and can-do attitude
+                  For Senior Engineering Positions: Supervise and support other junior
+                  developers in fulfilling tasks as well as improving their skills
                 </div>
               </div>
               <div className="what-we-give">
@@ -99,11 +133,11 @@ class BottomDetailPage extends Component {
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Optimization of the application for maximum speed, scalability and re-usability
+                  Young and dynamic environment combined with supportive and funny
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Optimization of the application for maximum speed, scalability and re-usability
+                  Fully stocked pantry (snacks, noodle, milk, coffee, tea, etc)
                 </div>
               </div>
               <div className="enviroment">
@@ -135,4 +169,4 @@ class BottomDetailPage extends Component {
   }
 }
 
-export default BottomDetailPage;
+export default JobDetailIOs;

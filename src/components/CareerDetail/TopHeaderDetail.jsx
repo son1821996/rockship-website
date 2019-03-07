@@ -14,7 +14,11 @@ class TopHeaderDetail extends Component {
         <div className="top-header-wraper">
           <div className="job-title-group">
             <div className="job-logo">
-              <div />
+              <img
+                alt="why-choose-copy"
+                src="/img/backend.png"
+                srcSet="/img/backend@2x.png 2x, /img/backend@3x.png 3x,"
+              />
             </div>
             <div className="job-title">
               Backend
