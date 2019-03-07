@@ -3,7 +3,7 @@ import ApplySection from './ApplySection';
 
 import '../../stylesheets/CareerDetails/BottomDetailPage.scss';
 
-class BottomDetailPage extends Component {
+class JobDetailFrontend extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -21,31 +21,36 @@ class BottomDetailPage extends Component {
               <div className="list-of-responesible">
                 <div className="first-line">
                   <span>•</span>
-                  Build efficient, testable, scalable, and reusable modules
+                  Develop frontend applications in Vue.js using GraphQL
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Solve complex performance problems and architectural challenges
+                  R&D novel and ingenious solutions to unique problems
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Not only be cooperative and friendly,
-                  but also proactive and responsible and great believer of teamwork
+                  Ensure the technical feasibility of UI/UX designs
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  For Senior Engineering Positions:
-                </div>
-              </div>
-              <div className="what-you-do">
-                <div className="first-line">
-                  <span>-</span>
-                  Play a lead role either in terms of technical development and architecture,
-                  or in terms of team management
+                  Architect our frontend: localisation, build tools, server-side rendering,
+                  component framework
                 </div>
                 <div className="first-line">
-                  <span>-</span>
-                  Mentor and nurture engineers.
+                  <span>•</span>
+                  Monitoring user experience and maximising their satisfaction
+                </div>
+                <div className="first-line">
+                  <span>•</span>
+                  Collaborate with a diverse multinational team of engineers
+                </div>
+                <div className="first-line">
+                  <span>•</span>
+                  Be a vital voice in sprint planning and daily stand up meetings
+                </div>
+                <div className="first-line">
+                  <span>•</span>
+                  Automate everything!
                 </div>
               </div>
               <div className="expectation">
@@ -54,32 +59,38 @@ class BottomDetailPage extends Component {
               <div className="list-of-responesible">
                 <div className="first-line">
                   <span>•</span>
-                  Willing to work with new technologies in big and challenge projects
+                  Deep expertise in Vue.js or ReactJs, ES6 and GraphQL
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  2+ years experience with programming languages like Golang,
-                  Python or NodeJS (We’re open any language)
+                  Familiar with front-end stuffs such as: HTML, CSS/CSS3, Vanilla JS, etc
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Participate in the entire application lifecycle, focusing on coding
+                  Linux guru - piped commands with sed easily roll off your fingertips
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Write clean code to develop functional web applications
+                  Sound coding practices - git, unit testing, CI/CD, design patterns, service
+                  oriented architecture
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Optimization of the application for maximum speed, scalability and re-usability
+                  Strong sense of user empathy and ownership over the products you&apos;ve
+                  created
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Ability to find solutions to the new challenges daily
+                  Sensitivity to website design, and an eye for aesthetics
+                  Nice to have
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Always have a willing to learn and can-do attitude
+                  Build your own frontend boilerplate or component library
+                </div>
+                <div className="first-line">
+                  <span>•</span>
+                  Your own ideas!
                 </div>
               </div>
               <div className="what-we-give">
@@ -99,11 +110,11 @@ class BottomDetailPage extends Component {
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Optimization of the application for maximum speed, scalability and re-usability
+                  Young and dynamic environment combined with supportive and funny
                 </div>
                 <div className="first-line">
                   <span>•</span>
-                  Optimization of the application for maximum speed, scalability and re-usability
+                  Fully stocked pantry (snacks, noodle, milk, coffee, tea, etc)
                 </div>
               </div>
               <div className="enviroment">
@@ -135,4 +146,4 @@ class BottomDetailPage extends Component {
   }
 }
 
-export default BottomDetailPage;
+export default JobDetailFrontend;

@@ -22,8 +22,14 @@ const Sidebar = (props) => {
     linkBack = '/career';
   } else if (match.url === '/career/front-end/details') {
     linkBack = '/career';
-  } else if (match.url === '/Career/Appy-page') {
+  } else if (match.url === '/career/front-end/details/apply-page') {
     linkBack = '/career/front-end/details';
+  } else if (match.url === '/career/android/details/apply-page') {
+    linkBack = '/career/android/details';
+  } else if (match.url === '/career/ios/details/apply-page') {
+    linkBack = '/career/ios/details';
+  } else if (match.url === '/career/back-end/details/apply-page') {
+    linkBack = '/career/back-end/details';
   }
 
   return (

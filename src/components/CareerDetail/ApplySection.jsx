@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
+import { object } from 'prop-types';
 
 import '../../stylesheets/CareerDetails/ApplySection.scss';
 
@@ -10,6 +11,18 @@ class ApplySection extends Component {
   }
 
   render() {
+    const { match } = this.props;
+
+    let linkTo;
+    if (match.url === '/career/back-end/details') {
+      linkTo = '/career/back-end/details/apply-page';
+    } else if (match.url === '/career/ios/details') {
+      linkTo = '/career/ios/details/apply-page';
+    } else if (match.url === '/career/android/details') {
+      linkTo = '/career/android/details/apply-page';
+    } else if (match.url === '/career/front-end/details') {
+      linkTo = '/career/front-end/details/apply-page';
+    }
     return (
       <div className="apply-section">
         <div className="what-user-see">
@@ -28,16 +41,8 @@ class ApplySection extends Component {
             3 years
           </span>
         </div>
-        <div className="what-user-see two">
-          <div className="info">
-            Deadline:
-          </div>
-          <span>
-            12/8/2019
-          </span>
-        </div>
         <div className="button-apply">
-          <Link to="/Career/Appy-page">
+          <Link to={linkTo}>
             <div className="button-title">
               Apply now
             </div>
@@ -47,55 +52,89 @@ class ApplySection extends Component {
           Benefit
         </div>
         <div className="benefits">
-          <div className="icon" />
+          <img
+            alt="salary"
+            src="/img/salary.png"
+            srcSet="/img/salary@2x.png 2x, /img/salary@3x.png 3x,"
+            className="icon"
+          />
           <div className="name-icon">
             13th month salary
           </div>
         </div>
         <div className="benefits">
-          <div className="icon" />
+          <img
+            alt="review"
+            src="/img/review.png"
+            srcSet="/img/review@2x.png 2x, /img/review@3x.png 3x,"
+            className="icon"
+          />
           <div className="name-icon">
             2 times/year review salary
           </div>
         </div>
         <div className="benefits">
-          <div className="icon" />
+          <img
+            alt="leave"
+            src="/img/salary.png"
+            srcSet="/img/salary@2x.png 2x, /img/salary@3x.png 3x,"
+            className="icon"
+          />
           <div className="name-icon">
             15 days leave
           </div>
         </div>
         <div className="benefits">
-          <div className="icon" />
+          <img
+            alt="insurance"
+            src="/img/insurance.png"
+            srcSet="/img/insurance@2x.png 2x, /img/insurance@3x.png 3x,"
+            className="icon"
+          />
           <div className="name-icon">
             Insurance
           </div>
         </div>
         <div className="benefits">
-          <div className="icon" />
+          <img
+            alt="parking"
+            src="/img/parking.png"
+            srcSet="/img/parking@2x.png 2x, /img/parking@3x.png 3x,"
+            className="icon"
+          />
           <div className="name-icon">
             Parking free
           </div>
         </div>
         <div className="benefits">
-          <div className="icon" />
-          <div className="name-icon">
-            13th month salary
-          </div>
-        </div>
-        <div className="benefits">
-          <div className="icon" />
+          <img
+            alt="company-trip"
+            src="/img/company-trip.png"
+            srcSet="/img/company-trip@2x.png 2x, /img/company-trip@3x.png 3x,"
+            className="icon"
+          />
           <div className="name-icon">
             Company trip
           </div>
         </div>
         <div className="benefits">
-          <div className="icon" />
+          <img
+            alt="pantry"
+            src="/img/pantry.png"
+            srcSet="/img/pantry@2x.png 2x, /img/pantry@3x.png 3x,"
+            className="icon"
+          />
           <div className="name-icon">
             Fully stocked pantry
           </div>
         </div>
         <div className="benefits">
-          <div className="icon" />
+          <img
+            alt="sharing"
+            src="/img/sharing.png"
+            srcSet="/img/sharing@2x.png 2x, /img/sharing@3x.png 3x,"
+            className="icon"
+          />
           <div className="name-icon">
             Sharing & Talking technical
           </div>
@@ -105,4 +144,8 @@ class ApplySection extends Component {
   }
 }
 
-export default ApplySection;
+ApplySection.propTypes = {
+  match: object.isRequired,
+};
+
+export default withRouter(ApplySection);

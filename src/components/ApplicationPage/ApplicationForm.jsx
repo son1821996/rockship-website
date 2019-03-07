@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
+import { object } from 'prop-types';
 import Form from './Form';
 
 import '../../stylesheets/ApplicationPage/ApplicationForm.scss';
@@ -10,30 +12,51 @@ class ApplicationForm extends Component {
   }
 
   render() {
+    const { match } = this.props;
+
+    let logo;
+    let titleJob;
+    let technical;
+    if (match.url === '/career/back-end/details/apply-page') {
+      logo = '/img/Backend-icon.png';
+      titleJob = 'Backend';
+      technical = 'Python - Golang - NodeJS';
+    } else if (match.url === '/career/ios/details/apply-page') {
+      logo = '/img/Why-choose-copy2.png';
+      titleJob = 'IOs';
+      technical = 'Swift';
+    } else if (match.url === '/career/android/details/apply-page') {
+      logo = '/img/Android-icon.png';
+      titleJob = 'Android';
+      technical = 'Java';
+    } else if (match.url === '/career/front-end/details/apply-page') {
+      logo = '/img/Frontend-icon.png';
+      titleJob = 'Frontend';
+      technical = 'ReactJS - VueJS';
+    }
     return (
       <div className="application-form">
         <div className="apply-header">
-          <div className="top-header-wraper">
+          <div className="top-header-wraper-form">
             <div className="title-group">
               <img
-                alt="backend"
-                src="/img/backend.png"
-                srcSet="/img/backend@2x.png 2x, /img/backend@3x.png 3x,"
+                alt="logo"
+                src={logo}
                 className="logo"
               />
               <div className="title">
-                Backend
+                {titleJob}
               </div>
             </div>
             <div className="title-group-head">
               <div className="title-of-job">
                 <div className="line" />
                 <div className="head-title">
-                  SOFTWARE ENGINEERING
+                  APPLICATION FORM
                 </div>
               </div>
               <div className="what-we-want">
-                Python - Golang - NodeJS
+                {technical}
               </div>
             </div>
           </div>
@@ -51,4 +74,8 @@ class ApplicationForm extends Component {
   }
 }
 
-export default ApplicationForm;
+ApplicationForm.propTypes = {
+  match: object.isRequired,
+};
+
+export default withRouter(ApplicationForm);

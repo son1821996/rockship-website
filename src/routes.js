@@ -41,7 +41,10 @@ export default class Routes extends Component {
           <Route exact path="/career/ios/details" component={CareerDetail} />
           <Route exact path="/career/android/details" component={CareerDetail} />
           <Route exact path="/career/front-end/details" component={CareerDetail} />
-          <Route exact path="/career/apply-page" component={ApplicationPage} />
+          <Route exact path="/career/front-end/details/apply-page" component={ApplicationPage} />
+          <Route exact path="/career/android/details/apply-page" component={ApplicationPage} />
+          <Route exact path="/career/ios/details/apply-page" component={ApplicationPage} />
+          <Route exact path="/career/back-end/details/apply-page" component={ApplicationPage} />
         </Switch>
       </Router>
     );

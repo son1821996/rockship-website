@@ -25,6 +25,7 @@ const styling = theme => ({
     },
     '&:after': {
       borderBottomColor: '#d8d8d8',
+      opacity: '0.5',
     },
   },
 });
@@ -34,6 +35,9 @@ class Form extends Component {
     super(props);
     this.state = {
       name: '',
+      email: '',
+      phone: '',
+      cv: '',
     };
   }
 
@@ -46,6 +50,9 @@ class Form extends Component {
   render() {
     const {
       name,
+      email,
+      phone,
+      cv,
     } = this.state;
     const { classes } = this.props;
     return (
@@ -57,6 +64,7 @@ class Form extends Component {
               classes={{
                 root: classes.cssLabelForm,
               }}
+              style={{ fontFamily: 'ProximaNovaLight' }}
             >
               Your name:
             </InputLabel>
@@ -76,6 +84,7 @@ class Form extends Component {
               classes={{
                 root: classes.cssLabelForm,
               }}
+              style={{ fontFamily: 'ProximaNovaLight' }}
             >
               Enter your email address
             </InputLabel>
@@ -84,8 +93,8 @@ class Form extends Component {
               classes={{
                 underline: classes.cssUnderlineForm,
               }}
-              value={name}
-              onChange={this.handleChange('name')}
+              value={email}
+              onChange={this.handleChange('email')}
               autoComplete="off"
             />
           </FormControl>
@@ -97,6 +106,7 @@ class Form extends Component {
               classes={{
                 root: classes.cssLabelForm,
               }}
+              style={{ fontFamily: 'ProximaNovaLight' }}
             >
               Enter your phone number
             </InputLabel>
@@ -105,8 +115,8 @@ class Form extends Component {
               classes={{
                 underline: classes.cssUnderlineForm,
               }}
-              value={name}
-              onChange={this.handleChange('name')}
+              value={phone}
+              onChange={this.handleChange('phone')}
               autoComplete="off"
             />
           </FormControl>
@@ -116,6 +126,7 @@ class Form extends Component {
               classes={{
                 root: classes.cssLabelForm,
               }}
+              style={{ fontFamily: 'ProximaNovaLight' }}
             >
               Select your CV
             </InputLabel>
@@ -124,8 +135,8 @@ class Form extends Component {
               classes={{
                 underline: classes.cssUnderlineForm,
               }}
-              value={name}
-              onChange={this.handleChange('name')}
+              value={cv}
+              onChange={this.handleChange('cv')}
               autoComplete="off"
             />
           </FormControl>
