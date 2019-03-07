@@ -11,7 +11,7 @@ class position extends Component {
       openingPosition: [
         {
           id: '1',
-          jobTitle: 'Itern IOs developer',
+          jobTitle: 'Intern IOs developer',
           location: '64/1k Vo Oanh Street,Binh Thanh,HCM city',
           workAs: 'full time ',
           strangeNumber: 1,
@@ -58,7 +58,7 @@ class position extends Component {
     } = this.props;
     const { openingPosition } = this.state;
     if (iosActivated === true) {
-      openingPosition[0].jobTitle = 'Itern IOs developer';
+      openingPosition[0].jobTitle = 'Intern IOs developer';
       openingPosition[1].jobTitle = 'Junior IOs developer';
       openingPosition[2].jobTitle = 'Senior IOs developer';
       this.setState({
@@ -66,7 +66,7 @@ class position extends Component {
         direction: 'career/ios/details',
       });
     } else if (androidActivated === true) {
-      openingPosition[0].jobTitle = 'Itern Android developer';
+      openingPosition[0].jobTitle = 'Intern Android developer';
       openingPosition[1].jobTitle = 'Junior Android developer';
       openingPosition[2].jobTitle = 'Senior Android developer';
       this.setState({
@@ -74,7 +74,7 @@ class position extends Component {
         direction: '/career/android/details',
       });
     } else if (frontEndActivated === true) {
-      openingPosition[0].jobTitle = 'Itern Frontend developer';
+      openingPosition[0].jobTitle = 'Intern Frontend developer';
       openingPosition[1].jobTitle = 'Junior Frontend developer';
       openingPosition[2].jobTitle = 'Senior Frontend developer';
       this.setState({
@@ -82,7 +82,7 @@ class position extends Component {
         direction: '/career/front-end/details',
       });
     } else if (backEndActivated === true) {
-      openingPosition[0].jobTitle = 'Itern Backend developer';
+      openingPosition[0].jobTitle = 'Intern Backend developer';
       openingPosition[1].jobTitle = 'Junior Backend developer';
       openingPosition[2].jobTitle = 'Senior Backend developer';
       this.setState({
