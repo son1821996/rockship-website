@@ -148,7 +148,7 @@ class ContactForm extends Component {
     const listCompanySize = ['Single founder', '3 - 10 engineers', '10 - 50 engineers', '> 50 engineers'];
     const listCompanyLocation = ['US', 'Europe', 'East Asia', 'Other'];
     const listInterested = ['Live Streaming', ' Cryptocurrency Exchange', ' Payment Integration', ' VoIP routing app', ' Facility Booking System', 'Other'];
-    console.log('companyLocation', companyLocation);
+
     return (
       <form method="GET" className="contact-form" action="https://script.google.com/macros/s/AKfycbxAAMQs86MWDhSBtxJiphPislOJFAfCNWtUvcEu4GKVt_W39-pZ/exec">
         <ScrollAnimation
