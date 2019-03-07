@@ -93,22 +93,26 @@
         display: flex;
         justify-content: center;
         background-color: #ffffff;
-        .button{
+        button{
             height: 48px;
             width: 183px;
             background-color: #000000;
-            font-family: Poppins;
-            font-size: 16px;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: center;
             color: #ffffff;
             display: flex;
             justify-content: center;
             flex-direction: column;
+            .word{
+                font-family: Poppins;
+                font-size: 16px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                margin-left: 63px;
+                margin-top: -4px;
+            }
         }
     }
 }
