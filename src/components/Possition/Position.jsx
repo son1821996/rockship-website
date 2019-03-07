@@ -8,25 +8,27 @@ class position extends Component {
     super(props);
     this.state = {
       direction: 'career/ios/details',
-      jobTitle: 'IOs developer',
       openingPosition: [
         {
           id: '1',
-          location: '24/1k Vo Oanh Street',
+          jobTitle: 'Itern IOs developer',
+          location: '24/1k Vo Oanh Street,Binh Thanh,HCM city',
           workAs: 'full time ',
-          strangeNumber: 3,
+          strangeNumber: 1,
         },
         {
           id: '2',
-          location: '24/1k Vo Oanh Street',
+          jobTitle: 'Junior IOs developer',
+          location: '24/1k Vo Oanh Street,Binh Thanh,HCM city',
           workAs: 'full time ',
-          strangeNumber: 3,
+          strangeNumber: 1,
         },
         {
           id: '3',
-          location: '24/1k Vo Oanh Street',
+          jobTitle: 'Senior IOs developer',
+          location: '24/1k Vo Oanh Street,Binh Thanh,HCM city',
           workAs: 'full time ',
-          strangeNumber: 3,
+          strangeNumber: 1,
         },
       ],
     };
@@ -54,24 +56,37 @@ class position extends Component {
       frontEndActivated,
       backEndActivated,
     } = this.props;
+    const { openingPosition } = this.state;
     if (iosActivated === true) {
+      openingPosition[0].jobTitle = 'Itern IOs developer';
+      openingPosition[1].jobTitle = 'Junior IOs developer';
+      openingPosition[2].jobTitle = 'Senior IOs developer';
       this.setState({
-        jobTitle: 'IOs developer',
+        openingPosition,
         direction: 'career/ios/details',
       });
     } else if (androidActivated === true) {
+      openingPosition[0].jobTitle = 'Itern Android developer';
+      openingPosition[1].jobTitle = 'Junior Android developer';
+      openingPosition[2].jobTitle = 'Senior Android developer';
       this.setState({
-        jobTitle: 'Android developer',
+        openingPosition,
         direction: '/career/android/details',
       });
     } else if (frontEndActivated === true) {
+      openingPosition[0].jobTitle = 'Itern Frontend developer';
+      openingPosition[1].jobTitle = 'Junior Frontend developer';
+      openingPosition[2].jobTitle = 'Senior Frontend developer';
       this.setState({
-        jobTitle: 'Frontend developer',
+        openingPosition,
         direction: '/career/front-end/details',
       });
     } else if (backEndActivated === true) {
+      openingPosition[0].jobTitle = 'Itern Backend developer';
+      openingPosition[1].jobTitle = 'Junior Backend developer';
+      openingPosition[2].jobTitle = 'Senior Backend developer';
       this.setState({
-        jobTitle: 'Backend developer',
+        openingPosition,
         direction: '/career/back-end/details',
       });
     }
@@ -80,7 +95,6 @@ class position extends Component {
   render() {
     const {
       openingPosition,
-      jobTitle,
       direction,
     } = this.state;
     return (
@@ -91,7 +105,7 @@ class position extends Component {
               <Link to={direction} {...position}>
                 <div className="job-wraper">
                   <div className="job-title">
-                    {jobTitle}
+                    {openingPositionItem.jobTitle}
                   </div>
                   <div className="line location">
                     <img

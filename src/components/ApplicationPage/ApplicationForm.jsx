@@ -6,19 +6,21 @@ import '../../stylesheets/ApplicationPage/ApplicationForm.scss';
 class ApplicationForm extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      logo: '/img/backend.png',
+    };
   }
 
   render() {
+    const { logo } = this.state;
     return (
       <div className="application-form">
         <div className="apply-header">
           <div className="top-header-wraper-form">
             <div className="title-group">
               <img
-                alt="backend"
-                src="/img/backend.png"
-                srcSet="/img/backend@2x.png 2x, /img/backend@3x.png 3x,"
+                alt="logo"
+                src={logo}
                 className="logo"
               />
               <div className="title">

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
+import { object } from 'prop-types';
 
 import '../../stylesheets/CareerDetails/ApplySection.scss';
 
@@ -10,6 +11,18 @@ class ApplySection extends Component {
   }
 
   render() {
+    const { match } = this.props;
+
+    let linkTo;
+    if (match.url === '/career/back-end/details') {
+      linkTo = '/career/back-end/details/apply-page';
+    } else if (match.url === '/career/ios/details') {
+      linkTo = '/career/ios/details/apply-page';
+    } else if (match.url === '/career/android/details') {
+      linkTo = '/career/android/details/apply-page';
+    } else if (match.url === '/career/front-end/details') {
+      linkTo = '/career/front-end/details/apply-page';
+    }
     return (
       <div className="apply-section">
         <div className="what-user-see">
@@ -29,7 +42,7 @@ class ApplySection extends Component {
           </span>
         </div>
         <div className="button-apply">
-          <Link to="/career/apply-page">
+          <Link to={linkTo}>
             <div className="button-title">
               Apply now
             </div>
@@ -131,4 +144,8 @@ class ApplySection extends Component {
   }
 }
 
-export default ApplySection;
+ApplySection.propTypes = {
+  match: object.isRequired,
+};
+
+export default withRouter(ApplySection);
