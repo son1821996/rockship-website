@@ -1,3 +1,6 @@
+.none-display { 
+  display: none !important;
+}
 .contact-section {
   background-color: #1c1c1d;
   color: #ffffff;
@@ -26,10 +29,6 @@
     line-height: normal;
     letter-spacing: normal;
     color: #5c5c5c;
-  }
-
-  .none-display { 
-    display: none !important;
   }
 
   .contact-form > div {

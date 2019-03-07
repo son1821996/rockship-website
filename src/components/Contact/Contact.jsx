@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import 'animate.css/animate.min.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-import ContactFrom from './ContactForm';
+import ContactForm from './ContactForm';
 
 import '../../stylesheets/Contact/Contact.scss';
 
@@ -20,7 +20,7 @@ class Contact extends Component {
           animateOnce
         >
           <div className="contact-content">
-            <ContactFrom />
+            <ContactForm />
             <div className="contact-content">
               <div
                 className="dash"
