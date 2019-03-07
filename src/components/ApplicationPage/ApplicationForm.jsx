@@ -61,13 +61,15 @@ class ApplicationForm extends Component {
             </div>
           </div>
         </div>
-        <form method="GET" action="https://script.google.com/macros/s/AKfycbwg285KMzgqeFLNLOBDp1RpiqxPCesKnYxLwK42-bCIvI5kUw/exec" style={{ display: 'flex' }}>
+        <form method="GET" action="https://script.google.com/macros/s/AKfycbwg285KMzgqeFLNLOBDp1RpiqxPCesKnYxLwK42-bCIvI5kUw/exec">
           <div className="form-container-apply">
             <Form />
           </div>
           <div className="button-container">
-            <button className="button" type="submit">
-              Submit
+            <button type="submit">
+              <div className="word">
+                Submit
+              </div>
             </button>
           </div>
         </form>
