@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
+import { object } from 'prop-types';
 import Form from './Form';
 
 import '../../stylesheets/ApplicationPage/ApplicationForm.scss';
@@ -6,13 +8,34 @@ import '../../stylesheets/ApplicationPage/ApplicationForm.scss';
 class ApplicationForm extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      logo: '/img/backend.png',
-    };
+    this.state = {};
   }
 
   render() {
-    const { logo } = this.state;
+    const { match } = this.props;
+
+    console.log(match);
+
+    let logo;
+    let titleJob;
+    let technical;
+    if (match.url === '/career/back-end/details/apply-page') {
+      logo = '/img/Backend-icon.png';
+      titleJob = 'Backend';
+      technical = 'Python - Golang - NodeJS';
+    } else if (match.url === '/career/ios/details/apply-page') {
+      logo = '/img/Why-choose-copy2.png';
+      titleJob = 'IOs';
+      technical = 'Swift';
+    } else if (match.url === '/career/android/details/apply-page') {
+      logo = '/img/Android-icon.png';
+      titleJob = 'Android';
+      technical = 'Java';
+    } else if (match.url === '/career/front-end/details/apply-page') {
+      logo = '/img/Frontend-icon.png';
+      titleJob = 'Frontend';
+      technical = 'ReactJS - VueJS';
+    }
     return (
       <div className="application-form">
         <div className="apply-header">
@@ -24,7 +47,7 @@ class ApplicationForm extends Component {
                 className="logo"
               />
               <div className="title">
-                Backend
+                {titleJob}
               </div>
             </div>
             <div className="title-group-head">
@@ -35,7 +58,7 @@ class ApplicationForm extends Component {
                 </div>
               </div>
               <div className="what-we-want">
-                Python - Golang - NodeJS
+                {technical}
               </div>
             </div>
           </div>
@@ -53,4 +76,8 @@ class ApplicationForm extends Component {
   }
 }
 
-export default ApplicationForm;
+ApplicationForm.propTypes = {
+  match: object.isRequired,
+};
+
+export default withRouter(ApplicationForm);
