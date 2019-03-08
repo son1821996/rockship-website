@@ -48,23 +48,20 @@ class Navigation extends Component {
         </div>
         <div className="navigation-mobile">
           <div className="nav-mobile-content">
-            <div className="nav-left" style={{ display: 'flex' }}>
-              <Link to="/"><img alt="logo" src="/img/logo.png" className="logo" /></Link>
-            </div>
-            <div className="nav-right">
+            <div className="nav-left">
               <img
                 alt="burger menu"
                 src="/img/burger.png"
                 srcSet="/img/burger@2x.png 2x, /img/burger@3x.png 3x,"
                 onClick={this.handleClickToShowSidebar}
                 style={{
-                  transform: `${isShowSidebar ? 'translateX(-540%)' : 'unset'}`,
+                  transform: `${isShowSidebar ? 'translateX(540%)' : 'unset'}`,
                 }}
               />
               <ul
                 className="navigation_list"
                 style={{
-                  transform: `${isShowSidebar ? 'translateX(-100%)' : 'unset'}`,
+                  transform: `${isShowSidebar ? 'translateX(100%)' : 'unset'}`,
                 }}
               >
                 <li className="nav_item">
@@ -86,6 +83,9 @@ class Navigation extends Component {
                   <Link to="/">Career</Link>
                 </li>
               </ul>
+            </div>
+            <div className="nav-right" style={{ display: 'flex' }}>
+              <Link to="/"><img alt="logo" src="/img/logo.png" className="logo" /></Link>
             </div>
           </div>
         </div>

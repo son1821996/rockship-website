@@ -38,9 +38,9 @@
             width: auto;
             height: 652px;
           }
-          @media only screen and (max-width: 414px) {
+          @media only screen and (max-width: 568px) {
             width: auto;
-            height: 410px;
+            height: 310px;
           }
         }
       }
@@ -158,12 +158,16 @@
           top: 69%;
         }
 
+        @media only screen and (max-width: 568px) {
+          top: 55%;
+        }
+
         @media only screen and (max-width: 414px) {
-          top: 57%;
+          top: 53%;
         }
 
         @media only screen and (max-width: 375px) {
-          top: 56%;
+          top: 52%;
         }
 
 
@@ -182,7 +186,7 @@
           left: 34%;
         }
         @media only screen and (max-width: 1366px) {
-          left: 41%;
+          left: 38.5%;
         }
         @media only screen and (max-width: 1024px) {
           right: 36px;

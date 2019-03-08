@@ -19,7 +19,9 @@
   height: 80px; 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
-    height: 100px; 
+    height: 100px;
+    align-items: center;
+    padding-bottom: 24px;
   }
   .footer-left {
     display: flex;
@@ -27,6 +29,7 @@
     margin-left: 16px;
     @media only screen and (max-width: 768px) {
       text-align: center;
+      margin-left: 0px;
     }
     font-family: 'ProximaNovaRegular';
   }
@@ -34,10 +37,12 @@
   .footer-right {
     display: flex;
     align-items: center;
+    margin-right: 50px;
     font-family: 'ProximaNovaSemiBold';
     @media only screen and (max-width: 768px) {
       margin-top: 24px;
       flex-direction: column;
+      margin-right: 0px;
     }
 
     .footer-right-text {
